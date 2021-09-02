@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED626E10FF8004194EA /* AppDelegate.swift */; };
 		DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED826E10FF8004194EA /* SceneDelegate.swift */; };
-		DA516EDB26E10FF8004194EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EDA26E10FF8004194EA /* ViewController.swift */; };
 		DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDC26E10FF8004194EA /* Main.storyboard */; };
 		DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDF26E10FFB004194EA /* Assets.xcassets */; };
 		DA516EE326E10FFB004194EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EE126E10FFB004194EA /* LaunchScreen.storyboard */; };
 		DA516EEF26E1233E004194EA /* AertripData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA516EEE26E1233E004194EA /* AertripData.json */; };
+		DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF426E13E89004194EA /* ItinaryViewController.swift */; };
+		DA516EF726E13E89004194EA /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516EF526E13E89004194EA /* ItinaryViewController.xib */; };
+		DA516EF926E14C97004194EA /* AertripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF826E14C97004194EA /* AertripModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA516ED326E10FF8004194EA /* AertripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AertripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA516ED626E10FF8004194EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA516ED826E10FF8004194EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA516EDA26E10FF8004194EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA516EDD26E10FF8004194EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA516EDF26E10FFB004194EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA516EE226E10FFB004194EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA516EE426E10FFB004194EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA516EEE26E1233E004194EA /* AertripData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AertripData.json; sourceTree = "<group>"; };
+		DA516EF426E13E89004194EA /* ItinaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryViewController.swift; sourceTree = "<group>"; };
+		DA516EF526E13E89004194EA /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
+		DA516EF826E14C97004194EA /* AertripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AertripModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,10 @@
 		DA516ED526E10FF8004194EA /* AertripDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DA516EED26E1225D004194EA /* JSONData */,
 				DA516EEC26E11582004194EA /* ViewModel */,
 				DA516EEB26E1157A004194EA /* View */,
 				DA516EEA26E11570004194EA /* Model */,
-				DA516ED626E10FF8004194EA /* AppDelegate.swift */,
-				DA516ED826E10FF8004194EA /* SceneDelegate.swift */,
-				DA516EDA26E10FF8004194EA /* ViewController.swift */,
-				DA516EDC26E10FF8004194EA /* Main.storyboard */,
 				DA516EDF26E10FFB004194EA /* Assets.xcassets */,
-				DA516EE126E10FFB004194EA /* LaunchScreen.storyboard */,
 				DA516EE426E10FFB004194EA /* Info.plist */,
 			);
 			path = AertripDemo;
@@ -76,6 +74,7 @@
 		DA516EEA26E11570004194EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA516EF826E14C97004194EA /* AertripModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,6 +82,9 @@
 		DA516EEB26E1157A004194EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA516EF326E13D44004194EA /* XIB */,
+				DA516EF226E13D2D004194EA /* Storyboard */,
+				DA516EF426E13E89004194EA /* ItinaryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,6 +92,8 @@
 		DA516EEC26E11582004194EA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DA516EF126E13B39004194EA /* Delegates */,
+				DA516EED26E1225D004194EA /* JSONData */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -100,6 +104,32 @@
 				DA516EEE26E1233E004194EA /* AertripData.json */,
 			);
 			path = JSONData;
+			sourceTree = "<group>";
+		};
+		DA516EF126E13B39004194EA /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DA516ED626E10FF8004194EA /* AppDelegate.swift */,
+				DA516ED826E10FF8004194EA /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DA516EF226E13D2D004194EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DA516EDC26E10FF8004194EA /* Main.storyboard */,
+				DA516EE126E10FFB004194EA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DA516EF326E13D44004194EA /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				DA516EF526E13E89004194EA /* ItinaryViewController.xib */,
+			);
+			path = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +191,7 @@
 			files = (
 				DA516EE326E10FFB004194EA /* LaunchScreen.storyboard in Resources */,
 				DA516EEF26E1233E004194EA /* AertripData.json in Resources */,
+				DA516EF726E13E89004194EA /* ItinaryViewController.xib in Resources */,
 				DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */,
 				DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */,
 			);
@@ -173,7 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA516EDB26E10FF8004194EA /* ViewController.swift in Sources */,
+				DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */,
+				DA516EF926E14C97004194EA /* AertripModel.swift in Sources */,
 				DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */,
 				DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */,
 			);
@@ -325,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDXV7KFR34;
 				INFOPLIST_FILE = AertripDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDXV7KFR34;
 				INFOPLIST_FILE = AertripDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
