@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA3F55E82DF8F64325E68BB /* Pods_AertripDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F3CF6CA9C0CFB08A59E311 /* Pods_AertripDemo.framework */; };
 		DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED626E10FF8004194EA /* AppDelegate.swift */; };
 		DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED826E10FF8004194EA /* SceneDelegate.swift */; };
 		DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDC26E10FF8004194EA /* Main.storyboard */; };
@@ -16,9 +17,23 @@
 		DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF426E13E89004194EA /* ItinaryViewController.swift */; };
 		DA516EF726E13E89004194EA /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516EF526E13E89004194EA /* ItinaryViewController.xib */; };
 		DA516EF926E14C97004194EA /* AertripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF826E14C97004194EA /* AertripModel.swift */; };
+		DA516EFC26E18FF9004194EA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EFB26E18FF9004194EA /* Page.swift */; };
+		DA516F0026E19184004194EA /* TabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EFE26E19184004194EA /* TabBarCollectionViewCell.swift */; };
+		DA516F0126E19184004194EA /* TabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516EFF26E19184004194EA /* TabBarCollectionViewCell.xib */; };
+		DA516F0626E193EA004194EA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0426E193EA004194EA /* FilterViewController.swift */; };
+		DA516F0726E193EA004194EA /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516F0526E193EA004194EA /* FilterViewController.xib */; };
+		DA516F0A26E19F17004194EA /* DoubledSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0826E19F16004194EA /* DoubledSlider.swift */; };
+		DA516F0B26E19F17004194EA /* ViewProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0926E19F17004194EA /* ViewProgrammatically.swift */; };
+		DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */; };
+		DA516F1226E22D53004194EA /* ItinaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */; };
+		DADF560F26E24C1900C7A611 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF560E26E24C1900C7A611 /* JSONParser.swift */; };
+		DADF561226E2A9C700C7A611 /* LoopableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF561126E2A9C700C7A611 /* LoopableProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		289486933D97BF983BF81639 /* Pods-AertripDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AertripDemo.release.xcconfig"; path = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.release.xcconfig"; sourceTree = "<group>"; };
+		28F3CF6CA9C0CFB08A59E311 /* Pods_AertripDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AertripDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AC4B71FEEC52F4919C3A01 /* Pods-AertripDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AertripDemo.debug.xcconfig"; path = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DA516ED326E10FF8004194EA /* AertripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AertripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA516ED626E10FF8004194EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA516ED826E10FF8004194EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +45,17 @@
 		DA516EF426E13E89004194EA /* ItinaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryViewController.swift; sourceTree = "<group>"; };
 		DA516EF526E13E89004194EA /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
 		DA516EF826E14C97004194EA /* AertripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AertripModel.swift; sourceTree = "<group>"; };
+		DA516EFB26E18FF9004194EA /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		DA516EFE26E19184004194EA /* TabBarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCollectionViewCell.swift; sourceTree = "<group>"; };
+		DA516EFF26E19184004194EA /* TabBarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarCollectionViewCell.xib; sourceTree = "<group>"; };
+		DA516F0426E193EA004194EA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		DA516F0526E193EA004194EA /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		DA516F0826E19F16004194EA /* DoubledSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubledSlider.swift; sourceTree = "<group>"; };
+		DA516F0926E19F17004194EA /* ViewProgrammatically.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProgrammatically.swift; sourceTree = "<group>"; };
+		DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryTableViewCell.swift; sourceTree = "<group>"; };
+		DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryTableViewCell.xib; sourceTree = "<group>"; };
+		DADF560E26E24C1900C7A611 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		DADF561126E2A9C700C7A611 /* LoopableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopableProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA3F55E82DF8F64325E68BB /* Pods_AertripDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F8E9034D9D0B48FBF789610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F3CF6CA9C0CFB08A59E311 /* Pods_AertripDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA516ECA26E10FF8004194EA = {
 			isa = PBXGroup;
 			children = (
 				DA516ED526E10FF8004194EA /* AertripDemo */,
 				DA516ED426E10FF8004194EA /* Products */,
+				EF4B722897E2087EB27B5BB3 /* Pods */,
+				5F8E9034D9D0B48FBF789610 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +99,8 @@
 		DA516ED526E10FF8004194EA /* AertripDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DADF561026E2A98A00C7A611 /* Protocols */,
+				DA516F0C26E22C44004194EA /* Library */,
 				DA516EEC26E11582004194EA /* ViewModel */,
 				DA516EEB26E1157A004194EA /* View */,
 				DA516EEA26E11570004194EA /* Model */,
@@ -82,9 +121,12 @@
 		DA516EEB26E1157A004194EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA516EFD26E19137004194EA /* Cells */,
+				DA516EFA26E1670B004194EA /* CustomFiles */,
 				DA516EF326E13D44004194EA /* XIB */,
 				DA516EF226E13D2D004194EA /* Storyboard */,
 				DA516EF426E13E89004194EA /* ItinaryViewController.swift */,
+				DA516F0426E193EA004194EA /* FilterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,8 +134,10 @@
 		DA516EEC26E11582004194EA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DA516EFB26E18FF9004194EA /* Page.swift */,
 				DA516EF126E13B39004194EA /* Delegates */,
 				DA516EED26E1225D004194EA /* JSONData */,
+				DADF560E26E24C1900C7A611 /* JSONParser.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,9 +171,54 @@
 		DA516EF326E13D44004194EA /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */,
+				DA516EFF26E19184004194EA /* TabBarCollectionViewCell.xib */,
+				DA516F0526E193EA004194EA /* FilterViewController.xib */,
 				DA516EF526E13E89004194EA /* ItinaryViewController.xib */,
 			);
 			path = XIB;
+			sourceTree = "<group>";
+		};
+		DA516EFA26E1670B004194EA /* CustomFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomFiles;
+			sourceTree = "<group>";
+		};
+		DA516EFD26E19137004194EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DA516EFE26E19184004194EA /* TabBarCollectionViewCell.swift */,
+				DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DA516F0C26E22C44004194EA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DA516F0826E19F16004194EA /* DoubledSlider.swift */,
+				DA516F0926E19F17004194EA /* ViewProgrammatically.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DADF561026E2A98A00C7A611 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DADF561126E2A9C700C7A611 /* LoopableProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EF4B722897E2087EB27B5BB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9AC4B71FEEC52F4919C3A01 /* Pods-AertripDemo.debug.xcconfig */,
+				289486933D97BF983BF81639 /* Pods-AertripDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA516EE726E10FFB004194EA /* Build configuration list for PBXNativeTarget "AertripDemo" */;
 			buildPhases = (
+				57645951E2128780BA36F1E2 /* [CP] Check Pods Manifest.lock */,
 				DA516ECF26E10FF8004194EA /* Sources */,
 				DA516ED026E10FF8004194EA /* Frameworks */,
 				DA516ED126E10FF8004194EA /* Resources */,
+				ADD884134D71CAF67F7E9821 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,8 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA516F0726E193EA004194EA /* FilterViewController.xib in Resources */,
 				DA516EE326E10FFB004194EA /* LaunchScreen.storyboard in Resources */,
 				DA516EEF26E1233E004194EA /* AertripData.json in Resources */,
+				DA516F0126E19184004194EA /* TabBarCollectionViewCell.xib in Resources */,
+				DA516F1226E22D53004194EA /* ItinaryTableViewCell.xib in Resources */,
 				DA516EF726E13E89004194EA /* ItinaryViewController.xib in Resources */,
 				DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */,
 				DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */,
@@ -199,15 +293,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57645951E2128780BA36F1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AertripDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD884134D71CAF67F7E9821 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AertripDemo/Pods-AertripDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AertripDemo/Pods-AertripDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AertripDemo/Pods-AertripDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA516ECF26E10FF8004194EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA516F0A26E19F17004194EA /* DoubledSlider.swift in Sources */,
+				DA516F0626E193EA004194EA /* FilterViewController.swift in Sources */,
+				DA516F0B26E19F17004194EA /* ViewProgrammatically.swift in Sources */,
+				DADF560F26E24C1900C7A611 /* JSONParser.swift in Sources */,
 				DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */,
+				DADF561226E2A9C700C7A611 /* LoopableProtocol.swift in Sources */,
 				DA516EF926E14C97004194EA /* AertripModel.swift in Sources */,
+				DA516F0026E19184004194EA /* TabBarCollectionViewCell.swift in Sources */,
+				DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */,
 				DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */,
 				DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */,
+				DA516EFC26E18FF9004194EA /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +495,7 @@
 		};
 		DA516EE826E10FFB004194EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9AC4B71FEEC52F4919C3A01 /* Pods-AertripDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +516,7 @@
 		};
 		DA516EE926E10FFB004194EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289486933D97BF983BF81639 /* Pods-AertripDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

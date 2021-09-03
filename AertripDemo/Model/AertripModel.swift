@@ -121,7 +121,7 @@ struct The6_E: Codable {
 }
 
 // MARK: - Aldet
-struct Aldet: Codable {
+struct Aldet: Codable, Loopable {
     let uk: String
     let ai: String
     let the6E: String?
