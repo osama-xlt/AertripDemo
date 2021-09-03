@@ -54,6 +54,7 @@
 		DA516F0926E19F17004194EA /* ViewProgrammatically.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProgrammatically.swift; sourceTree = "<group>"; };
 		DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryTableViewCell.swift; sourceTree = "<group>"; };
 		DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryTableViewCell.xib; sourceTree = "<group>"; };
+		DAA6AD5E26E2B87700481406 /* AertripDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AertripDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DADF560E26E24C1900C7A611 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		DADF561126E2A9C700C7A611 /* LoopableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopableProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +100,7 @@
 		DA516ED526E10FF8004194EA /* AertripDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DAA6AD5D26E2B7D800481406 /* BridgingHeader */,
 				DADF561026E2A98A00C7A611 /* Protocols */,
 				DA516F0C26E22C44004194EA /* Library */,
 				DA516EEC26E11582004194EA /* ViewModel */,
@@ -202,6 +204,14 @@
 				DA516F0926E19F17004194EA /* ViewProgrammatically.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		DAA6AD5D26E2B7D800481406 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6AD5E26E2B87700481406 /* AertripDemo-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
 			sourceTree = "<group>";
 		};
 		DADF561026E2A98A00C7A611 /* Protocols */ = {
@@ -509,6 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.osama.AertripDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AertripDemo/AertripDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -530,6 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.osama.AertripDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AertripDemo/AertripDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

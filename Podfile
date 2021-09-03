@@ -7,5 +7,6 @@ target 'AertripDemo' do
 
   # Pods for AertripDemo
   pod "DottedLineView"
-
+  pod 'TLYShyNavBar'
+  
 end

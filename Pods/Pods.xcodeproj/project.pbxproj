@@ -3,59 +3,119 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		035FA1AB5E9BDEF2896CD3F7D33FDA96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8DA70948E1CDC5591BC50230BE06107C /* DottedLineView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6482CB9C7F323E6A113F72C7856B1F /* DottedLineView-dummy.m */; };
-		A58F5CEE7AED0DE1260C212EE6A192C9 /* DottedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8957794427837BB481095E613A09397 /* DottedLineView.swift */; };
-		A898EAEB887CB116233FD833F7862861 /* Pods-AertripDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12542D013488CC6B2FDEB2D9CA18D249 /* Pods-AertripDemo-dummy.m */; };
-		CB2F2A43A1258057538A75D7A4B23B6F /* Pods-AertripDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA36DA4DA56CDAD825BD529B3F23CA /* Pods-AertripDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00E7AD489F43D4481AD8B6C8B896E102 /* TLYDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AB88EA453556CD1948B08501A0D083 /* TLYDelegateProxy.m */; };
+		05853715ED6186A4E3350FFCAAB63696 /* TLYShyStatusBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 834688E4E88539961B3EDF6B0CD45E73 /* TLYShyStatusBarController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		15A1471261FD8C64E4D77D76B1AA5B59 /* TLYShyNavBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD225F525431DF829A892C4FEEB9AE8 /* TLYShyNavBar-dummy.m */; };
+		2CFE2FE3AE595726902BA8EE73076776 /* TLYShyNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = AB10716498375739518DDD8840B25729 /* TLYShyNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9FB5AB12E47EDB680CBA7A4473BBCF /* TLYShyNavBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEE1690D62C814FE609BD9CF16CE657 /* TLYShyNavBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C4CFF2A453DE0D23EE15FA6472374A3 /* Pods-AertripDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA36DA4DA56CDAD825BD529B3F23CA /* Pods-AertripDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D08ED01CE048395C0307E61D15C347E /* NSObject+TLYSwizzlingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2916DFD5A8D93158B53CC2F3B95EA9 /* NSObject+TLYSwizzlingHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52C211E976191DDE47A96D86666C001A /* UIViewController+BetterLayoutGuides.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F31F7B42EF8B1B8A3252A49F2BB4E5 /* UIViewController+BetterLayoutGuides.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5407B047D48A79AFB8969DF35A7DB91A /* TLYShyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8686A744B2F585007E9212DEC20E1BB /* TLYShyViewController.m */; };
+		59EDA8097A772D8D652E42AAD1A23E25 /* NSObject+TLYSwizzlingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AEECCADB4F13F1503753EFF98C4D738 /* NSObject+TLYSwizzlingHelpers.m */; };
+		63287D01A64A3C52494F9045BF1B8191 /* TLYShyNavBarFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F046C6E12F30B5974C7E6ACBED7B5A9 /* TLYShyNavBarFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F9F1DAEB589CC508955832BA8673FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		728DEF296849DEF66469B8E7D8D63604 /* TLYShyStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7DB17E0861A9005A272B45BC197D66 /* TLYShyStatusBarController.m */; };
+		7BFD1D1D638FBC80E15FED3F2C7E88C3 /* UIScrollView+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5EE34F802DD4CF47786E248219F9AD /* UIScrollView+Helpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83CA606ECB20C5AB6CF11498A4367BAD /* Pods-AertripDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12542D013488CC6B2FDEB2D9CA18D249 /* Pods-AertripDemo-dummy.m */; };
+		87BC61E1AF99BFDFED0A41DFC055B3C3 /* TLYShyChild.h in Headers */ = {isa = PBXBuildFile; fileRef = E9DFFBAF5BA9D66964AA5232AB7522BA /* TLYShyChild.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DA70948E1CDC5591BC50230BE06107C /* DottedLineView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA98A49EA7A22C42E8E12166828D699 /* DottedLineView-dummy.m */; };
+		95A2AA20F57C9633EFF1230C89729B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9B09D55F8BBD3E597576073317ED482D /* UIScrollView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBF9CA7BCCDBEB5A4D8C5C46F45A612 /* UIScrollView+Helpers.m */; };
+		9EE25EE5D9E78B0A1063E32C49D73BF1 /* TLYShyScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49963B9093B1A089ACBEB5B7A510A947 /* TLYShyScrollViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FB8FA7815B89CBA726A28F5218068DD /* TLYShyNavBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9943D8932A3C9ABAEC8D7981F3C013C3 /* TLYShyNavBarManager.m */; };
+		A58F5CEE7AED0DE1260C212EE6A192C9 /* DottedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662F7E26D5FF24D66413B52B8422E09A /* DottedLineView.swift */; };
+		B3C4EB504066AFB9A93B1E7F33EC1784 /* TLYShyNavBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 184AE360C780D619C34BF9AB6BB605F2 /* TLYShyNavBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D8D2AA19AD095E91D2985DAE634813 /* TLYShyParent.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A9B2A8BBB01B098F660035E08AFCBC /* TLYShyParent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB3A8FCA5F3864EB90BCAD65B02A7852 /* TLYShyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF3E9AB1EBF2704D77192ABEA03C62E /* TLYShyScrollViewController.m */; };
 		D523E796B5F0B9302A913E0E1C347F80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FA87E1CC8CFDE638B1D7288CDFF31BE3 /* DottedLineView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE61B63715E0E83C4C92FC0BDDF60725 /* DottedLineView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E701C90E27C6785252258963983F3785 /* TLYShyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2914ECC4EC22F15FE8035888C8A7A729 /* TLYShyViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E87DAB18CDB4B189668D4543021A7550 /* TLYDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC08ECC6163814151F3C46820F53F14 /* TLYDelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDC8F902B6825E127D638026DC9FEED2 /* UIViewController+BetterLayoutGuides.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488B87CC5C61387DDFBE07E5408AB89 /* UIViewController+BetterLayoutGuides.m */; };
+		FA87E1CC8CFDE638B1D7288CDFF31BE3 /* DottedLineView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8711DEED75AE8CA5395CEB023794287 /* DottedLineView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FED3B8082CF0A0ED9B822A166A5D971E /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 9381E97DEBAF6E893CE58E7F04119302 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CDB2890920315FE6DEECE66CA03B4F12 /* PBXContainerItemProxy */ = {
+		481C8490F1925625A7ABE7A162E69A0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 63B7C85CCA5F592B4BB71F4FC61381B8;
 			remoteInfo = DottedLineView;
 		};
+		595C885BCE1914D026B9B8017FF67558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A5CA658D11126106755630FEA45B43;
+			remoteInfo = TLYShyNavBar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		010B433D06221C4C01A7C83B207AC304 /* DottedLineView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DottedLineView.framework; path = DottedLineView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07075AB4BD0823654581BF37F6F05223 /* DottedLineView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DottedLineView.modulemap; sourceTree = "<group>"; };
 		0A586B6AAC23744F65F240C2141D9112 /* Pods-AertripDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AertripDemo.modulemap"; sourceTree = "<group>"; };
 		12542D013488CC6B2FDEB2D9CA18D249 /* Pods-AertripDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AertripDemo-dummy.m"; sourceTree = "<group>"; };
-		1AD2EB6BC441C830855CBAA9320350FD /* DottedLineView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DottedLineView-prefix.pch"; sourceTree = "<group>"; };
+		147FBC3812B4930EF1002AB103A017B8 /* TLYShyNavBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TLYShyNavBar.framework; path = TLYShyNavBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		184AE360C780D619C34BF9AB6BB605F2 /* TLYShyNavBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarManager.h; path = TLYShyNavBar/TLYShyNavBarManager.h; sourceTree = "<group>"; };
+		1D3D58B14C5EED4A943C0469FFAF0072 /* TLYShyNavBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.release.xcconfig; sourceTree = "<group>"; };
+		1DBF9CA7BCCDBEB5A4D8C5C46F45A612 /* UIScrollView+Helpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Helpers.m"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.m"; sourceTree = "<group>"; };
 		1F2DAD7D5D0D6A73B03A2659F8A67777 /* Pods_AertripDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AertripDemo.framework; path = "Pods-AertripDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA98A49EA7A22C42E8E12166828D699 /* DottedLineView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DottedLineView-dummy.m"; sourceTree = "<group>"; };
+		2914ECC4EC22F15FE8035888C8A7A729 /* TLYShyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyViewController.h; sourceTree = "<group>"; };
 		2DBA36DA4DA56CDAD825BD529B3F23CA /* Pods-AertripDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AertripDemo-umbrella.h"; sourceTree = "<group>"; };
+		2F046C6E12F30B5974C7E6ACBED7B5A9 /* TLYShyNavBarFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarFade.h; path = TLYShyNavBar/TLYShyNavBarFade.h; sourceTree = "<group>"; };
+		3488B87CC5C61387DDFBE07E5408AB89 /* UIViewController+BetterLayoutGuides.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BetterLayoutGuides.m"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.m"; sourceTree = "<group>"; };
 		389DAF20EA50A4C588C6D48A2D6A049D /* Pods-AertripDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AertripDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		38D7DA1D13FF7D399785A9A2183B8429 /* Pods-AertripDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AertripDemo-Info.plist"; sourceTree = "<group>"; };
-		3F6482CB9C7F323E6A113F72C7856B1F /* DottedLineView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DottedLineView-dummy.m"; sourceTree = "<group>"; };
-		627D66341D0F8B222FC2D97E8DEDBFD9 /* DottedLineView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DottedLineView.debug.xcconfig; sourceTree = "<group>"; };
+		3A5EE34F802DD4CF47786E248219F9AD /* UIScrollView+Helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Helpers.h"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.h"; sourceTree = "<group>"; };
+		49963B9093B1A089ACBEB5B7A510A947 /* TLYShyScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyScrollViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.h; sourceTree = "<group>"; };
+		4BF3E9AB1EBF2704D77192ABEA03C62E /* TLYShyScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyScrollViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.m; sourceTree = "<group>"; };
+		59A9B2A8BBB01B098F660035E08AFCBC /* TLYShyParent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyParent.h; path = TLYShyNavBar/ShyControllers/TLYShyParent.h; sourceTree = "<group>"; };
+		5AA0DE53585DFEBA584A62D630ABBF05 /* DottedLineView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DottedLineView.debug.xcconfig; sourceTree = "<group>"; };
+		5D2916DFD5A8D93158B53CC2F3B95EA9 /* NSObject+TLYSwizzlingHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TLYSwizzlingHelpers.h"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.h"; sourceTree = "<group>"; };
+		662F7E26D5FF24D66413B52B8422E09A /* DottedLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DottedLineView.swift; path = DottedLineView/Classes/DottedLineView.swift; sourceTree = "<group>"; };
+		6DF1B3812B45D0019B766016264FEF4C /* DottedLineView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DottedLineView.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		781BF26F2582F47B812EF87BBC5D06FA /* Pods-AertripDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AertripDemo.release.xcconfig"; sourceTree = "<group>"; };
-		901F8128F4E1C969C1DD8FBD61FE6150 /* DottedLineView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DottedLineView-Info.plist"; sourceTree = "<group>"; };
+		7AEECCADB4F13F1503753EFF98C4D738 /* NSObject+TLYSwizzlingHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TLYSwizzlingHelpers.m"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.m"; sourceTree = "<group>"; };
+		7E0BC2338975568AB8C48CA9DC5213B8 /* TLYShyNavBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TLYShyNavBar.modulemap; sourceTree = "<group>"; };
+		834688E4E88539961B3EDF6B0CD45E73 /* TLYShyStatusBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyStatusBarController.h; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.h; sourceTree = "<group>"; };
+		85BCB8EE3183734C82C4CCB5DFBDED4C /* DottedLineView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DottedLineView-prefix.pch"; sourceTree = "<group>"; };
+		8D994ECC725053144A0E3522618A978C /* TLYShyNavBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.debug.xcconfig; sourceTree = "<group>"; };
+		9381E97DEBAF6E893CE58E7F04119302 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = TLYShyNavBar/Info.plist; sourceTree = "<group>"; };
+		9943D8932A3C9ABAEC8D7981F3C013C3 /* TLYShyNavBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyNavBarManager.m; path = TLYShyNavBar/TLYShyNavBarManager.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FEE1690D62C814FE609BD9CF16CE657 /* TLYShyNavBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-umbrella.h"; sourceTree = "<group>"; };
 		A9BC2EFA9A4BB71113EB2763790B15D1 /* Pods-AertripDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AertripDemo-frameworks.sh"; sourceTree = "<group>"; };
+		AB10716498375739518DDD8840B25729 /* TLYShyNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBar.h; path = TLYShyNavBar/TLYShyNavBar.h; sourceTree = "<group>"; };
+		B4AB88EA453556CD1948B08501A0D083 /* TLYDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYDelegateProxy.m; path = TLYShyNavBar/Categories/TLYDelegateProxy.m; sourceTree = "<group>"; };
+		B69F4C90F3CC3786B90FB783C5D3AF2A /* DottedLineView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DottedLineView.modulemap; sourceTree = "<group>"; };
 		B93C02C9436D10822914D673A76E5DA8 /* Pods-AertripDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AertripDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D2F071D8B5BDF906C50B80D691D1A12D /* DottedLineView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DottedLineView.release.xcconfig; sourceTree = "<group>"; };
-		DE61B63715E0E83C4C92FC0BDDF60725 /* DottedLineView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DottedLineView-umbrella.h"; sourceTree = "<group>"; };
-		E8957794427837BB481095E613A09397 /* DottedLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DottedLineView.swift; path = DottedLineView/Classes/DottedLineView.swift; sourceTree = "<group>"; };
+		D8711DEED75AE8CA5395CEB023794287 /* DottedLineView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DottedLineView-umbrella.h"; sourceTree = "<group>"; };
+		DFC08ECC6163814151F3C46820F53F14 /* TLYDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYDelegateProxy.h; path = TLYShyNavBar/Categories/TLYDelegateProxy.h; sourceTree = "<group>"; };
+		E2B4D8517CEA7B56474AD2D5CAA39033 /* TLYShyNavBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TLYShyNavBar-Info.plist"; sourceTree = "<group>"; };
+		E319C2BEB4D0CCF78FE8711BA0538D15 /* DottedLineView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DottedLineView-Info.plist"; sourceTree = "<group>"; };
+		E8686A744B2F585007E9212DEC20E1BB /* TLYShyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyViewController.m; sourceTree = "<group>"; };
+		E9DFFBAF5BA9D66964AA5232AB7522BA /* TLYShyChild.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyChild.h; path = TLYShyNavBar/ShyControllers/TLYShyChild.h; sourceTree = "<group>"; };
+		EA7DB17E0861A9005A272B45BC197D66 /* TLYShyStatusBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyStatusBarController.m; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.m; sourceTree = "<group>"; };
+		EC341830D6D89878F3736D0B05FB5F8D /* TLYShyNavBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-prefix.pch"; sourceTree = "<group>"; };
+		F1F31F7B42EF8B1B8A3252A49F2BB4E5 /* UIViewController+BetterLayoutGuides.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BetterLayoutGuides.h"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.h"; sourceTree = "<group>"; };
 		F931A761A73C283BAA98A1E81E4B0430 /* Pods-AertripDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AertripDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		FAD225F525431DF829A892C4FEEB9AE8 /* TLYShyNavBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLYShyNavBar-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5F791F400E318E7F79F6E4BED92CD9E1 /* Frameworks */ = {
+		2681347EB40BEE4A928823105F081079 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				035FA1AB5E9BDEF2896CD3F7D33FDA96 /* Foundation.framework in Frameworks */,
+				95A2AA20F57C9633EFF1230C89729B1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,30 +127,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		967C095846B915C909F917285D871DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9F1DAEB589CC508955832BA8673FB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C69FAB2DFB04C4F730E3A2E5536D3E4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				07075AB4BD0823654581BF37F6F05223 /* DottedLineView.modulemap */,
-				3F6482CB9C7F323E6A113F72C7856B1F /* DottedLineView-dummy.m */,
-				901F8128F4E1C969C1DD8FBD61FE6150 /* DottedLineView-Info.plist */,
-				1AD2EB6BC441C830855CBAA9320350FD /* DottedLineView-prefix.pch */,
-				DE61B63715E0E83C4C92FC0BDDF60725 /* DottedLineView-umbrella.h */,
-				627D66341D0F8B222FC2D97E8DEDBFD9 /* DottedLineView.debug.xcconfig */,
-				D2F071D8B5BDF906C50B80D691D1A12D /* DottedLineView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DottedLineView";
-			sourceTree = "<group>";
-		};
 		2F67CF12210321C03CCBC6BFE05EC447 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				58BF4F689F8B3CD19A2AC430A4D8A928 /* Pods-AertripDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B2241652B3E522FF569070CCE3D6B36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C6D99970699492883A6C9E9D9A1B7D /* DottedLineView */,
+				81EFD9422C98231308DD519249A52820 /* TLYShyNavBar */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -118,31 +180,69 @@
 			path = "Target Support Files/Pods-AertripDemo";
 			sourceTree = "<group>";
 		};
-		9C6A51ED1BE4893B6DC6860D83B06530 /* Pods */ = {
+		75C6D99970699492883A6C9E9D9A1B7D /* DottedLineView */ = {
 			isa = PBXGroup;
 			children = (
-				C9736CE04FDB536C4B6F94BE1568B916 /* DottedLineView */,
+				662F7E26D5FF24D66413B52B8422E09A /* DottedLineView.swift */,
+				7FE55E4EDD58587F35EE42D0C1ADE7AF /* Support Files */,
 			);
-			name = Pods;
+			name = DottedLineView;
+			path = DottedLineView;
 			sourceTree = "<group>";
 		};
-		A4FF726AFB29E2A7BC6F0FC2F404F535 /* Products */ = {
+		7FE55E4EDD58587F35EE42D0C1ADE7AF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B69F4C90F3CC3786B90FB783C5D3AF2A /* DottedLineView.modulemap */,
+				1FA98A49EA7A22C42E8E12166828D699 /* DottedLineView-dummy.m */,
+				E319C2BEB4D0CCF78FE8711BA0538D15 /* DottedLineView-Info.plist */,
+				85BCB8EE3183734C82C4CCB5DFBDED4C /* DottedLineView-prefix.pch */,
+				D8711DEED75AE8CA5395CEB023794287 /* DottedLineView-umbrella.h */,
+				5AA0DE53585DFEBA584A62D630ABBF05 /* DottedLineView.debug.xcconfig */,
+				6DF1B3812B45D0019B766016264FEF4C /* DottedLineView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DottedLineView";
+			sourceTree = "<group>";
+		};
+		81EFD9422C98231308DD519249A52820 /* TLYShyNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				9381E97DEBAF6E893CE58E7F04119302 /* Info.plist */,
+				5D2916DFD5A8D93158B53CC2F3B95EA9 /* NSObject+TLYSwizzlingHelpers.h */,
+				7AEECCADB4F13F1503753EFF98C4D738 /* NSObject+TLYSwizzlingHelpers.m */,
+				DFC08ECC6163814151F3C46820F53F14 /* TLYDelegateProxy.h */,
+				B4AB88EA453556CD1948B08501A0D083 /* TLYDelegateProxy.m */,
+				E9DFFBAF5BA9D66964AA5232AB7522BA /* TLYShyChild.h */,
+				AB10716498375739518DDD8840B25729 /* TLYShyNavBar.h */,
+				2F046C6E12F30B5974C7E6ACBED7B5A9 /* TLYShyNavBarFade.h */,
+				184AE360C780D619C34BF9AB6BB605F2 /* TLYShyNavBarManager.h */,
+				9943D8932A3C9ABAEC8D7981F3C013C3 /* TLYShyNavBarManager.m */,
+				59A9B2A8BBB01B098F660035E08AFCBC /* TLYShyParent.h */,
+				49963B9093B1A089ACBEB5B7A510A947 /* TLYShyScrollViewController.h */,
+				4BF3E9AB1EBF2704D77192ABEA03C62E /* TLYShyScrollViewController.m */,
+				834688E4E88539961B3EDF6B0CD45E73 /* TLYShyStatusBarController.h */,
+				EA7DB17E0861A9005A272B45BC197D66 /* TLYShyStatusBarController.m */,
+				2914ECC4EC22F15FE8035888C8A7A729 /* TLYShyViewController.h */,
+				E8686A744B2F585007E9212DEC20E1BB /* TLYShyViewController.m */,
+				3A5EE34F802DD4CF47786E248219F9AD /* UIScrollView+Helpers.h */,
+				1DBF9CA7BCCDBEB5A4D8C5C46F45A612 /* UIScrollView+Helpers.m */,
+				F1F31F7B42EF8B1B8A3252A49F2BB4E5 /* UIViewController+BetterLayoutGuides.h */,
+				3488B87CC5C61387DDFBE07E5408AB89 /* UIViewController+BetterLayoutGuides.m */,
+				E7CF91E28E799BE8DBCCB6442754F0B0 /* Support Files */,
+			);
+			name = TLYShyNavBar;
+			path = TLYShyNavBar;
+			sourceTree = "<group>";
+		};
+		A54F98BACDADAC919C36B52ED290E97B /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				010B433D06221C4C01A7C83B207AC304 /* DottedLineView.framework */,
 				1F2DAD7D5D0D6A73B03A2659F8A67777 /* Pods_AertripDemo.framework */,
+				147FBC3812B4930EF1002AB103A017B8 /* TLYShyNavBar.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C9736CE04FDB536C4B6F94BE1568B916 /* DottedLineView */ = {
-			isa = PBXGroup;
-			children = (
-				E8957794427837BB481095E613A09397 /* DottedLineView.swift */,
-				0C69FAB2DFB04C4F730E3A2E5536D3E4 /* Support Files */,
-			);
-			name = DottedLineView;
-			path = DottedLineView;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -150,8 +250,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				9C6A51ED1BE4893B6DC6860D83B06530 /* Pods */,
-				A4FF726AFB29E2A7BC6F0FC2F404F535 /* Products */,
+				3B2241652B3E522FF569070CCE3D6B36 /* Pods */,
+				A54F98BACDADAC919C36B52ED290E97B /* Products */,
 				2F67CF12210321C03CCBC6BFE05EC447 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -164,9 +264,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7CF91E28E799BE8DBCCB6442754F0B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E0BC2338975568AB8C48CA9DC5213B8 /* TLYShyNavBar.modulemap */,
+				FAD225F525431DF829A892C4FEEB9AE8 /* TLYShyNavBar-dummy.m */,
+				E2B4D8517CEA7B56474AD2D5CAA39033 /* TLYShyNavBar-Info.plist */,
+				EC341830D6D89878F3736D0B05FB5F8D /* TLYShyNavBar-prefix.pch */,
+				9FEE1690D62C814FE609BD9CF16CE657 /* TLYShyNavBar-umbrella.h */,
+				8D994ECC725053144A0E3522618A978C /* TLYShyNavBar.debug.xcconfig */,
+				1D3D58B14C5EED4A943C0469FFAF0072 /* TLYShyNavBar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TLYShyNavBar";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		01162D49B69B92C3DFC6149F34D85A9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4CFF2A453DE0D23EE15FA6472374A3 /* Pods-AertripDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B94A4514E53859DFBFCD46B02F3F4A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,30 +298,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBA07AE035EBA7728AF77AE1EEFDE416 /* Headers */ = {
+		F28EFAB8898EC85983C73D8E243EB7FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2F2A43A1258057538A75D7A4B23B6F /* Pods-AertripDemo-umbrella.h in Headers */,
+				4D08ED01CE048395C0307E61D15C347E /* NSObject+TLYSwizzlingHelpers.h in Headers */,
+				E87DAB18CDB4B189668D4543021A7550 /* TLYDelegateProxy.h in Headers */,
+				87BC61E1AF99BFDFED0A41DFC055B3C3 /* TLYShyChild.h in Headers */,
+				3C9FB5AB12E47EDB680CBA7A4473BBCF /* TLYShyNavBar-umbrella.h in Headers */,
+				2CFE2FE3AE595726902BA8EE73076776 /* TLYShyNavBar.h in Headers */,
+				63287D01A64A3C52494F9045BF1B8191 /* TLYShyNavBarFade.h in Headers */,
+				B3C4EB504066AFB9A93B1E7F33EC1784 /* TLYShyNavBarManager.h in Headers */,
+				B8D8D2AA19AD095E91D2985DAE634813 /* TLYShyParent.h in Headers */,
+				9EE25EE5D9E78B0A1063E32C49D73BF1 /* TLYShyScrollViewController.h in Headers */,
+				05853715ED6186A4E3350FFCAAB63696 /* TLYShyStatusBarController.h in Headers */,
+				E701C90E27C6785252258963983F3785 /* TLYShyViewController.h in Headers */,
+				7BFD1D1D638FBC80E15FED3F2C7E88C3 /* UIScrollView+Helpers.h in Headers */,
+				52C211E976191DDE47A96D86666C001A /* UIViewController+BetterLayoutGuides.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		578015CB3A9700467D6AC707422FF516 /* Pods-AertripDemo */ = {
+		56A5CA658D11126106755630FEA45B43 /* TLYShyNavBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D261B22450A01F47479465EEC7407226 /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */;
+			buildConfigurationList = B672B9F7D7E5E136DB4F0987336EB6D8 /* Build configuration list for PBXNativeTarget "TLYShyNavBar" */;
 			buildPhases = (
-				CBA07AE035EBA7728AF77AE1EEFDE416 /* Headers */,
-				73AD61275E41EC6550A62D23F7C137E9 /* Sources */,
-				5F791F400E318E7F79F6E4BED92CD9E1 /* Frameworks */,
-				A6B544E8ED041BA96A2C885EECD4708C /* Resources */,
+				F28EFAB8898EC85983C73D8E243EB7FA /* Headers */,
+				4E57ECBE3C92C8743523631C1BB7743F /* Sources */,
+				967C095846B915C909F917285D871DCA /* Frameworks */,
+				FA9C034063BEF71B87E1F50DA1FE1F36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4EAE00EF6738C5631F920D5CBA08A9BB /* PBXTargetDependency */,
+			);
+			name = TLYShyNavBar;
+			productName = TLYShyNavBar;
+			productReference = 147FBC3812B4930EF1002AB103A017B8 /* TLYShyNavBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		578015CB3A9700467D6AC707422FF516 /* Pods-AertripDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11541BA00F333C9E391C282F81A9F56F /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */;
+			buildPhases = (
+				01162D49B69B92C3DFC6149F34D85A9F /* Headers */,
+				C3478E94B018449A98DE01E7565BE39B /* Sources */,
+				2681347EB40BEE4A928823105F081079 /* Frameworks */,
+				56C51A39F7F087F06FE0D0C6CE8FC982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				009073FE74E670C0A678C979E00F8FA6 /* PBXTargetDependency */,
+				8522A3E15F4433819B2100E7EAFE69FE /* PBXTargetDependency */,
 			);
 			name = "Pods-AertripDemo";
 			productName = "Pods-AertripDemo";
@@ -233,7 +387,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -241,12 +395,13 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A4FF726AFB29E2A7BC6F0FC2F404F535 /* Products */;
+			productRefGroup = A54F98BACDADAC919C36B52ED290E97B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				63B7C85CCA5F592B4BB71F4FC61381B8 /* DottedLineView */,
 				578015CB3A9700467D6AC707422FF516 /* Pods-AertripDemo */,
+				56A5CA658D11126106755630FEA45B43 /* TLYShyNavBar */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +414,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6B544E8ED041BA96A2C885EECD4708C /* Resources */ = {
+		56C51A39F7F087F06FE0D0C6CE8FC982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9C034063BEF71B87E1F50DA1FE1F36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,27 +440,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73AD61275E41EC6550A62D23F7C137E9 /* Sources */ = {
+		4E57ECBE3C92C8743523631C1BB7743F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A898EAEB887CB116233FD833F7862861 /* Pods-AertripDemo-dummy.m in Sources */,
+				FED3B8082CF0A0ED9B822A166A5D971E /* Info.plist in Sources */,
+				59EDA8097A772D8D652E42AAD1A23E25 /* NSObject+TLYSwizzlingHelpers.m in Sources */,
+				00E7AD489F43D4481AD8B6C8B896E102 /* TLYDelegateProxy.m in Sources */,
+				15A1471261FD8C64E4D77D76B1AA5B59 /* TLYShyNavBar-dummy.m in Sources */,
+				9FB8FA7815B89CBA726A28F5218068DD /* TLYShyNavBarManager.m in Sources */,
+				CB3A8FCA5F3864EB90BCAD65B02A7852 /* TLYShyScrollViewController.m in Sources */,
+				728DEF296849DEF66469B8E7D8D63604 /* TLYShyStatusBarController.m in Sources */,
+				5407B047D48A79AFB8969DF35A7DB91A /* TLYShyViewController.m in Sources */,
+				9B09D55F8BBD3E597576073317ED482D /* UIScrollView+Helpers.m in Sources */,
+				EDC8F902B6825E127D638026DC9FEED2 /* UIViewController+BetterLayoutGuides.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3478E94B018449A98DE01E7565BE39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CA606ECB20C5AB6CF11498A4367BAD /* Pods-AertripDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4EAE00EF6738C5631F920D5CBA08A9BB /* PBXTargetDependency */ = {
+		009073FE74E670C0A678C979E00F8FA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DottedLineView;
 			target = 63B7C85CCA5F592B4BB71F4FC61381B8 /* DottedLineView */;
-			targetProxy = CDB2890920315FE6DEECE66CA03B4F12 /* PBXContainerItemProxy */;
+			targetProxy = 481C8490F1925625A7ABE7A162E69A0B /* PBXContainerItemProxy */;
+		};
+		8522A3E15F4433819B2100E7EAFE69FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TLYShyNavBar;
+			target = 56A5CA658D11126106755630FEA45B43 /* TLYShyNavBar */;
+			targetProxy = 595C885BCE1914D026B9B8017FF67558 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A9632FFCEA893AB5288CC34C275B157 /* Release */ = {
+		176A90F0F14EC3DA727C6E3D92FCB964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389DAF20EA50A4C588C6D48A2D6A049D /* Pods-AertripDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E66AC145E81A43ABA14A33A84E82C4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 781BF26F2582F47B812EF87BBC5D06FA /* Pods-AertripDemo.release.xcconfig */;
 			buildSettings = {
@@ -338,7 +560,7 @@
 		};
 		73493706F7A727FA9184A23DE1F4BC3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 627D66341D0F8B222FC2D97E8DEDBFD9 /* DottedLineView.debug.xcconfig */;
+			baseConfigurationReference = 5AA0DE53585DFEBA584A62D630ABBF05 /* DottedLineView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -369,6 +591,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		739C085E03CC5B39297EC07E79C25AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3D58B14C5EED4A943C0469FFAF0072 /* TLYShyNavBar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TLYShyNavBar/TLYShyNavBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TLYShyNavBar/TLYShyNavBar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TLYShyNavBar/TLYShyNavBar.modulemap";
+				PRODUCT_MODULE_NAME = TLYShyNavBar;
+				PRODUCT_NAME = TLYShyNavBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -438,7 +695,7 @@
 		};
 		8ED4535061C03153F958EF0660E61F49 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2F071D8B5BDF906C50B80D691D1A12D /* DottedLineView.release.xcconfig */;
+			baseConfigurationReference = 6DF1B3812B45D0019B766016264FEF4C /* DottedLineView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -533,12 +790,10 @@
 			};
 			name = Release;
 		};
-		CA99B0F5DC441ED08761435CCD9E2D12 /* Debug */ = {
+		A70F6F00090B35AF50CC3ADB57CB9415 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 389DAF20EA50A4C588C6D48A2D6A049D /* Pods-AertripDemo.debug.xcconfig */;
+			baseConfigurationReference = 8D994ECC725053144A0E3522618A978C /* TLYShyNavBar.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -547,23 +802,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TLYShyNavBar/TLYShyNavBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TLYShyNavBar/TLYShyNavBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TLYShyNavBar/TLYShyNavBar.modulemap";
+				PRODUCT_MODULE_NAME = TLYShyNavBar;
+				PRODUCT_NAME = TLYShyNavBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -573,6 +827,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11541BA00F333C9E391C282F81A9F56F /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176A90F0F14EC3DA727C6E3D92FCB964 /* Debug */,
+				4E66AC145E81A43ABA14A33A84E82C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -582,20 +845,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B672B9F7D7E5E136DB4F0987336EB6D8 /* Build configuration list for PBXNativeTarget "TLYShyNavBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70F6F00090B35AF50CC3ADB57CB9415 /* Debug */,
+				739C085E03CC5B39297EC07E79C25AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA57C2EF7057E59DB35B5B0009DEAEC9 /* Build configuration list for PBXNativeTarget "DottedLineView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73493706F7A727FA9184A23DE1F4BC3C /* Debug */,
 				8ED4535061C03153F958EF0660E61F49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D261B22450A01F47479465EEC7407226 /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA99B0F5DC441ED08761435CCD9E2D12 /* Debug */,
-				0A9632FFCEA893AB5288CC34C275B157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

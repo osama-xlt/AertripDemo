@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-AertripDemo/Pods-AertripDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DottedLineView/DottedLineView.framework
+${BUILT_PRODUCTS_DIR}/TLYShyNavBar/TLYShyNavBar.framework
