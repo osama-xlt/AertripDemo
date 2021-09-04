@@ -8,19 +8,19 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 public class DottedLineView: UIView {
 
-    @IBInspectable
-    public var lineColor: UIColor = UIColor.black
+//    @IBInspectable
+    public var lineColor: UIColor = UIColor.lightGray
     
-    @IBInspectable
-    public var lineWidth: CGFloat = CGFloat(4)
+//    @IBInspectable
+    public var lineWidth: CGFloat = CGFloat(0.5)
     
-    @IBInspectable
+//    @IBInspectable
     public var round: Bool = false
     
-    @IBInspectable
+//    @IBInspectable
     public var horizontal: Bool = true
     
     override public init(frame: CGRect) {
@@ -77,9 +77,9 @@ public class DottedLineView: UIView {
             path.addLine(to: CGPoint(x: center, y: drawHeight))
         }
         
-        let dashes: [CGFloat] = [lineWidth, lineWidth]
+        let dashes: [CGFloat] = [8, 1]
         path.setLineDash(dashes, count: dashes.count, phase: 0)
-        path.lineCapStyle = CGLineCap.butt
+        path.lineCapStyle = .butt
     }
     
     private func configureRoundPath(path: UIBezierPath, rect: CGRect) {

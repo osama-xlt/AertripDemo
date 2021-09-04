@@ -49,4 +49,54 @@ class JSONParser {
         let flightNames = (aertripData?.data.flights[section].results.aldet.allProperties())
         return flightNames![flightKey.lowercased()] as! String
     }
+    
+    func departureTime(section: Int, row: Int) -> String {
+        return (aertripData?.data.flights[section].results.j[row].dt)!
+    }
+    
+    func flightTime(section: Int, row: Int) -> String {
+        let flightTimeSecs = Double((aertripData?.data.flights[section].results.j[row].leg[0].tt)!)!
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.hour, .minute, .second]
+        formatter.unitsStyle = .abbreviated
+
+        let formattedString = formatter.string(from: TimeInterval(flightTimeSecs))!
+        return formattedString
+    }
+    
+    func arrivalTime(section: Int, row: Int) -> String {
+        return (aertripData?.data.flights[section].results.j[row].at)!
+    }
+    
+    func departureCity(section: Int, row: Int) -> String {
+        return (aertripData?.data.flights[section].results.j[row].leg[0].flights.first?.fr)!
+    }
+    
+    func flightStops(section: Int, row: Int) -> String {
+        let numberOfStops = Int((aertripData?.data.flights[section].results.j[row].leg[0].stp)!)!
+        if numberOfStops == 0 {
+            return ""
+        } else if numberOfStops == 1 {
+            let stopsStrings: String = (aertripData?.data.flights[section].results.j[row].leg[0].allAp[1])!
+            return stopsStrings
+        } else if numberOfStops == 2 {
+            let firstStop = (aertripData?.data.flights[section].results.j[row].leg[0].allAp[1])!
+            let secondStop = (aertripData?.data.flights[section].results.j[row].leg[0].allAp[2])!
+            let stopsString: String = "\(firstStop)   \(secondStop)"
+            return stopsString
+        } else if numberOfStops > 2 {
+            let stopsStrings: String = "\(numberOfStops) Stops"
+            return stopsStrings
+        }
+        return ""
+    }
+    
+    func arrivalCity(section: Int, row: Int) -> String {
+        return (aertripData?.data.flights[section].results.j[row].leg[0].flights.last?.to)!
+    }
+    
+    func flightFare(section: Int, row: Int) -> String {
+        let fare: Int = (aertripData?.data.flights[section].results.j[row].farepr)!
+        return "\u{20B9} " + String(fare)
+    }
 }

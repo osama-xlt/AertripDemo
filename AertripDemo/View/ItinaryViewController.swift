@@ -7,6 +7,7 @@
 
 import UIKit
 import TLYShyNavBar
+import DottedLineView
 
 class ItinaryViewController: UIViewController {
     
@@ -95,6 +96,23 @@ extension ItinaryViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: ItinaryTableViewCellID, for: indexPath) as! ItinaryTableViewCell
         cell.flightLogo.image = UIImage(named: jsonParser.airlineLogo(section: indexPath.section, row: indexPath.row))
         cell.flightName.text = jsonParser.airlineName(section: indexPath.section, row: indexPath.row)
+        cell.departureTime.text = jsonParser.departureTime(section: indexPath.section, row: indexPath.row)
+        cell.flightTime.text = jsonParser.flightTime(section: indexPath.section, row: indexPath.row)
+        cell.landingTime.text = jsonParser.arrivalTime(section: indexPath.section, row: indexPath.row)
+        cell.flightOrigin.text = jsonParser.departureCity(section: indexPath.section, row: indexPath.row)
+        cell.flightStops.text = jsonParser.flightStops(section: indexPath.section, row: indexPath.row)
+        cell.flightDestination.text = jsonParser.arrivalCity(section: indexPath.section, row: indexPath.row)
+        
+        let directionOne: DottedLineView = DottedLineView.init(frame: CGRect(x: 0, y: 0, width: cell.directionOne.frame.size.width, height: cell.directionOne.frame.size.height))
+        
+        cell.directionOne.addSubview(directionOne)
+        
+        let directionTwo: DottedLineView = DottedLineView.init(frame: CGRect(x: 0, y: 0, width: cell.directionTwo.frame.size.width, height: cell.directionTwo.frame.size.height))
+        
+        cell.directionTwo.addSubview(directionTwo)
+        
+        cell.flightFare.text = jsonParser.flightFare(section: indexPath.section, row: indexPath.row)
+        
         return cell
     }
 }
