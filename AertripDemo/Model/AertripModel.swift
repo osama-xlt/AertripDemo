@@ -103,7 +103,7 @@ struct AlMaster: Codable {
     enum CodingKeys: String, CodingKey {
         case uk = "UK"
         case ai = "AI"
-        case the6E = "6E"
+        case the6E = "the6E"
     }
 }
 
@@ -124,12 +124,12 @@ struct The6_E: Codable {
 struct Aldet: Codable, Loopable {
     let uk: String
     let ai: String
-    let the6E: String?
+    let the6e: String?
 
     enum CodingKeys: String, CodingKey {
         case uk = "UK"
         case ai = "AI"
-        case the6E = "6E"
+        case the6e = "the6E"
     }
 }
 
@@ -279,7 +279,7 @@ struct F: Codable {
 enum Pca: String, Codable {
     case ai = "AI"
     case allianceAir = "Alliance Air"
-    case the6E = "6E"
+    case the6E = "the6E"
     case uk = "UK"
 }
 
