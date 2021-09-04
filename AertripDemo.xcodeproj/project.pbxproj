@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2CA3F55E82DF8F64325E68BB /* Pods_AertripDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F3CF6CA9C0CFB08A59E311 /* Pods_AertripDemo.framework */; };
+		DA16992226E33259004E08BB /* SortFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16992026E33259004E08BB /* SortFilterViewController.swift */; };
+		DA16992326E33259004E08BB /* SortFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992126E33259004E08BB /* SortFilterViewController.xib */; };
+		DA16992626E33291004E08BB /* PriceFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16992426E33291004E08BB /* PriceFilterViewController.swift */; };
+		DA16992726E33291004E08BB /* PriceFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992526E33291004E08BB /* PriceFilterViewController.xib */; };
+		DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16992926E34B4D004E08BB /* ImageExtension.swift */; };
+		DA16993026E36A75004E08BB /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992F26E36A75004E08BB /* ItinaryViewController.xib */; };
 		DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED626E10FF8004194EA /* AppDelegate.swift */; };
 		DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED826E10FF8004194EA /* SceneDelegate.swift */; };
 		DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDC26E10FF8004194EA /* Main.storyboard */; };
@@ -15,13 +21,8 @@
 		DA516EE326E10FFB004194EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EE126E10FFB004194EA /* LaunchScreen.storyboard */; };
 		DA516EEF26E1233E004194EA /* AertripData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA516EEE26E1233E004194EA /* AertripData.json */; };
 		DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF426E13E89004194EA /* ItinaryViewController.swift */; };
-		DA516EF726E13E89004194EA /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516EF526E13E89004194EA /* ItinaryViewController.xib */; };
 		DA516EF926E14C97004194EA /* AertripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF826E14C97004194EA /* AertripModel.swift */; };
 		DA516EFC26E18FF9004194EA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EFB26E18FF9004194EA /* Page.swift */; };
-		DA516F0026E19184004194EA /* TabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EFE26E19184004194EA /* TabBarCollectionViewCell.swift */; };
-		DA516F0126E19184004194EA /* TabBarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516EFF26E19184004194EA /* TabBarCollectionViewCell.xib */; };
-		DA516F0626E193EA004194EA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0426E193EA004194EA /* FilterViewController.swift */; };
-		DA516F0726E193EA004194EA /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516F0526E193EA004194EA /* FilterViewController.xib */; };
 		DA516F0A26E19F17004194EA /* DoubledSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0826E19F16004194EA /* DoubledSlider.swift */; };
 		DA516F0B26E19F17004194EA /* ViewProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0926E19F17004194EA /* ViewProgrammatically.swift */; };
 		DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */; };
@@ -34,6 +35,12 @@
 		289486933D97BF983BF81639 /* Pods-AertripDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AertripDemo.release.xcconfig"; path = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.release.xcconfig"; sourceTree = "<group>"; };
 		28F3CF6CA9C0CFB08A59E311 /* Pods_AertripDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AertripDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AC4B71FEEC52F4919C3A01 /* Pods-AertripDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AertripDemo.debug.xcconfig"; path = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DA16992026E33259004E08BB /* SortFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFilterViewController.swift; sourceTree = "<group>"; };
+		DA16992126E33259004E08BB /* SortFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortFilterViewController.xib; sourceTree = "<group>"; };
+		DA16992426E33291004E08BB /* PriceFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFilterViewController.swift; sourceTree = "<group>"; };
+		DA16992526E33291004E08BB /* PriceFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceFilterViewController.xib; sourceTree = "<group>"; };
+		DA16992926E34B4D004E08BB /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		DA16992F26E36A75004E08BB /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
 		DA516ED326E10FF8004194EA /* AertripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AertripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA516ED626E10FF8004194EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA516ED826E10FF8004194EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,13 +50,8 @@
 		DA516EE426E10FFB004194EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA516EEE26E1233E004194EA /* AertripData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AertripData.json; sourceTree = "<group>"; };
 		DA516EF426E13E89004194EA /* ItinaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryViewController.swift; sourceTree = "<group>"; };
-		DA516EF526E13E89004194EA /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
 		DA516EF826E14C97004194EA /* AertripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AertripModel.swift; sourceTree = "<group>"; };
 		DA516EFB26E18FF9004194EA /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		DA516EFE26E19184004194EA /* TabBarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCollectionViewCell.swift; sourceTree = "<group>"; };
-		DA516EFF26E19184004194EA /* TabBarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarCollectionViewCell.xib; sourceTree = "<group>"; };
-		DA516F0426E193EA004194EA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
-		DA516F0526E193EA004194EA /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 		DA516F0826E19F16004194EA /* DoubledSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubledSlider.swift; sourceTree = "<group>"; };
 		DA516F0926E19F17004194EA /* ViewProgrammatically.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProgrammatically.swift; sourceTree = "<group>"; };
 		DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA16992826E34B31004E08BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA16992926E34B4D004E08BB /* ImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DA516ECA26E10FF8004194EA = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		DA516ED526E10FF8004194EA /* AertripDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DA16992826E34B31004E08BB /* Extensions */,
 				DAA6AD5D26E2B7D800481406 /* BridgingHeader */,
 				DADF561026E2A98A00C7A611 /* Protocols */,
 				DA516F0C26E22C44004194EA /* Library */,
@@ -128,7 +139,8 @@
 				DA516EF326E13D44004194EA /* XIB */,
 				DA516EF226E13D2D004194EA /* Storyboard */,
 				DA516EF426E13E89004194EA /* ItinaryViewController.swift */,
-				DA516F0426E193EA004194EA /* FilterViewController.swift */,
+				DA16992026E33259004E08BB /* SortFilterViewController.swift */,
+				DA16992426E33291004E08BB /* PriceFilterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,9 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */,
-				DA516EFF26E19184004194EA /* TabBarCollectionViewCell.xib */,
-				DA516F0526E193EA004194EA /* FilterViewController.xib */,
-				DA516EF526E13E89004194EA /* ItinaryViewController.xib */,
+				DA16992126E33259004E08BB /* SortFilterViewController.xib */,
+				DA16992526E33291004E08BB /* PriceFilterViewController.xib */,
+				DA16992F26E36A75004E08BB /* ItinaryViewController.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -191,7 +203,6 @@
 		DA516EFD26E19137004194EA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DA516EFE26E19184004194EA /* TabBarCollectionViewCell.swift */,
 				DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */,
 			);
 			path = Cells;
@@ -290,12 +301,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA516F0726E193EA004194EA /* FilterViewController.xib in Resources */,
+				DA16993026E36A75004E08BB /* ItinaryViewController.xib in Resources */,
 				DA516EE326E10FFB004194EA /* LaunchScreen.storyboard in Resources */,
 				DA516EEF26E1233E004194EA /* AertripData.json in Resources */,
-				DA516F0126E19184004194EA /* TabBarCollectionViewCell.xib in Resources */,
+				DA16992726E33291004E08BB /* PriceFilterViewController.xib in Resources */,
+				DA16992326E33259004E08BB /* SortFilterViewController.xib in Resources */,
 				DA516F1226E22D53004194EA /* ItinaryTableViewCell.xib in Resources */,
-				DA516EF726E13E89004194EA /* ItinaryViewController.xib in Resources */,
 				DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */,
 				DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */,
 			);
@@ -351,13 +362,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA516F0A26E19F17004194EA /* DoubledSlider.swift in Sources */,
-				DA516F0626E193EA004194EA /* FilterViewController.swift in Sources */,
 				DA516F0B26E19F17004194EA /* ViewProgrammatically.swift in Sources */,
 				DADF560F26E24C1900C7A611 /* JSONParser.swift in Sources */,
+				DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */,
+				DA16992226E33259004E08BB /* SortFilterViewController.swift in Sources */,
 				DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */,
 				DADF561226E2A9C700C7A611 /* LoopableProtocol.swift in Sources */,
+				DA16992626E33291004E08BB /* PriceFilterViewController.swift in Sources */,
 				DA516EF926E14C97004194EA /* AertripModel.swift in Sources */,
-				DA516F0026E19184004194EA /* TabBarCollectionViewCell.swift in Sources */,
 				DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */,
 				DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */,
 				DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */,
@@ -519,7 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.osama.AertripDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AertripDemo/AertripDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AertripDemo/BridgingHeader/AertripDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -541,7 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.osama.AertripDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AertripDemo/AertripDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AertripDemo/BridgingHeader/AertripDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

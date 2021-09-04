@@ -9,31 +9,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItinaryViewController" customModule="AertripDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortFilterViewController" customModule="AertripDemo" customModuleProvider="target">
             <connections>
-                <outlet property="itinaryTableView" destination="E4f-Qb-4YR" id="dIC-r5-gil"/>
-                <outlet property="view" destination="fvv-KI-l3V" id="f3t-f7-dbw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="fvv-KI-l3V">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E4f-Qb-4YR">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-Tm-QRD">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="IB3-rF-fQp"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="E4f-Qb-4YR" firstAttribute="top" secondItem="IB3-rF-fQp" secondAttribute="top" id="1ec-2u-7FH"/>
-                <constraint firstItem="E4f-Qb-4YR" firstAttribute="leading" secondItem="IB3-rF-fQp" secondAttribute="leading" id="3Wb-jQ-MuJ"/>
-                <constraint firstItem="IB3-rF-fQp" firstAttribute="bottom" secondItem="E4f-Qb-4YR" secondAttribute="bottom" id="buK-ya-mhF"/>
-                <constraint firstItem="IB3-rF-fQp" firstAttribute="trailing" secondItem="E4f-Qb-4YR" secondAttribute="trailing" id="krM-iy-hfx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ab9-Tm-QRD" secondAttribute="bottom" id="GGP-0Z-hlS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ab9-Tm-QRD" secondAttribute="trailing" id="bAy-lj-WBf"/>
+                <constraint firstItem="Ab9-Tm-QRD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oaB-Ev-K6z"/>
+                <constraint firstItem="Ab9-Tm-QRD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="upq-Wa-P8R"/>
             </constraints>
-            <point key="canvasLocation" x="-80" y="457"/>
+            <point key="canvasLocation" x="7" y="64"/>
         </view>
     </objects>
     <resources>

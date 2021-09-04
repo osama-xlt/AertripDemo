@@ -19,7 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         windowScene = scene as? UIWindowScene
         
         window = UIWindow(windowScene: windowScene!)
-        window?.rootViewController = ItinaryViewController(nibName: "ItinaryViewController", bundle: nil)
+        let rootVC = ItinaryViewController(nibName: "ItinaryViewController", bundle: nil)
+        let navVC = UINavigationController(rootViewController: rootVC)
+        rootVC.shyNavBarManager = TLYShyNavBarManager()
+        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }
 
