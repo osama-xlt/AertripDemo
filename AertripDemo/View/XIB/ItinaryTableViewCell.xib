@@ -84,14 +84,12 @@
                                                                 <rect key="frame" x="51.5" y="0.0" width="72.5" height="35.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                                                         <real key="value" value="1"/>
                                                                     </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="separatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontal" value="YES"/>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1w-cS-hDR">
@@ -104,14 +102,12 @@
                                                                 <rect key="frame" x="124" y="0.0" width="73" height="35.5"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                                                         <real key="value" value="1"/>
                                                                     </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="separatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontal" value="YES"/>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="NO"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hke-uj-Nsa">
@@ -127,6 +123,9 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71" id="rwD-Ow-qzF"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
@@ -163,6 +162,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="c4e-Z0-2Eg" secondAttribute="trailing" id="05Z-8q-p09"/>
                                     <constraint firstItem="c4e-Z0-2Eg" firstAttribute="centerY" secondItem="2Ex-6J-Gxk" secondAttribute="centerY" id="fmh-pz-7rh"/>
+                                    <constraint firstAttribute="height" constant="50" id="sXs-la-X4c"/>
                                 </constraints>
                             </view>
                         </subviews>
