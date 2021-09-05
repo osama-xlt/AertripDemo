@@ -105,20 +105,6 @@ extension ItinaryViewController: UITableViewDataSource {
         
         cell.flightFare.text = jsonParser.flightFare(section: indexPath.section, row: indexPath.row)
         
-        cell.layoutIfNeeded()
-        
-//        let acceptedWidthOne = cell.directionOne.frame.size.width - (cell.flightOrigin.frame.width / 2) - (cell.flightStops.frame.width / 2) - (cell.flightDestination.frame.width / 2)
-//
-//        cell.directionOne.frame = CGRect(x: cell.directionOne.frame.origin.x, y: cell.directionOne.frame.origin.y, width: acceptedWidthOne, height: cell.directionOne.frame.size.height)
-//
-//        cell.directionOne.updateConstraints()
-//
-//        let acceptedWidthTwo = cell.directionTwo.frame.size.width - (cell.flightOrigin.frame.width / 2) - (cell.flightStops.frame.width / 2) - (cell.flightDestination.frame.width / 2)
-//
-//        cell.directionTwo.frame = CGRect(x: cell.directionTwo.frame.origin.x, y: cell.directionTwo.frame.origin.y, width: acceptedWidthTwo, height: cell.directionTwo.frame.size.height)
-//
-//        cell.directionTwo.updateConstraints()
-        
         return cell
     }
     
