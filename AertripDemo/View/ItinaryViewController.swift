@@ -14,10 +14,11 @@ class ItinaryViewController: UIViewController {
     private let jsonParser = JSONParser.jsonParser
     @IBOutlet weak var itinaryTableView: UITableView!
     var navigationBarHeight: CGFloat!
+    
     lazy var presenter: Presentr = {
         let centerY = (navigationBarHeight * 2) + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height)! + 5
         let width = ModalSize.full
-        let height = ModalSize.fluid(percentage: 0.70)
+        let height = ModalSize.fluid(percentage: 0.50)
         let center = ModalCenterPosition.customOrigin(origin: CGPoint(x: 0, y: centerY))
         let customBackgroundViewOrigin = CGPoint(x: 0, y: centerY)
         let customBackgroundViewSize = CGSize.init(width: (self.view.window?.frame.width)!, height: (self.view.window?.frame.height)! - centerY)
@@ -42,13 +43,19 @@ class ItinaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBarHeight = self.navigationController!.navigationBar.frame.size.height
+        initializeVC()
         setupTableView()
+    }
+    
+    func initializeVC() {
+        navigationBarHeight = self.navigationController!.navigationBar.frame.size.height
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
+        let navBarTitleView: UIView = (Bundle.main.loadNibNamed("NavBarTitleView", owner: nil, options: nil)?.first as! UIView)
+        self.navigationController?.navigationBar.addSubview(navBarTitleView)
         setupTabBarExtensionView()
     }
     
@@ -61,6 +68,18 @@ class ItinaryViewController: UIViewController {
     func setupTabBarExtensionView() {
         let tabBar = UITabBar(frame: CGRect(x: 0, y: 0, width: self.navigationController!.navigationBar.frame.size.width, height: navigationBarHeight))
         tabBar.delegate = self
+        tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
+        tabBar.layer.shadowRadius = 1
+        tabBar.layer.shadowColor = UIColor.black.cgColor
+        tabBar.layer.shadowOpacity = 0.3
+        
+        UITabBar.appearance().tintColor = UIColor(red: 96/255, green: 210/255, blue: 153/255, alpha: 1)
+        UITabBar.appearance().barTintColor = .systemGray6
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -1 * tabBar.frame.height / 2 + (tabBar.frame.height / 4) - 5)
+        
+        let fontSize:CGFloat = 20
+        let font:UIFont = UIFont.systemFont(ofSize: fontSize)
+        let attributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor : UIColor.darkText]
         
         var tabBarItems: [UITabBarItem] = []
         
@@ -68,17 +87,20 @@ class ItinaryViewController: UIViewController {
         filterTabBarItem.badgeColor = .red
         filterTabBarItem.image = UIImage(named: "filterIcon")
         filterTabBarItem.tag = 0
+        filterTabBarItem.imageInsets = UIEdgeInsets.init(top: 8, left: 8, bottom: 3, right: 8)
         tabBarItems.append(filterTabBarItem)
         
         let sortFilterTabBarItem = UITabBarItem()
         sortFilterTabBarItem.badgeColor = UIColor(red: 96/255, green: 210/255, blue: 153/255, alpha: 1)
         sortFilterTabBarItem.title = "Sort"
+        sortFilterTabBarItem.setTitleTextAttributes(attributes, for: .normal)
         sortFilterTabBarItem.tag = 1
         tabBarItems.append(sortFilterTabBarItem)
         
         let priceFilterTabBarItem = UITabBarItem()
         priceFilterTabBarItem.badgeColor = UIColor(red: 96/255, green: 210/255, blue: 153/255, alpha: 1)
         priceFilterTabBarItem.title = "Price"
+        priceFilterTabBarItem.setTitleTextAttributes(attributes, for: .normal)
         priceFilterTabBarItem.tag = 2
         tabBarItems.append(priceFilterTabBarItem)
         
@@ -100,12 +122,10 @@ extension ItinaryViewController: UITabBarDelegate {
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 1:
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
-            sortVC.modalPresentationStyle = .pageSheet
-            self.present(sortVC, animated: true, completion: nil)
+            customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 2:
             let priceVC = PriceFilterViewController(nibName: "PriceFilterViewController", bundle: nil)
-            priceVC.modalPresentationStyle = .pageSheet
-            self.present(priceVC, animated: true, completion: nil)
+            customPresentViewController(presenter, viewController: priceVC, animated: true)
         default:
             return
         }

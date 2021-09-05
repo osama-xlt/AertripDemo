@@ -14,6 +14,7 @@
 		DA16992726E33291004E08BB /* PriceFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992526E33291004E08BB /* PriceFilterViewController.xib */; };
 		DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16992926E34B4D004E08BB /* ImageExtension.swift */; };
 		DA16993026E36A75004E08BB /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992F26E36A75004E08BB /* ItinaryViewController.xib */; };
+		DA1B579C26E521D2005E1481 /* NavBarTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */; };
 		DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED626E10FF8004194EA /* AppDelegate.swift */; };
 		DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED826E10FF8004194EA /* SceneDelegate.swift */; };
 		DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDC26E10FF8004194EA /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		DA16992526E33291004E08BB /* PriceFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceFilterViewController.xib; sourceTree = "<group>"; };
 		DA16992926E34B4D004E08BB /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		DA16992F26E36A75004E08BB /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
+		DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarTitleView.xib; sourceTree = "<group>"; };
 		DA516ED326E10FF8004194EA /* AertripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AertripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA516ED626E10FF8004194EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA516ED826E10FF8004194EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				DA16992126E33259004E08BB /* SortFilterViewController.xib */,
 				DA16992526E33291004E08BB /* PriceFilterViewController.xib */,
 				DA16992F26E36A75004E08BB /* ItinaryViewController.xib */,
+				DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				DA16992726E33291004E08BB /* PriceFilterViewController.xib in Resources */,
 				DA16992326E33259004E08BB /* SortFilterViewController.xib in Resources */,
 				DA516F1226E22D53004194EA /* ItinaryTableViewCell.xib in Resources */,
+				DA1B579C26E521D2005E1481 /* NavBarTitleView.xib in Resources */,
 				DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */,
 				DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */,
 			);

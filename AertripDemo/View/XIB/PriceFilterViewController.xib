@@ -23,7 +23,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUf-io-6rq">
-                            <rect key="frame" x="8" y="8" width="100" height="29"/>
+                            <rect key="frame" x="16" y="16" width="100" height="29"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="W16-s2-l0k"/>
@@ -38,7 +38,7 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB6-tg-lCI">
-                            <rect key="frame" x="306" y="8" width="100" height="29"/>
+                            <rect key="frame" x="298" y="16" width="100" height="29"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="f4n-cm-RBQ"/>
@@ -53,27 +53,27 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-AD-X9y" customClass="DoubledSlider" customModule="AertripDemo" customModuleProvider="target">
-                            <rect key="frame" x="8" y="53" width="398" height="50"/>
+                            <rect key="frame" x="8" y="61" width="398" height="50"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="afh-2O-49p"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <constraints>
                         <constraint firstItem="Fgf-AD-X9y" firstAttribute="top" secondItem="oUf-io-6rq" secondAttribute="bottom" constant="16" id="00t-DN-d9f"/>
                         <constraint firstItem="Fgf-AD-X9y" firstAttribute="leading" secondItem="ZTa-fM-gXG" secondAttribute="leading" constant="8" id="Th7-dS-L6t"/>
-                        <constraint firstItem="oUf-io-6rq" firstAttribute="top" secondItem="ZTa-fM-gXG" secondAttribute="top" constant="8" id="dOK-bq-aEh"/>
-                        <constraint firstItem="PB6-tg-lCI" firstAttribute="top" secondItem="ZTa-fM-gXG" secondAttribute="top" constant="8" id="lSx-D5-vWL"/>
-                        <constraint firstItem="oUf-io-6rq" firstAttribute="leading" secondItem="ZTa-fM-gXG" secondAttribute="leading" constant="8" id="uSS-bV-mdq"/>
+                        <constraint firstItem="oUf-io-6rq" firstAttribute="top" secondItem="ZTa-fM-gXG" secondAttribute="top" constant="16" id="dOK-bq-aEh"/>
+                        <constraint firstItem="PB6-tg-lCI" firstAttribute="top" secondItem="ZTa-fM-gXG" secondAttribute="top" constant="16" id="lSx-D5-vWL"/>
+                        <constraint firstItem="oUf-io-6rq" firstAttribute="leading" secondItem="ZTa-fM-gXG" secondAttribute="leading" constant="16" id="uSS-bV-mdq"/>
                         <constraint firstItem="Fgf-AD-X9y" firstAttribute="centerX" secondItem="ZTa-fM-gXG" secondAttribute="centerX" id="xNx-dW-Lee"/>
-                        <constraint firstAttribute="trailing" secondItem="PB6-tg-lCI" secondAttribute="trailing" constant="8" id="xak-gv-4pY"/>
+                        <constraint firstAttribute="trailing" secondItem="PB6-tg-lCI" secondAttribute="trailing" constant="16" id="xak-gv-4pY"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
             <constraints>
                 <constraint firstItem="ZTa-fM-gXG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1br-6n-YjY"/>
                 <constraint firstItem="ZTa-fM-gXG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ExX-LN-Tvs"/>
@@ -89,6 +89,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
