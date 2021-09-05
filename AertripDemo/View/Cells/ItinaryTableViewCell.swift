@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import DottedLineView
 
 let ItinaryTableViewCellID = "ItinaryTableViewCell"
 
@@ -24,8 +23,6 @@ class ItinaryTableViewCell: UITableViewCell {
     @IBOutlet weak var flightDestination: UILabel!
     @IBOutlet weak var flightFare: UILabel!
     
-    @IBOutlet weak var directionOneWidth: NSLayoutConstraint!
-    @IBOutlet weak var directionTwoWidth: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

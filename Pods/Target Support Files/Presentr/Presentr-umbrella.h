@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double DottedLineViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char DottedLineViewVersionString[];
+FOUNDATION_EXPORT double PresentrVersionNumber;
+FOUNDATION_EXPORT const unsigned char PresentrVersionString[];
 

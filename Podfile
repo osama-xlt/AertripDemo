@@ -6,7 +6,7 @@ target 'AertripDemo' do
   use_frameworks!
 
   # Pods for AertripDemo
-  pod "DottedLineView"
   pod 'TLYShyNavBar'
+  pod 'Presentr'
   
 end

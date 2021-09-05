@@ -7,17 +7,47 @@
 
 import UIKit
 import TLYShyNavBar
-import DottedLineView
+import Presentr
 
 class ItinaryViewController: UIViewController {
     
     private let jsonParser = JSONParser.jsonParser
     @IBOutlet weak var itinaryTableView: UITableView!
+    var navigationBarHeight: CGFloat!
+    lazy var presenter: Presentr = {
+        let centerY = (navigationBarHeight * 2) + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height)! + 5
+        let width = ModalSize.full
+        let height = ModalSize.fluid(percentage: 0.70)
+        let center = ModalCenterPosition.customOrigin(origin: CGPoint(x: 0, y: centerY))
+        let customBackgroundViewOrigin = CGPoint(x: 0, y: centerY)
+        let customBackgroundViewSize = CGSize.init(width: (self.view.window?.frame.width)!, height: (self.view.window?.frame.height)! - centerY)
+        let customBackgroundViewFrame = CGRect.init(origin: customBackgroundViewOrigin, size: customBackgroundViewSize)
+        let customBackgroundView = UIView.init(frame: customBackgroundViewFrame)
+        customBackgroundView.backgroundColor = .black
+        customBackgroundView.alpha = 0.5
+        let customType = PresentationType.custom(width: width, height: height, center: center)
+        
+        let customPresenter = Presentr(presentationType: customType)
+        customPresenter.transitionType = .coverVerticalFromTop
+        customPresenter.dismissTransitionType = .crossDissolve
+        customPresenter.roundCorners = true
+        customPresenter.cornerRadius = 8
+        customPresenter.dismissOnSwipe = true
+        customPresenter.backgroundColor = .clear
+        customPresenter.backgroundOpacity = 0
+        customPresenter.dismissOnSwipeDirection = .top
+        customPresenter.customBackgroundView = customBackgroundView
+        return customPresenter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationBarHeight = self.navigationController!.navigationBar.frame.size.height
         setupTableView()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         
         setupTabBarExtensionView()
     }
@@ -29,7 +59,7 @@ class ItinaryViewController: UIViewController {
     }
     
     func setupTabBarExtensionView() {
-        let tabBar = UITabBar(frame: CGRect(x: 0, y: 0, width: self.navigationController!.navigationBar.frame.size.width, height: self.navigationController!.navigationBar.frame.size.height))
+        let tabBar = UITabBar(frame: CGRect(x: 0, y: 0, width: self.navigationController!.navigationBar.frame.size.width, height: navigationBarHeight))
         tabBar.delegate = self
         
         var tabBarItems: [UITabBarItem] = []
@@ -56,6 +86,7 @@ class ItinaryViewController: UIViewController {
         
         tabBar.selectionIndicatorImage = UIImage().createSelectionIndicator(color: UIColor(red: 96/255, green: 210/255, blue: 153/255, alpha: 1), size: CGSize(width: tabBar.frame.width/CGFloat(tabBar.items!.count), height: tabBar.frame.height))
         
+        self.shyNavBarManager.scrollView = self.itinaryTableView
         self.shyNavBarManager.extensionView = tabBar
         self.shyNavBarManager.stickyExtensionView = true
     }
@@ -63,17 +94,18 @@ class ItinaryViewController: UIViewController {
 
 extension ItinaryViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        modalPresentationStyle = .pageSheet
         switch item.tag {
         case 0:
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
-            show(sortVC, sender: self)
+            customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 1:
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
-            show(sortVC, sender: self)
+            sortVC.modalPresentationStyle = .pageSheet
+            self.present(sortVC, animated: true, completion: nil)
         case 2:
             let priceVC = PriceFilterViewController(nibName: "PriceFilterViewController", bundle: nil)
-            show(priceVC, sender: self)
+            priceVC.modalPresentationStyle = .pageSheet
+            self.present(priceVC, animated: true, completion: nil)
         default:
             return
         }

@@ -9,7 +9,7 @@ import Foundation
 
 extension UIView {
     func addDashedBorder() {
-        let color = UIColor.lightGray.cgColor
+        let color = UIColor.systemGray5.cgColor
         
         let shapeLayer:CAShapeLayer = CAShapeLayer()
         let frameSize = self.frame.size

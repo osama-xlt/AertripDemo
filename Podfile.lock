@@ -1,20 +1,20 @@
 PODS:
-  - DottedLineView (1.0.0)
+  - Presentr (1.9)
   - TLYShyNavBar (1.1.1)
 
 DEPENDENCIES:
-  - DottedLineView
+  - Presentr
   - TLYShyNavBar
 
 SPEC REPOS:
   trunk:
-    - DottedLineView
+    - Presentr
     - TLYShyNavBar
 
 SPEC CHECKSUMS:
-  DottedLineView: 750c5aee6eae69f9bc9acd3bc6ee9938e35856bb
+  Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
   TLYShyNavBar: d200e598923fbc2bd21a5c5efdfabf4898b11da0
 
-PODFILE CHECKSUM: d4a885e69cb20215af0dea42215566700a42454a
+PODFILE CHECKSUM: 5d425d790c0c21ec338873d8f6bc7b435beea6f5
 
 COCOAPODS: 1.10.1
