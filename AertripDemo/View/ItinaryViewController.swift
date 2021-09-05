@@ -17,9 +17,9 @@ class ItinaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupTabBarExtensionView()
-        
         setupTableView()
+        
+        setupTabBarExtensionView()
     }
     
     func setupTableView() {
@@ -103,17 +103,32 @@ extension ItinaryViewController: UITableViewDataSource {
         cell.flightStops.text = jsonParser.flightStops(section: indexPath.section, row: indexPath.row)
         cell.flightDestination.text = jsonParser.arrivalCity(section: indexPath.section, row: indexPath.row)
         
-        let directionOne: DottedLineView = DottedLineView.init(frame: CGRect(x: 0, y: 0, width: cell.directionOne.frame.size.width, height: cell.directionOne.frame.size.height))
-        
-        cell.directionOne.addSubview(directionOne)
-        
-        let directionTwo: DottedLineView = DottedLineView.init(frame: CGRect(x: 0, y: 0, width: cell.directionTwo.frame.size.width, height: cell.directionTwo.frame.size.height))
-        
-        cell.directionTwo.addSubview(directionTwo)
-        
         cell.flightFare.text = jsonParser.flightFare(section: indexPath.section, row: indexPath.row)
         
+        cell.layoutIfNeeded()
+        
+//        let acceptedWidthOne = cell.directionOne.frame.size.width - (cell.flightOrigin.frame.width / 2) - (cell.flightStops.frame.width / 2) - (cell.flightDestination.frame.width / 2)
+//
+//        cell.directionOne.frame = CGRect(x: cell.directionOne.frame.origin.x, y: cell.directionOne.frame.origin.y, width: acceptedWidthOne, height: cell.directionOne.frame.size.height)
+//
+//        cell.directionOne.updateConstraints()
+//
+//        let acceptedWidthTwo = cell.directionTwo.frame.size.width - (cell.flightOrigin.frame.width / 2) - (cell.flightStops.frame.width / 2) - (cell.flightDestination.frame.width / 2)
+//
+//        cell.directionTwo.frame = CGRect(x: cell.directionTwo.frame.origin.x, y: cell.directionTwo.frame.origin.y, width: acceptedWidthTwo, height: cell.directionTwo.frame.size.height)
+//
+//        cell.directionTwo.updateConstraints()
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let cellToBe = cell as! ItinaryTableViewCell
+        
+        cellToBe.layoutIfNeeded()
+        
+        cellToBe.directionOne.addDashedBorder()
+        cellToBe.directionTwo.addDashedBorder()
     }
 }
 

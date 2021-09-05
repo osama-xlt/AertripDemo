@@ -103,8 +103,11 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbc-T0-6p6">
-                                                        <rect key="frame" x="47.5" y="0.0" width="115" height="36.5"/>
+                                                        <rect key="frame" x="47.5" y="18" width="119" height="1"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="i1X-oR-JIR"/>
+                                                        </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1w-cS-hDR">
                                                         <rect key="frame" x="166.5" y="8" width="0.0" height="20.5"/>
@@ -113,8 +116,11 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imR-AC-8Dw">
-                                                        <rect key="frame" x="170.5" y="0.0" width="114.5" height="36.5"/>
+                                                        <rect key="frame" x="166.5" y="18" width="118.5" height="1"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="OSJ-6B-4e1"/>
+                                                        </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hke-uj-Nsa">
                                                         <rect key="frame" x="289" y="8" width="35.5" height="20.5"/>
@@ -129,18 +135,16 @@
                                                     <constraint firstItem="nbc-T0-6p6" firstAttribute="centerY" secondItem="CeR-Kl-PKK" secondAttribute="centerY" id="7gX-6y-cbt"/>
                                                     <constraint firstAttribute="bottom" secondItem="E1w-cS-hDR" secondAttribute="bottom" constant="8" id="Jba-1c-VsX"/>
                                                     <constraint firstAttribute="bottom" secondItem="xY0-8F-BZy" secondAttribute="bottom" constant="8" id="Mdg-XV-KRm"/>
-                                                    <constraint firstItem="nbc-T0-6p6" firstAttribute="height" secondItem="CeR-Kl-PKK" secondAttribute="height" id="Ovo-6e-ChW"/>
-                                                    <constraint firstItem="imR-AC-8Dw" firstAttribute="leading" secondItem="E1w-cS-hDR" secondAttribute="trailing" constant="4" id="Q7R-tk-ta8"/>
-                                                    <constraint firstItem="imR-AC-8Dw" firstAttribute="height" secondItem="nbc-T0-6p6" secondAttribute="height" id="QJa-fD-D5J"/>
+                                                    <constraint firstItem="imR-AC-8Dw" firstAttribute="leading" secondItem="E1w-cS-hDR" secondAttribute="trailing" id="Q7R-tk-ta8"/>
                                                     <constraint firstItem="xY0-8F-BZy" firstAttribute="leading" secondItem="CeR-Kl-PKK" secondAttribute="leading" constant="8" id="aHu-3i-CAC"/>
+                                                    <constraint firstItem="imR-AC-8Dw" firstAttribute="width" secondItem="nbc-T0-6p6" secondAttribute="width" id="bpn-2x-GrR"/>
                                                     <constraint firstItem="xY0-8F-BZy" firstAttribute="top" secondItem="CeR-Kl-PKK" secondAttribute="top" constant="8" id="gc1-fG-NFD"/>
                                                     <constraint firstAttribute="trailing" secondItem="hke-uj-Nsa" secondAttribute="trailing" constant="8" id="okI-KS-eED"/>
                                                     <constraint firstItem="E1w-cS-hDR" firstAttribute="top" secondItem="CeR-Kl-PKK" secondAttribute="top" constant="8" id="rOV-b3-2wZ"/>
                                                     <constraint firstItem="hke-uj-Nsa" firstAttribute="leading" secondItem="imR-AC-8Dw" secondAttribute="trailing" constant="4" id="vfM-9T-FE2"/>
                                                     <constraint firstItem="hke-uj-Nsa" firstAttribute="top" secondItem="CeR-Kl-PKK" secondAttribute="top" constant="8" id="wjP-MT-i1j"/>
-                                                    <constraint firstItem="imR-AC-8Dw" firstAttribute="width" secondItem="nbc-T0-6p6" secondAttribute="width" id="wjl-UA-pC8"/>
                                                     <constraint firstAttribute="bottom" secondItem="hke-uj-Nsa" secondAttribute="bottom" constant="8" id="xHD-So-OxU"/>
-                                                    <constraint firstItem="E1w-cS-hDR" firstAttribute="leading" secondItem="nbc-T0-6p6" secondAttribute="trailing" constant="4" id="xe7-qk-QXJ"/>
+                                                    <constraint firstItem="E1w-cS-hDR" firstAttribute="leading" secondItem="nbc-T0-6p6" secondAttribute="trailing" id="xe7-qk-QXJ"/>
                                                     <constraint firstItem="imR-AC-8Dw" firstAttribute="centerY" secondItem="CeR-Kl-PKK" secondAttribute="centerY" id="zyS-Zb-mrN"/>
                                                 </constraints>
                                             </view>
@@ -224,8 +228,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="departureTime" destination="kp4-Ey-YcZ" id="fCC-PT-Z24"/>
-                <outlet property="directionOne" destination="nbc-T0-6p6" id="2oh-Hq-epL"/>
-                <outlet property="directionTwo" destination="imR-AC-8Dw" id="gef-iU-7fN"/>
+                <outlet property="directionOne" destination="nbc-T0-6p6" id="hcm-7T-oJZ"/>
+                <outlet property="directionTwo" destination="imR-AC-8Dw" id="UZK-ei-IjE"/>
                 <outlet property="flightDestination" destination="hke-uj-Nsa" id="Mhq-rl-K74"/>
                 <outlet property="flightFare" destination="c4e-Z0-2Eg" id="P8x-sC-a9K"/>
                 <outlet property="flightLogo" destination="7YL-Kx-6Pq" id="vSg-Z4-YlA"/>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DottedLineView
 
 let ItinaryTableViewCellID = "ItinaryTableViewCell"
 
@@ -23,6 +24,8 @@ class ItinaryTableViewCell: UITableViewCell {
     @IBOutlet weak var flightDestination: UILabel!
     @IBOutlet weak var flightFare: UILabel!
     
+    @IBOutlet weak var directionOneWidth: NSLayoutConstraint!
+    @IBOutlet weak var directionTwoWidth: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -33,12 +36,4 @@ class ItinaryTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        directionOne.frame = CGRect(x: directionOne.frame.origin.x, y: directionOne.frame.origin.y, width: directionOne.frame.size.width - flightStops.frame.size.width, height: directionOne.frame.size.height)
-//        
-//        directionTwo.frame = CGRect(x: directionTwo.frame.origin.x, y: directionTwo.frame.origin.y, width: directionTwo.frame.size.width - flightStops.frame.size.width, height: directionTwo.frame.size.height)
-//    }
-    
 }
