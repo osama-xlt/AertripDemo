@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-AertripDemo/Pods-AertripDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework
+${BUILT_PRODUCTS_DIR}/SwiftRangeSlider/SwiftRangeSlider.framework
 ${BUILT_PRODUCTS_DIR}/TLYShyNavBar/TLYShyNavBar.framework

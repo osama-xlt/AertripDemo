@@ -8,5 +8,6 @@ target 'AertripDemo' do
   # Pods for AertripDemo
   pod 'TLYShyNavBar'
   pod 'Presentr'
+  pod 'SwiftRangeSlider'
   
 end

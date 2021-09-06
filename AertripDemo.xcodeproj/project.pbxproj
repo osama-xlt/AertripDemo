@@ -15,6 +15,10 @@
 		DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16992926E34B4D004E08BB /* ImageExtension.swift */; };
 		DA16993026E36A75004E08BB /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992F26E36A75004E08BB /* ItinaryViewController.xib */; };
 		DA1B579C26E521D2005E1481 /* NavBarTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */; };
+		DA3FAEFD26E5CAE000937A29 /* SortFilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FAEFB26E5CAE000937A29 /* SortFilterTableViewCell.swift */; };
+		DA3FAEFE26E5CAE000937A29 /* SortFilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */; };
+		DA3FAF0026E5CF5200937A29 /* SortFilterData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA3FAEFF26E5CF5200937A29 /* SortFilterData.json */; };
+		DA3FAF0226E5D25C00937A29 /* FiltersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FAF0126E5D25C00937A29 /* FiltersModel.swift */; };
 		DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED626E10FF8004194EA /* AppDelegate.swift */; };
 		DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED826E10FF8004194EA /* SceneDelegate.swift */; };
 		DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDC26E10FF8004194EA /* Main.storyboard */; };
@@ -24,8 +28,6 @@
 		DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF426E13E89004194EA /* ItinaryViewController.swift */; };
 		DA516EF926E14C97004194EA /* AertripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EF826E14C97004194EA /* AertripModel.swift */; };
 		DA516EFC26E18FF9004194EA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EFB26E18FF9004194EA /* Page.swift */; };
-		DA516F0A26E19F17004194EA /* DoubledSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0826E19F16004194EA /* DoubledSlider.swift */; };
-		DA516F0B26E19F17004194EA /* ViewProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0926E19F17004194EA /* ViewProgrammatically.swift */; };
 		DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */; };
 		DA516F1226E22D53004194EA /* ItinaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */; };
 		DAB9D03A26E3DFA500CFEA01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9D03926E3DFA500CFEA01 /* CardView.swift */; };
@@ -45,6 +47,10 @@
 		DA16992926E34B4D004E08BB /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		DA16992F26E36A75004E08BB /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
 		DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarTitleView.xib; sourceTree = "<group>"; };
+		DA3FAEFB26E5CAE000937A29 /* SortFilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFilterTableViewCell.swift; sourceTree = "<group>"; };
+		DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortFilterTableViewCell.xib; sourceTree = "<group>"; };
+		DA3FAEFF26E5CF5200937A29 /* SortFilterData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SortFilterData.json; sourceTree = "<group>"; };
+		DA3FAF0126E5D25C00937A29 /* FiltersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersModel.swift; sourceTree = "<group>"; };
 		DA516ED326E10FF8004194EA /* AertripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AertripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA516ED626E10FF8004194EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA516ED826E10FF8004194EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +62,6 @@
 		DA516EF426E13E89004194EA /* ItinaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryViewController.swift; sourceTree = "<group>"; };
 		DA516EF826E14C97004194EA /* AertripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AertripModel.swift; sourceTree = "<group>"; };
 		DA516EFB26E18FF9004194EA /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		DA516F0826E19F16004194EA /* DoubledSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubledSlider.swift; sourceTree = "<group>"; };
-		DA516F0926E19F17004194EA /* ViewProgrammatically.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProgrammatically.swift; sourceTree = "<group>"; };
 		DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryTableViewCell.swift; sourceTree = "<group>"; };
 		DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryTableViewCell.xib; sourceTree = "<group>"; };
 		DAA6AD5E26E2B87700481406 /* AertripDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AertripDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -94,6 +98,23 @@
 				DAB9D03B26E4B7D000CFEA01 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA3FAF0326E5D6FF00937A29 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */,
+				DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DA3FAF0426E5D72800937A29 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		DA516ECA26E10FF8004194EA = {
@@ -134,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				DA516EF826E14C97004194EA /* AertripModel.swift */,
+				DA3FAF0126E5D25C00937A29 /* FiltersModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				DA516EFD26E19137004194EA /* Cells */,
-				DA516EFA26E1670B004194EA /* CustomFiles */,
 				DA516EF326E13D44004194EA /* XIB */,
 				DA516EF226E13D2D004194EA /* Storyboard */,
 				DA516EF426E13E89004194EA /* ItinaryViewController.swift */,
@@ -167,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				DA516EEE26E1233E004194EA /* AertripData.json */,
+				DA3FAEFF26E5CF5200937A29 /* SortFilterData.json */,
 			);
 			path = JSONData;
 			sourceTree = "<group>";
@@ -192,26 +214,20 @@
 		DA516EF326E13D44004194EA /* XIB */ = {
 			isa = PBXGroup;
 			children = (
-				DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */,
+				DA3FAF0426E5D72800937A29 /* CustomViews */,
+				DA3FAF0326E5D6FF00937A29 /* Cells */,
 				DA16992126E33259004E08BB /* SortFilterViewController.xib */,
 				DA16992526E33291004E08BB /* PriceFilterViewController.xib */,
 				DA16992F26E36A75004E08BB /* ItinaryViewController.xib */,
-				DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */,
 			);
 			path = XIB;
-			sourceTree = "<group>";
-		};
-		DA516EFA26E1670B004194EA /* CustomFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomFiles;
 			sourceTree = "<group>";
 		};
 		DA516EFD26E19137004194EA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */,
+				DA3FAEFB26E5CAE000937A29 /* SortFilterTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -219,8 +235,6 @@
 		DA516F0C26E22C44004194EA /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				DA516F0826E19F16004194EA /* DoubledSlider.swift */,
-				DA516F0926E19F17004194EA /* ViewProgrammatically.swift */,
 				DAB9D03926E3DFA500CFEA01 /* CardView.swift */,
 			);
 			path = Library;
@@ -311,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA16993026E36A75004E08BB /* ItinaryViewController.xib in Resources */,
+				DA3FAEFE26E5CAE000937A29 /* SortFilterTableViewCell.xib in Resources */,
 				DA516EE326E10FFB004194EA /* LaunchScreen.storyboard in Resources */,
 				DA516EEF26E1233E004194EA /* AertripData.json in Resources */,
 				DA16992726E33291004E08BB /* PriceFilterViewController.xib in Resources */,
@@ -319,6 +334,7 @@
 				DA1B579C26E521D2005E1481 /* NavBarTitleView.xib in Resources */,
 				DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */,
 				DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */,
+				DA3FAF0026E5CF5200937A29 /* SortFilterData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,11 +389,11 @@
 			files = (
 				DAB9D03C26E4B7D000CFEA01 /* UIViewExtension.swift in Sources */,
 				DAB9D03A26E3DFA500CFEA01 /* CardView.swift in Sources */,
-				DA516F0A26E19F17004194EA /* DoubledSlider.swift in Sources */,
-				DA516F0B26E19F17004194EA /* ViewProgrammatically.swift in Sources */,
 				DADF560F26E24C1900C7A611 /* JSONParser.swift in Sources */,
+				DA3FAEFD26E5CAE000937A29 /* SortFilterTableViewCell.swift in Sources */,
 				DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */,
 				DA16992226E33259004E08BB /* SortFilterViewController.swift in Sources */,
+				DA3FAF0226E5D25C00937A29 /* FiltersModel.swift in Sources */,
 				DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */,
 				DADF561226E2A9C700C7A611 /* LoopableProtocol.swift in Sources */,
 				DA16992626E33291004E08BB /* PriceFilterViewController.swift in Sources */,

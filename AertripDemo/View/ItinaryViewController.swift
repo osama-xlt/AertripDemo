@@ -37,6 +37,7 @@ class ItinaryViewController: UIViewController {
         customPresenter.backgroundColor = .clear
         customPresenter.backgroundOpacity = 0
         customPresenter.dismissOnSwipeDirection = .top
+        customPresenter.dismissOnSwipe = false
         customPresenter.customBackgroundView = customBackgroundView
         return customPresenter
     }()

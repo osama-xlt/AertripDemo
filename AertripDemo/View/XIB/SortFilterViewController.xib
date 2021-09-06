@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortFilterViewController" customModule="AertripDemo" customModuleProvider="target">
             <connections>
+                <outlet property="sortFilterTableView" destination="Ab9-Tm-QRD" id="y3J-YD-luB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

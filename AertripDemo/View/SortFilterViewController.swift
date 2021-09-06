@@ -9,21 +9,75 @@ import UIKit
 
 class SortFilterViewController: UIViewController {
 
+    @IBOutlet weak var sortFilterTableView: UITableView!
+    let jsonParser: JSONParser = JSONParser.jsonParser
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initializeSortFilter()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func initializeSortFilter() {
+        sortFilterTableView.delegate = self
+        sortFilterTableView.dataSource = self
+        sortFilterTableView.register(UINib(nibName: SortFilterTableViewCellID, bundle: nil), forCellReuseIdentifier: SortFilterTableViewCellID)
     }
-    */
+}
 
+
+//MARK:- Table View Data Source
+
+extension SortFilterViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jsonParser.numberOfFilters()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SortFilterTableViewCellID, for: indexPath) as! SortFilterTableViewCell
+        cell.textLabel?.text = jsonParser.filterTitle(row: indexPath.row)
+        cell.detailTextLabel?.text = jsonParser.filterDetail(row: indexPath.row)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let indexPathsForSelectedRows = tableView.indexPathsForSelectedRows ?? [IndexPath]()
+        
+        // If there is a selected cell in |indexPath.section|, do nothing
+        for selectedIndexPath in indexPathsForSelectedRows {
+            if selectedIndexPath.section == indexPath.section {
+                tableView.deselectRow(at: selectedIndexPath, animated: true)
+                tableView.cellForRow(at: selectedIndexPath)?.accessoryType = .none
+            }
+        }
+        
+        return indexPath;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! SortFilterTableViewCell
+        if cell.accessoryType == UITableViewCell.AccessoryType.none {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+    }
+}
+
+//MARK:- Table View Delegate
+
+extension SortFilterViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
 }

@@ -6,24 +6,56 @@
 //
 
 import UIKit
+import SwiftRangeSlider
 
 class PriceFilterViewController: UIViewController {
-
+    
+    @IBOutlet weak var minPrice: UILabel!
+    @IBOutlet weak var maxPrice: UILabel!
+    @IBOutlet weak var rangeSlider: RangeSlider!
+    
+    var flightSection: Int!
+    let jsonParser: JSONParser = JSONParser.jsonParser
+    var minMaxPrice: (Double, Double)!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        initializeVC()
     }
-    */
-
+    
+    func initializeVC() {
+        minMaxPrice = jsonParser.minMaxPrice(section: flightSection ?? 0)
+        
+        initializeRangeSlider()
+    }
+    
+    func initializeRangeSlider() {
+        let minPriceValue = minMaxPrice.0
+        let maxPriceValue = minMaxPrice.1
+        minPrice.text = "\u{20B9} " + rangeSlider.getLabelText(forValue: minPriceValue)
+        maxPrice.text = "\u{20B9} " + rangeSlider.getLabelText(forValue: maxPriceValue)
+        
+        rangeSlider.lowerValue = minMaxPrice.0
+        rangeSlider.upperValue = minMaxPrice.1
+        rangeSlider.minimumValue = minMaxPrice.0
+        rangeSlider.maximumValue = minMaxPrice.1
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        rangeSlider.updateLayerFramesAndPositions()
+    }
+    
+    @IBAction func updateValues(_ sender: RangeSlider) {
+        let minPriceValue = sender.lowerValue
+        let maxPriceValue = sender.upperValue
+        minPrice.text = "\u{20B9} " + sender.getLabelText(forValue: minPriceValue)
+        maxPrice.text = "\u{20B9} " + sender.getLabelText(forValue: maxPriceValue)
+    }
 }

@@ -7,67 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E7AD489F43D4481AD8B6C8B896E102 /* TLYDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E83C9F6E82D3A4F6827297F7E0226A /* TLYDelegateProxy.m */; };
-		04C4270959BF06C148034E4AFE364547 /* CoverVerticalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6811303F19E6FEEC5CF83A0EC79FD5AE /* CoverVerticalAnimation.swift */; };
-		05853715ED6186A4E3350FFCAAB63696 /* TLYShyStatusBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 189B1A97CBB34E55E118484C9A1422BA /* TLYShyStatusBarController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		15A1471261FD8C64E4D77D76B1AA5B59 /* TLYShyNavBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 779B6C9CD78BD8340B77E5821C8CA2AF /* TLYShyNavBar-dummy.m */; };
-		1859D8A4E0AC0EDB52FB4C96FB3B1491 /* ModalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6209B3052B25E9C5237266CADCA5565 /* ModalSize.swift */; };
-		1B0DDDAEFE7B03BE4B3318193245AC85 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC12036967002B794BF2E1396BFBF9E6 /* AlertViewController.xib */; };
-		1C2B0DBFE173DD529676D8DC53C1F443 /* Pods-AertripDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA36DA4DA56CDAD825BD529B3F23CA /* Pods-AertripDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CFE2FE3AE595726902BA8EE73076776 /* TLYShyNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB10363D587B4E07AE44BD713C69D50 /* TLYShyNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3394DEB14F1A65D6AB49C29DA720AC73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		38D02BB4234A5383903F0AB8B43F88C3 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7BD041C23A68D21D87BAA1A9E40BCC /* CoverHorizontalAnimation.swift */; };
-		3C9FB5AB12E47EDB680CBA7A4473BBCF /* TLYShyNavBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DE28078B872593D413314F15B0FC46 /* TLYShyNavBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		465D334E70D12CD5507C61F5E3CE1ED5 /* CoverFromCornerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7858B4C9E44BABFA04338CA123EFE127 /* CoverFromCornerAnimation.swift */; };
-		4D08ED01CE048395C0307E61D15C347E /* NSObject+TLYSwizzlingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 740A0EBB797B5C1A75DD7553113FF135 /* NSObject+TLYSwizzlingHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		52C211E976191DDE47A96D86666C001A /* UIViewController+BetterLayoutGuides.h in Headers */ = {isa = PBXBuildFile; fileRef = E052D8AAAB2C37BFDE44288BD1B89BF5 /* UIViewController+BetterLayoutGuides.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5407B047D48A79AFB8969DF35A7DB91A /* TLYShyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77816A462EB02CC6EAE1A9362C8617E5 /* TLYShyViewController.m */; };
-		59EDA8097A772D8D652E42AAD1A23E25 /* NSObject+TLYSwizzlingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1BA510373C6EADD0A1F5EEA4B53010 /* NSObject+TLYSwizzlingHelpers.m */; };
-		5ACC0761AA2F53FA486F482AA1B6C3AB /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A2CF8AD4A7300C544FCEDF710CB72 /* CoverVerticalFromTopAnimation.swift */; };
-		5F89B5BC6C4484C8952D0E30125FFA97 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EC63A3FC662B5152FBF132AADF8F46 /* BackgroundView.swift */; };
-		63287D01A64A3C52494F9045BF1B8191 /* TLYShyNavBarFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A60196C2765EF157DAFE559ECD55257 /* TLYShyNavBarFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DC2A051B005A442BFE99413171BFB3E /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB72A1F27B16019203DF6BF0CFF3086 /* PresentrAnimation.swift */; };
-		6F9F1DAEB589CC508955832BA8673FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		728DEF296849DEF66469B8E7D8D63604 /* TLYShyStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16611114CE88608DADF905808A3F1029 /* TLYShyStatusBarController.m */; };
-		7BFD1D1D638FBC80E15FED3F2C7E88C3 /* UIScrollView+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAA147989B951AEC678F830C620EDDF /* UIScrollView+Helpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7F5D4056ECAEB94D204648FD9D9358C3 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA945895FAA331EDC1EC5DEA3AB718 /* TransitionType.swift */; };
-		8593ABCDAB3341B6015BD7D70BB41E63 /* ModalCenterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23D3224A20A70CD3C084F3EDB96849D /* ModalCenterPosition.swift */; };
-		8659D77DD4FAC48D3460DAAAC8579EB7 /* Presentr+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036B9F1FC31745C6479835003CA916F /* Presentr+Equatable.swift */; };
-		87BC61E1AF99BFDFED0A41DFC055B3C3 /* TLYShyChild.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A94B2067F34D420529150E9BC76F56 /* TLYShyChild.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		940A66A74460B78DE1247C004772BF4A /* Pods-AertripDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12542D013488CC6B2FDEB2D9CA18D249 /* Pods-AertripDemo-dummy.m */; };
-		9B09D55F8BBD3E597576073317ED482D /* UIScrollView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C184B1B5F53685C65851EDA76C4C4 /* UIScrollView+Helpers.m */; };
-		9EE25EE5D9E78B0A1063E32C49D73BF1 /* TLYShyScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44DA65D7C1615D4D9F3D3E89B8BA5599 /* TLYShyScrollViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9FB8FA7815B89CBA726A28F5218068DD /* TLYShyNavBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B583BB66C34DDD64955C69E6C259B5E0 /* TLYShyNavBarManager.m */; };
-		A1486939A193D2D47D287741A759410D /* PresentrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C663B0793898BE1FAE33E95DAC47339 /* PresentrController.swift */; };
-		A94ADA35543BC28D8C30844F42DA336C /* Presentr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F5E756C2B4A49E712C1C42AD0BF314 /* Presentr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0FAAEFD6F044584E10978F47C9149DC /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DEF626E374A2A24AF2BF3CE1E3B60 /* Presentr.swift */; };
-		B3C4EB504066AFB9A93B1E7F33EC1784 /* TLYShyNavBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1089B1164C0259375969040D20BC249D /* TLYShyNavBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5898C79306BD47BF80FA77102220FA3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8832A5E2F1FF0BC85F65A0DAE4FB0976 /* AlertViewController.swift */; };
-		B8D8D2AA19AD095E91D2985DAE634813 /* TLYShyParent.h in Headers */ = {isa = PBXBuildFile; fileRef = EC62486AC22D427450DCA623EF1862B5 /* TLYShyParent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B9D189DA76A4DDF132F1394EE17AB503 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A15D0D0DE9164A4C0F4BB1FE842801 /* Montserrat-Regular.ttf */; };
-		C518359E5D1D0AE21B5DFCFB06377F2C /* KeyboardTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2D4F5E198DC4960991E69C26B4647 /* KeyboardTranslation.swift */; };
-		CB3A8FCA5F3864EB90BCAD65B02A7852 /* TLYShyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB2B1C2DF9A01EF310099652E227E7F /* TLYShyScrollViewController.m */; };
-		CC3FBB5CA09A03A559938E8EAFD3A8D9 /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B73E4E202219769F67CBF96537993A /* CrossDissolveAnimation.swift */; };
-		CF2EC3484741EAE2FFCCB55F6379A932 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDFA34DBA482DAC7F5B485804F04716 /* PresentationType.swift */; };
-		E40AB3A4CFC85E39BF54ECC6E583B99C /* Presentr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 086130A1207E5097DA7EBF046A40B0DE /* Presentr-dummy.m */; };
-		E701C90E27C6785252258963983F3785 /* TLYShyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C05A9B8516A45B868DB262EBC1F322D1 /* TLYShyViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E87DAB18CDB4B189668D4543021A7550 /* TLYDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E30B1CA363292EC144FA78F1E48BA567 /* TLYDelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E9476BBC49AE3EFA6BD0E829AD0D01C2 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05A3254BB2AE39537E5D6ABBCEDBE8EA /* SourceSansPro-Regular.ttf */; };
-		EDC8F902B6825E127D638026DC9FEED2 /* UIViewController+BetterLayoutGuides.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0C675927F6F5640AC88CC68A39A912 /* UIViewController+BetterLayoutGuides.m */; };
-		F0AB3A23A9A2BA780AD74AB9CEC49E9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F5FE7E07F102865EE766E9ED9D2A169D /* PresentrShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A545432AFBE05CFC41707B849C79B /* PresentrShadow.swift */; };
-		FBC9750C5051E2C415D97C81E13E09A0 /* FlipHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505989B9A4895B980960360D1972229 /* FlipHorizontalAnimation.swift */; };
+		00E7AD489F43D4481AD8B6C8B896E102 /* TLYDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CBEE827631139B36F3D5193532536A /* TLYDelegateProxy.m */; };
+		04C4270959BF06C148034E4AFE364547 /* CoverVerticalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B211CFE92DB27717F06A1FA7E2CF1C /* CoverVerticalAnimation.swift */; };
+		05853715ED6186A4E3350FFCAAB63696 /* TLYShyStatusBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A9C1E5E5285529BB3C9241178B62B7 /* TLYShyStatusBarController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0DBBE3A8C75B6F9BCDAB1D0D5DA6BD37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		15A1471261FD8C64E4D77D76B1AA5B59 /* TLYShyNavBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8D1110970464BF0B091EDB7AC80741 /* TLYShyNavBar-dummy.m */; };
+		1859D8A4E0AC0EDB52FB4C96FB3B1491 /* ModalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A899ABD8BA319976833BB0923913C4 /* ModalSize.swift */; };
+		1B0DDDAEFE7B03BE4B3318193245AC85 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBD47446B7059D8DBA1CF3C77E4D254 /* AlertViewController.xib */; };
+		1B7B0DFC290438BD97BEB8DAAA6DACD6 /* SwiftRangeSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80616C3B03FCA42B6B83F7AD6AAA9CD1 /* SwiftRangeSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CFE2FE3AE595726902BA8EE73076776 /* TLYShyNavBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 31768EB654533365EA6CBABE63EEBC2B /* TLYShyNavBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3394DEB14F1A65D6AB49C29DA720AC73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		38D02BB4234A5383903F0AB8B43F88C3 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AAB55076673320156D413541B256E7 /* CoverHorizontalAnimation.swift */; };
+		3C9FB5AB12E47EDB680CBA7A4473BBCF /* TLYShyNavBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADBB02E22D385523A11503F8435F04B /* TLYShyNavBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D334E70D12CD5507C61F5E3CE1ED5 /* CoverFromCornerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967417AFC8BB09D6C966D0BCB294E2DE /* CoverFromCornerAnimation.swift */; };
+		4D08ED01CE048395C0307E61D15C347E /* NSObject+TLYSwizzlingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 96AD6DB74C4DECC83F62B08A9F253553 /* NSObject+TLYSwizzlingHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52C211E976191DDE47A96D86666C001A /* UIViewController+BetterLayoutGuides.h in Headers */ = {isa = PBXBuildFile; fileRef = FB5AB2136F7183BCC33638B21E937E4A /* UIViewController+BetterLayoutGuides.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5407B047D48A79AFB8969DF35A7DB91A /* TLYShyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14082630618110C5D3BE09385795B37D /* TLYShyViewController.m */; };
+		5652480EAC92270640DA00F3BBB283E7 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A9BA0E0C6EFA21135B6B646AF52EF /* RangeSliderKnob.swift */; };
+		59EDA8097A772D8D652E42AAD1A23E25 /* NSObject+TLYSwizzlingHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57F46046E128B04B32EC52319DE8B2 /* NSObject+TLYSwizzlingHelpers.m */; };
+		5ACC0761AA2F53FA486F482AA1B6C3AB /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1910735703D969A7FA9F5A0B62ABDE4 /* CoverVerticalFromTopAnimation.swift */; };
+		5F89B5BC6C4484C8952D0E30125FFA97 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF834699F8E56231AFB187209122CCC /* BackgroundView.swift */; };
+		63287D01A64A3C52494F9045BF1B8191 /* TLYShyNavBarFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8B3BC0541D08BCEF492511EB54E77D /* TLYShyNavBarFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		634A1FBC07359A953C5EC6255E70A2F3 /* Pods-AertripDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12542D013488CC6B2FDEB2D9CA18D249 /* Pods-AertripDemo-dummy.m */; };
+		670D15E04915EE84A15481ACE5BB7A9A /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669FF3EA85E2D95CAA8E725E1D880781 /* RangeSliderTrack.swift */; };
+		6DC2A051B005A442BFE99413171BFB3E /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8383EE94D4516AAFAD8F41F81AAE6A1 /* PresentrAnimation.swift */; };
+		6F9F1DAEB589CC508955832BA8673FB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		728DEF296849DEF66469B8E7D8D63604 /* TLYShyStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A41649EACCECA353949D58F54C9C40 /* TLYShyStatusBarController.m */; };
+		7BFD1D1D638FBC80E15FED3F2C7E88C3 /* UIScrollView+Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D181EFC9F3154C1168B8FAA8FC556162 /* UIScrollView+Helpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F5D4056ECAEB94D204648FD9D9358C3 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB66A6004A78FDE3033305F5D673C1C /* TransitionType.swift */; };
+		8593ABCDAB3341B6015BD7D70BB41E63 /* ModalCenterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198232C6892F68666692F58FA33FF805 /* ModalCenterPosition.swift */; };
+		8659D77DD4FAC48D3460DAAAC8579EB7 /* Presentr+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C873D7269AB947C349E8278C76AC7F5 /* Presentr+Equatable.swift */; };
+		87BC61E1AF99BFDFED0A41DFC055B3C3 /* TLYShyChild.h in Headers */ = {isa = PBXBuildFile; fileRef = C12306A737616ABB51B08CE583277245 /* TLYShyChild.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90D7EF2DF2FDE235C7F2657F181FE099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		96F95331640614131BAE4D57D07F22F0 /* Pods-AertripDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DBA36DA4DA56CDAD825BD529B3F23CA /* Pods-AertripDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B09D55F8BBD3E597576073317ED482D /* UIScrollView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E29518D2CB9E25F560614ACC2A7370DA /* UIScrollView+Helpers.m */; };
+		9EE25EE5D9E78B0A1063E32C49D73BF1 /* TLYShyScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8F11CAF6FB45DDF010F1F2E073E538 /* TLYShyScrollViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FB8FA7815B89CBA726A28F5218068DD /* TLYShyNavBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BACA65567F86C71B08A478D1EE142B79 /* TLYShyNavBarManager.m */; };
+		A1486939A193D2D47D287741A759410D /* PresentrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96603C5DD1FD5CD0847FBAD686A5ECA2 /* PresentrController.swift */; };
+		A94ADA35543BC28D8C30844F42DA336C /* Presentr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2576D678C5CFBF1DB7D2E32FEEEEECF4 /* Presentr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9A350EF033EAFC6BDEF1923313F9F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		ADD70A73049D61C7ADD6942CC2EB2232 /* SwiftRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A818D5CDA5FA38BAA607E2B65EB491 /* SwiftRangeSlider-dummy.m */; };
+		B0FAAEFD6F044584E10978F47C9149DC /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC15FC027DDA6629417B620164D56BF /* Presentr.swift */; };
+		B3C4EB504066AFB9A93B1E7F33EC1784 /* TLYShyNavBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 369EF517A693E9B193725462A96682CD /* TLYShyNavBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5898C79306BD47BF80FA77102220FA3 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9EC80D0392419F6FD11D965C4A24F /* AlertViewController.swift */; };
+		B8D8D2AA19AD095E91D2985DAE634813 /* TLYShyParent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE8515F40B9C9EFAA1C6330C986588F /* TLYShyParent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9D189DA76A4DDF132F1394EE17AB503 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD9F2C188C98DC494C8A8D72BE292B6E /* Montserrat-Regular.ttf */; };
+		C518359E5D1D0AE21B5DFCFB06377F2C /* KeyboardTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19693ACF3211FDCCCE4EF3D7989BCCB2 /* KeyboardTranslation.swift */; };
+		CB3A8FCA5F3864EB90BCAD65B02A7852 /* TLYShyScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A6C5C842E94980FFFF8A619007BD4 /* TLYShyScrollViewController.m */; };
+		CC3FBB5CA09A03A559938E8EAFD3A8D9 /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9FC0EAAA6957E1F4CF73AC4FCB9479 /* CrossDissolveAnimation.swift */; };
+		CF2EC3484741EAE2FFCCB55F6379A932 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237FE265AAC36BE9296D320C7186C8B /* PresentationType.swift */; };
+		DF44245E1F5D218AED37E1579C99C145 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303CD9BBC09D536651B8F0F4AC1ED3AB /* RangeSlider.swift */; };
+		E40AB3A4CFC85E39BF54ECC6E583B99C /* Presentr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6345659EA33F6035083004CE4B44210C /* Presentr-dummy.m */; };
+		E701C90E27C6785252258963983F3785 /* TLYShyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 97305D46643B90695C1E6BEAA07EF03C /* TLYShyViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E87DAB18CDB4B189668D4543021A7550 /* TLYDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A24C69E9C0B3CDF6CAAAE6851A16BD /* TLYDelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9476BBC49AE3EFA6BD0E829AD0D01C2 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B9FAB7E8415B7AD42375C2B844F8C78 /* SourceSansPro-Regular.ttf */; };
+		EDC8F902B6825E127D638026DC9FEED2 /* UIViewController+BetterLayoutGuides.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA1160EC5FDED5393050BEF4AB62BD1 /* UIViewController+BetterLayoutGuides.m */; };
+		F5FE7E07F102865EE766E9ED9D2A169D /* PresentrShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444AF6CFFC15C7D9515D0A273B66F12 /* PresentrShadow.swift */; };
+		FBC9750C5051E2C415D97C81E13E09A0 /* FlipHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F856BD37801F09C50B6E5DBE51CE385 /* FlipHorizontalAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7DA29D319536A69D40A867B4495AED5E /* PBXContainerItemProxy */ = {
+		2EACBC6277E6E8A88C2C570C488C3679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 433F79D5F3953F8EA8E7B0C7A2A27D32;
 			remoteInfo = Presentr;
 		};
-		BD45FAD7AF9265B90216BCC60A4713C1 /* PBXContainerItemProxy */ = {
+		3B90D548E73B9236E3DBF60FDCC90675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4468DA463E43D33582E6BA100A6B78E;
+			remoteInfo = SwiftRangeSlider;
+		};
+		DBE16D43B682C73DB8B9D825A57F4938 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -77,79 +91,108 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05A3254BB2AE39537E5D6ABBCEDBE8EA /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "SourceSansPro-Regular.ttf"; path = "Presentr/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
-		086130A1207E5097DA7EBF046A40B0DE /* Presentr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Presentr-dummy.m"; sourceTree = "<group>"; };
-		08EC63A3FC662B5152FBF132AADF8F46 /* BackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundView.swift; path = Presentr/BackgroundView.swift; sourceTree = "<group>"; };
+		09CBEE827631139B36F3D5193532536A /* TLYDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYDelegateProxy.m; path = TLYShyNavBar/Categories/TLYDelegateProxy.m; sourceTree = "<group>"; };
 		0A586B6AAC23744F65F240C2141D9112 /* Pods-AertripDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AertripDemo.modulemap"; sourceTree = "<group>"; };
-		1089B1164C0259375969040D20BC249D /* TLYShyNavBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarManager.h; path = TLYShyNavBar/TLYShyNavBarManager.h; sourceTree = "<group>"; };
 		12542D013488CC6B2FDEB2D9CA18D249 /* Pods-AertripDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AertripDemo-dummy.m"; sourceTree = "<group>"; };
+		14082630618110C5D3BE09385795B37D /* TLYShyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyViewController.m; sourceTree = "<group>"; };
 		147FBC3812B4930EF1002AB103A017B8 /* TLYShyNavBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TLYShyNavBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16611114CE88608DADF905808A3F1029 /* TLYShyStatusBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyStatusBarController.m; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.m; sourceTree = "<group>"; };
 		182CB281FBC245D9709B360E9FA4E00C /* Presentr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		189B1A97CBB34E55E118484C9A1422BA /* TLYShyStatusBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyStatusBarController.h; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.h; sourceTree = "<group>"; };
+		19693ACF3211FDCCCE4EF3D7989BCCB2 /* KeyboardTranslation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardTranslation.swift; path = Presentr/KeyboardTranslation.swift; sourceTree = "<group>"; };
+		198232C6892F68666692F58FA33FF805 /* ModalCenterPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCenterPosition.swift; path = Presentr/ModalCenterPosition.swift; sourceTree = "<group>"; };
+		1C8B3BC0541D08BCEF492511EB54E77D /* TLYShyNavBarFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarFade.h; path = TLYShyNavBar/TLYShyNavBarFade.h; sourceTree = "<group>"; };
 		1F2DAD7D5D0D6A73B03A2659F8A67777 /* Pods_AertripDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AertripDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28DE28078B872593D413314F15B0FC46 /* TLYShyNavBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-umbrella.h"; sourceTree = "<group>"; };
-		29A15D0D0DE9164A4C0F4BB1FE842801 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "Presentr/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		2A60196C2765EF157DAFE559ECD55257 /* TLYShyNavBarFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarFade.h; path = TLYShyNavBar/TLYShyNavBarFade.h; sourceTree = "<group>"; };
-		2AB10363D587B4E07AE44BD713C69D50 /* TLYShyNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBar.h; path = TLYShyNavBar/TLYShyNavBar.h; sourceTree = "<group>"; };
-		2BDFA34DBA482DAC7F5B485804F04716 /* PresentationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationType.swift; path = Presentr/PresentationType.swift; sourceTree = "<group>"; };
-		2CC2D4F5E198DC4960991E69C26B4647 /* KeyboardTranslation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardTranslation.swift; path = Presentr/KeyboardTranslation.swift; sourceTree = "<group>"; };
+		1FFC7F11562B7806962D837DADD3F1C2 /* SwiftRangeSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftRangeSlider.modulemap; sourceTree = "<group>"; };
+		2576D678C5CFBF1DB7D2E32FEEEEECF4 /* Presentr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-umbrella.h"; sourceTree = "<group>"; };
+		2C95352816E54A3AB9E9F7ABDAB973ED /* TLYShyNavBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-prefix.pch"; sourceTree = "<group>"; };
 		2DBA36DA4DA56CDAD825BD529B3F23CA /* Pods-AertripDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AertripDemo-umbrella.h"; sourceTree = "<group>"; };
-		364028CDD0182C331FBC7CF63A3C33C5 /* TLYShyNavBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.debug.xcconfig; sourceTree = "<group>"; };
+		303CD9BBC09D536651B8F0F4AC1ED3AB /* RangeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
+		31768EB654533365EA6CBABE63EEBC2B /* TLYShyNavBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBar.h; path = TLYShyNavBar/TLYShyNavBar.h; sourceTree = "<group>"; };
+		369EF517A693E9B193725462A96682CD /* TLYShyNavBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyNavBarManager.h; path = TLYShyNavBar/TLYShyNavBarManager.h; sourceTree = "<group>"; };
 		389DAF20EA50A4C588C6D48A2D6A049D /* Pods-AertripDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AertripDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		38D7DA1D13FF7D399785A9A2183B8429 /* Pods-AertripDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AertripDemo-Info.plist"; sourceTree = "<group>"; };
-		41DFD4F777A0B32C53024180CB11BAC8 /* Presentr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.debug.xcconfig; sourceTree = "<group>"; };
-		41E83C9F6E82D3A4F6827297F7E0226A /* TLYDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYDelegateProxy.m; path = TLYShyNavBar/Categories/TLYDelegateProxy.m; sourceTree = "<group>"; };
-		44DA65D7C1615D4D9F3D3E89B8BA5599 /* TLYShyScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyScrollViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.h; sourceTree = "<group>"; };
-		453C184B1B5F53685C65851EDA76C4C4 /* UIScrollView+Helpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Helpers.m"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.m"; sourceTree = "<group>"; };
-		45B73E4E202219769F67CBF96537993A /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossDissolveAnimation.swift; path = Presentr/CrossDissolveAnimation.swift; sourceTree = "<group>"; };
-		525013A5EB7BCEA490D0D0D5B4789A12 /* Presentr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Presentr-Info.plist"; sourceTree = "<group>"; };
-		5EAA147989B951AEC678F830C620EDDF /* UIScrollView+Helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Helpers.h"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.h"; sourceTree = "<group>"; };
-		602A545432AFBE05CFC41707B849C79B /* PresentrShadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrShadow.swift; path = Presentr/PresentrShadow.swift; sourceTree = "<group>"; };
-		6190F587DC1AD9B7CE7881C8EB0D9DAC /* TLYShyNavBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TLYShyNavBar.modulemap; sourceTree = "<group>"; };
-		6811303F19E6FEEC5CF83A0EC79FD5AE /* CoverVerticalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalAnimation.swift; path = Presentr/CoverVerticalAnimation.swift; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		740A0EBB797B5C1A75DD7553113FF135 /* NSObject+TLYSwizzlingHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TLYSwizzlingHelpers.h"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.h"; sourceTree = "<group>"; };
-		76A94B2067F34D420529150E9BC76F56 /* TLYShyChild.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyChild.h; path = TLYShyNavBar/ShyControllers/TLYShyChild.h; sourceTree = "<group>"; };
-		77816A462EB02CC6EAE1A9362C8617E5 /* TLYShyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyViewController.m; sourceTree = "<group>"; };
-		779B6C9CD78BD8340B77E5821C8CA2AF /* TLYShyNavBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLYShyNavBar-dummy.m"; sourceTree = "<group>"; };
-		77C985D0F577499E2345E8771411F734 /* Presentr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Presentr.modulemap; sourceTree = "<group>"; };
+		3CAD7EB82BEC25EDB780D0C0422CE4F1 /* Presentr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Presentr.modulemap; sourceTree = "<group>"; };
+		3FB66A6004A78FDE3033305F5D673C1C /* TransitionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionType.swift; path = Presentr/TransitionType.swift; sourceTree = "<group>"; };
+		4ADBB02E22D385523A11503F8435F04B /* TLYShyNavBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-umbrella.h"; sourceTree = "<group>"; };
+		4BF834699F8E56231AFB187209122CCC /* BackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundView.swift; path = Presentr/BackgroundView.swift; sourceTree = "<group>"; };
+		53A818D5CDA5FA38BAA607E2B65EB491 /* SwiftRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftRangeSlider-dummy.m"; sourceTree = "<group>"; };
+		5865E6F7A8965A5A9078E4DA2D25185E /* SwiftRangeSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftRangeSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B9FAB7E8415B7AD42375C2B844F8C78 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "SourceSansPro-Regular.ttf"; path = "Presentr/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		61A41649EACCECA353949D58F54C9C40 /* TLYShyStatusBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyStatusBarController.m; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.m; sourceTree = "<group>"; };
+		6345659EA33F6035083004CE4B44210C /* Presentr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Presentr-dummy.m"; sourceTree = "<group>"; };
+		669FF3EA85E2D95CAA8E725E1D880781 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
+		6EA1160EC5FDED5393050BEF4AB62BD1 /* UIViewController+BetterLayoutGuides.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BetterLayoutGuides.m"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.m"; sourceTree = "<group>"; };
+		6F8F11CAF6FB45DDF010F1F2E073E538 /* TLYShyScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyScrollViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.h; sourceTree = "<group>"; };
 		781BF26F2582F47B812EF87BBC5D06FA /* Pods-AertripDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AertripDemo.release.xcconfig"; sourceTree = "<group>"; };
-		7858B4C9E44BABFA04338CA123EFE127 /* CoverFromCornerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverFromCornerAnimation.swift; path = Presentr/CoverFromCornerAnimation.swift; sourceTree = "<group>"; };
-		7FD3B5EA82F34AF9D102D80BD9308108 /* Presentr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.release.xcconfig; sourceTree = "<group>"; };
-		8832A5E2F1FF0BC85F65A0DAE4FB0976 /* AlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Presentr/AlertViewController.swift; sourceTree = "<group>"; };
-		8A1A2CF8AD4A7300C544FCEDF710CB72 /* CoverVerticalFromTopAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalFromTopAnimation.swift; path = Presentr/CoverVerticalFromTopAnimation.swift; sourceTree = "<group>"; };
-		8C663B0793898BE1FAE33E95DAC47339 /* PresentrController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrController.swift; path = Presentr/PresentrController.swift; sourceTree = "<group>"; };
-		9505989B9A4895B980960360D1972229 /* FlipHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlipHorizontalAnimation.swift; path = Presentr/FlipHorizontalAnimation.swift; sourceTree = "<group>"; };
-		9C1BA510373C6EADD0A1F5EEA4B53010 /* NSObject+TLYSwizzlingHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TLYSwizzlingHelpers.m"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.m"; sourceTree = "<group>"; };
+		7EE8515F40B9C9EFAA1C6330C986588F /* TLYShyParent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyParent.h; path = TLYShyNavBar/ShyControllers/TLYShyParent.h; sourceTree = "<group>"; };
+		7F856BD37801F09C50B6E5DBE51CE385 /* FlipHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlipHorizontalAnimation.swift; path = Presentr/FlipHorizontalAnimation.swift; sourceTree = "<group>"; };
+		80616C3B03FCA42B6B83F7AD6AAA9CD1 /* SwiftRangeSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRangeSlider-umbrella.h"; sourceTree = "<group>"; };
+		8C873D7269AB947C349E8278C76AC7F5 /* Presentr+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Presentr+Equatable.swift"; path = "Presentr/Presentr+Equatable.swift"; sourceTree = "<group>"; };
+		9237FE265AAC36BE9296D320C7186C8B /* PresentationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationType.swift; path = Presentr/PresentationType.swift; sourceTree = "<group>"; };
+		96603C5DD1FD5CD0847FBAD686A5ECA2 /* PresentrController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrController.swift; path = Presentr/PresentrController.swift; sourceTree = "<group>"; };
+		967417AFC8BB09D6C966D0BCB294E2DE /* CoverFromCornerAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverFromCornerAnimation.swift; path = Presentr/CoverFromCornerAnimation.swift; sourceTree = "<group>"; };
+		96AD6DB74C4DECC83F62B08A9F253553 /* NSObject+TLYSwizzlingHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TLYSwizzlingHelpers.h"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.h"; sourceTree = "<group>"; };
+		97305D46643B90695C1E6BEAA07EF03C /* TLYShyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyViewController.h; sourceTree = "<group>"; };
+		97AAB55076673320156D413541B256E7 /* CoverHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverHorizontalAnimation.swift; path = Presentr/CoverHorizontalAnimation.swift; sourceTree = "<group>"; };
+		9D8A6C5C842E94980FFFF8A619007BD4 /* TLYShyScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyScrollViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1B41B0B7D7AE4FA72C39D060F97A679 /* TLYShyNavBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TLYShyNavBar-Info.plist"; sourceTree = "<group>"; };
-		A73643D7092909F0C051EB9A0A6A8F08 /* TLYShyNavBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.release.xcconfig; sourceTree = "<group>"; };
+		A0E9EC80D0392419F6FD11D965C4A24F /* AlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Presentr/AlertViewController.swift; sourceTree = "<group>"; };
+		A0FB47675097E76D40B302399D564B25 /* TLYShyNavBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TLYShyNavBar-Info.plist"; sourceTree = "<group>"; };
+		A2D89458293E3E6768F143E8AF747E55 /* SwiftRangeSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftRangeSlider.release.xcconfig; sourceTree = "<group>"; };
+		A3DAAF22D77F974AA23FA277CBDDD569 /* Presentr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.release.xcconfig; sourceTree = "<group>"; };
+		A944FF50DD345BB6A17206658FF85985 /* Presentr-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Presentr-Info.plist"; sourceTree = "<group>"; };
+		A9A899ABD8BA319976833BB0923913C4 /* ModalSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalSize.swift; path = Presentr/ModalSize.swift; sourceTree = "<group>"; };
 		A9BC2EFA9A4BB71113EB2763790B15D1 /* Pods-AertripDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AertripDemo-frameworks.sh"; sourceTree = "<group>"; };
-		A9D8A041513CD44CB2F7AB54B85D6289 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = TLYShyNavBar/Info.plist; sourceTree = "<group>"; };
-		AB0C675927F6F5640AC88CC68A39A912 /* UIViewController+BetterLayoutGuides.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BetterLayoutGuides.m"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.m"; sourceTree = "<group>"; };
-		AFB72A1F27B16019203DF6BF0CFF3086 /* PresentrAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrAnimation.swift; path = Presentr/PresentrAnimation.swift; sourceTree = "<group>"; };
-		B583BB66C34DDD64955C69E6C259B5E0 /* TLYShyNavBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyNavBarManager.m; path = TLYShyNavBar/TLYShyNavBarManager.m; sourceTree = "<group>"; };
+		AD9F2C188C98DC494C8A8D72BE292B6E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "Presentr/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B0B211CFE92DB27717F06A1FA7E2CF1C /* CoverVerticalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalAnimation.swift; path = Presentr/CoverVerticalAnimation.swift; sourceTree = "<group>"; };
 		B93C02C9436D10822914D673A76E5DA8 /* Pods-AertripDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AertripDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA02572775B33AE97E04E37C98DCC49F /* Presentr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-prefix.pch"; sourceTree = "<group>"; };
-		BC12036967002B794BF2E1396BFBF9E6 /* AlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertViewController.xib; path = Presentr/AlertViewController.xib; sourceTree = "<group>"; };
-		C05A9B8516A45B868DB262EBC1F322D1 /* TLYShyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyViewController.h; path = TLYShyNavBar/ShyControllers/TLYShyViewController.h; sourceTree = "<group>"; };
-		C0CA945895FAA331EDC1EC5DEA3AB718 /* TransitionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionType.swift; path = Presentr/TransitionType.swift; sourceTree = "<group>"; };
-		C6209B3052B25E9C5237266CADCA5565 /* ModalSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalSize.swift; path = Presentr/ModalSize.swift; sourceTree = "<group>"; };
-		C8F5E756C2B4A49E712C1C42AD0BF314 /* Presentr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-umbrella.h"; sourceTree = "<group>"; };
-		CB7BD041C23A68D21D87BAA1A9E40BCC /* CoverHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverHorizontalAnimation.swift; path = Presentr/CoverHorizontalAnimation.swift; sourceTree = "<group>"; };
-		DE6DEF626E374A2A24AF2BF3CE1E3B60 /* Presentr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentr.swift; path = Presentr/Presentr.swift; sourceTree = "<group>"; };
-		DEB2B1C2DF9A01EF310099652E227E7F /* TLYShyScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyScrollViewController.m; path = TLYShyNavBar/ShyControllers/TLYShyScrollViewController.m; sourceTree = "<group>"; };
-		E052D8AAAB2C37BFDE44288BD1B89BF5 /* UIViewController+BetterLayoutGuides.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BetterLayoutGuides.h"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.h"; sourceTree = "<group>"; };
-		E23D3224A20A70CD3C084F3EDB96849D /* ModalCenterPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCenterPosition.swift; path = Presentr/ModalCenterPosition.swift; sourceTree = "<group>"; };
-		E299390E5A29C741890D1664B62D5887 /* TLYShyNavBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLYShyNavBar-prefix.pch"; sourceTree = "<group>"; };
-		E30B1CA363292EC144FA78F1E48BA567 /* TLYDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYDelegateProxy.h; path = TLYShyNavBar/Categories/TLYDelegateProxy.h; sourceTree = "<group>"; };
-		EC62486AC22D427450DCA623EF1862B5 /* TLYShyParent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyParent.h; path = TLYShyNavBar/ShyControllers/TLYShyParent.h; sourceTree = "<group>"; };
-		F036B9F1FC31745C6479835003CA916F /* Presentr+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Presentr+Equatable.swift"; path = "Presentr/Presentr+Equatable.swift"; sourceTree = "<group>"; };
+		BACA65567F86C71B08A478D1EE142B79 /* TLYShyNavBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TLYShyNavBarManager.m; path = TLYShyNavBar/TLYShyNavBarManager.m; sourceTree = "<group>"; };
+		BDAA1C3E97A3FF71122965D21DAA0491 /* Presentr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.debug.xcconfig; sourceTree = "<group>"; };
+		C12306A737616ABB51B08CE583277245 /* TLYShyChild.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyChild.h; path = TLYShyNavBar/ShyControllers/TLYShyChild.h; sourceTree = "<group>"; };
+		C372469C4E7FEE2506A9AB7D13432F7A /* TLYShyNavBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.release.xcconfig; sourceTree = "<group>"; };
+		C444AF6CFFC15C7D9515D0A273B66F12 /* PresentrShadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrShadow.swift; path = Presentr/PresentrShadow.swift; sourceTree = "<group>"; };
+		C8A9C1E5E5285529BB3C9241178B62B7 /* TLYShyStatusBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYShyStatusBarController.h; path = TLYShyNavBar/ShyControllers/TLYShyStatusBarController.h; sourceTree = "<group>"; };
+		D04F22479085290E90737FF8BABDCBF2 /* SwiftRangeSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftRangeSlider.debug.xcconfig; sourceTree = "<group>"; };
+		D181EFC9F3154C1168B8FAA8FC556162 /* UIScrollView+Helpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Helpers.h"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.h"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3A24C69E9C0B3CDF6CAAAE6851A16BD /* TLYDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TLYDelegateProxy.h; path = TLYShyNavBar/Categories/TLYDelegateProxy.h; sourceTree = "<group>"; };
+		DBBD47446B7059D8DBA1CF3C77E4D254 /* AlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertViewController.xib; path = Presentr/AlertViewController.xib; sourceTree = "<group>"; };
+		DF57F46046E128B04B32EC52319DE8B2 /* NSObject+TLYSwizzlingHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TLYSwizzlingHelpers.m"; path = "TLYShyNavBar/Categories/NSObject+TLYSwizzlingHelpers.m"; sourceTree = "<group>"; };
+		DF8D1110970464BF0B091EDB7AC80741 /* TLYShyNavBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLYShyNavBar-dummy.m"; sourceTree = "<group>"; };
+		E1910735703D969A7FA9F5A0B62ABDE4 /* CoverVerticalFromTopAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalFromTopAnimation.swift; path = Presentr/CoverVerticalFromTopAnimation.swift; sourceTree = "<group>"; };
+		E22CC1FB3F684F79197DF3D24AE322EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = TLYShyNavBar/Info.plist; sourceTree = "<group>"; };
+		E29518D2CB9E25F560614ACC2A7370DA /* UIScrollView+Helpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Helpers.m"; path = "TLYShyNavBar/Categories/UIScrollView+Helpers.m"; sourceTree = "<group>"; };
+		E73D01F778BB4E598E418FB6D43FBE18 /* TLYShyNavBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TLYShyNavBar.modulemap; sourceTree = "<group>"; };
+		EA840430F0385A60FB6510804F9DA334 /* SwiftRangeSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftRangeSlider-Info.plist"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB9FC0EAAA6957E1F4CF73AC4FCB9479 /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossDissolveAnimation.swift; path = Presentr/CrossDissolveAnimation.swift; sourceTree = "<group>"; };
+		F12A9BA0E0C6EFA21135B6B646AF52EF /* RangeSliderKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
+		F8383EE94D4516AAFAD8F41F81AAE6A1 /* PresentrAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrAnimation.swift; path = Presentr/PresentrAnimation.swift; sourceTree = "<group>"; };
+		F92C93289C057B759451647AA3CBF285 /* Presentr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-prefix.pch"; sourceTree = "<group>"; };
 		F931A761A73C283BAA98A1E81E4B0430 /* Pods-AertripDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AertripDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA587D9103DF07AD24A43C495FA3E931 /* TLYShyNavBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLYShyNavBar.debug.xcconfig; sourceTree = "<group>"; };
+		FB5AB2136F7183BCC33638B21E937E4A /* UIViewController+BetterLayoutGuides.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BetterLayoutGuides.h"; path = "TLYShyNavBar/Categories/UIViewController+BetterLayoutGuides.h"; sourceTree = "<group>"; };
+		FF9432347D7E0196349B206E52B8E33C /* SwiftRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRangeSlider-prefix.pch"; sourceTree = "<group>"; };
+		FFC15FC027DDA6629417B620164D56BF /* Presentr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentr.swift; path = Presentr/Presentr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00FF2B2337D43236647B55369285A9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A350EF033EAFC6BDEF1923313F9F58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1733C5CDE0F6E5C2017B9C83E081C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DBBE3A8C75B6F9BCDAB1D0D5DA6BD37 /* Foundation.framework in Frameworks */,
+				90D7EF2DF2FDE235C7F2657F181FE099 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		967C095846B915C909F917285D871DCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,42 +209,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6F44C2349EF86D607AD7FDE98BC1D4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0AB3A23A9A2BA780AD74AB9CEC49E9C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AADA60C92606800BB53B977E68D7570 /* Presentr */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8832A5E2F1FF0BC85F65A0DAE4FB0976 /* AlertViewController.swift */,
-				08EC63A3FC662B5152FBF132AADF8F46 /* BackgroundView.swift */,
-				7858B4C9E44BABFA04338CA123EFE127 /* CoverFromCornerAnimation.swift */,
-				CB7BD041C23A68D21D87BAA1A9E40BCC /* CoverHorizontalAnimation.swift */,
-				6811303F19E6FEEC5CF83A0EC79FD5AE /* CoverVerticalAnimation.swift */,
-				8A1A2CF8AD4A7300C544FCEDF710CB72 /* CoverVerticalFromTopAnimation.swift */,
-				45B73E4E202219769F67CBF96537993A /* CrossDissolveAnimation.swift */,
-				9505989B9A4895B980960360D1972229 /* FlipHorizontalAnimation.swift */,
-				2CC2D4F5E198DC4960991E69C26B4647 /* KeyboardTranslation.swift */,
-				E23D3224A20A70CD3C084F3EDB96849D /* ModalCenterPosition.swift */,
-				C6209B3052B25E9C5237266CADCA5565 /* ModalSize.swift */,
-				2BDFA34DBA482DAC7F5B485804F04716 /* PresentationType.swift */,
-				DE6DEF626E374A2A24AF2BF3CE1E3B60 /* Presentr.swift */,
-				F036B9F1FC31745C6479835003CA916F /* Presentr+Equatable.swift */,
-				AFB72A1F27B16019203DF6BF0CFF3086 /* PresentrAnimation.swift */,
-				8C663B0793898BE1FAE33E95DAC47339 /* PresentrController.swift */,
-				602A545432AFBE05CFC41707B849C79B /* PresentrShadow.swift */,
-				C0CA945895FAA331EDC1EC5DEA3AB718 /* TransitionType.swift */,
-				42DBDF341D0D27E5DE91C0B19C75AC3C /* Resources */,
-				9E1BEC7FC2D15CE3FCEB5590F4673F58 /* Support Files */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			path = Presentr;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		178C2FB2BDF81BBF6D55B2E50CF84690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC059FE1CCB9E8330C8CF2FD90BD6CE2 /* Presentr */,
+				ECDD2F20C63E45EFAAE45471A799A5BD /* SwiftRangeSlider */,
+				59A276BE52CF8287B071D734C05BF220 /* TLYShyNavBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		296D20857FE1327E28C4889EE484EEDB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC7F11562B7806962D837DADD3F1C2 /* SwiftRangeSlider.modulemap */,
+				53A818D5CDA5FA38BAA607E2B65EB491 /* SwiftRangeSlider-dummy.m */,
+				EA840430F0385A60FB6510804F9DA334 /* SwiftRangeSlider-Info.plist */,
+				FF9432347D7E0196349B206E52B8E33C /* SwiftRangeSlider-prefix.pch */,
+				80616C3B03FCA42B6B83F7AD6AAA9CD1 /* SwiftRangeSlider-umbrella.h */,
+				D04F22479085290E90737FF8BABDCBF2 /* SwiftRangeSlider.debug.xcconfig */,
+				A2D89458293E3E6768F143E8AF747E55 /* SwiftRangeSlider.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftRangeSlider";
 			sourceTree = "<group>";
 		};
 		2F67CF12210321C03CCBC6BFE05EC447 /* Targets Support Files */ = {
@@ -212,22 +253,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		42DBDF341D0D27E5DE91C0B19C75AC3C /* Resources */ = {
+		47C0E8CBE4E460002EB4BC595153C9A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BC12036967002B794BF2E1396BFBF9E6 /* AlertViewController.xib */,
-				29A15D0D0DE9164A4C0F4BB1FE842801 /* Montserrat-Regular.ttf */,
-				05A3254BB2AE39537E5D6ABBCEDBE8EA /* SourceSansPro-Regular.ttf */,
+				DBBD47446B7059D8DBA1CF3C77E4D254 /* AlertViewController.xib */,
+				AD9F2C188C98DC494C8A8D72BE292B6E /* Montserrat-Regular.ttf */,
+				5B9FAB7E8415B7AD42375C2B844F8C78 /* SourceSansPro-Regular.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		58BF4F689F8B3CD19A2AC430A4D8A928 /* Pods-AertripDemo */ = {
@@ -247,111 +280,150 @@
 			path = "Target Support Files/Pods-AertripDemo";
 			sourceTree = "<group>";
 		};
-		984679D5DA99BB4F7961E7ABEC644BAE /* Support Files */ = {
+		59A276BE52CF8287B071D734C05BF220 /* TLYShyNavBar */ = {
 			isa = PBXGroup;
 			children = (
-				6190F587DC1AD9B7CE7881C8EB0D9DAC /* TLYShyNavBar.modulemap */,
-				779B6C9CD78BD8340B77E5821C8CA2AF /* TLYShyNavBar-dummy.m */,
-				A1B41B0B7D7AE4FA72C39D060F97A679 /* TLYShyNavBar-Info.plist */,
-				E299390E5A29C741890D1664B62D5887 /* TLYShyNavBar-prefix.pch */,
-				28DE28078B872593D413314F15B0FC46 /* TLYShyNavBar-umbrella.h */,
-				364028CDD0182C331FBC7CF63A3C33C5 /* TLYShyNavBar.debug.xcconfig */,
-				A73643D7092909F0C051EB9A0A6A8F08 /* TLYShyNavBar.release.xcconfig */,
+				E22CC1FB3F684F79197DF3D24AE322EE /* Info.plist */,
+				96AD6DB74C4DECC83F62B08A9F253553 /* NSObject+TLYSwizzlingHelpers.h */,
+				DF57F46046E128B04B32EC52319DE8B2 /* NSObject+TLYSwizzlingHelpers.m */,
+				D3A24C69E9C0B3CDF6CAAAE6851A16BD /* TLYDelegateProxy.h */,
+				09CBEE827631139B36F3D5193532536A /* TLYDelegateProxy.m */,
+				C12306A737616ABB51B08CE583277245 /* TLYShyChild.h */,
+				31768EB654533365EA6CBABE63EEBC2B /* TLYShyNavBar.h */,
+				1C8B3BC0541D08BCEF492511EB54E77D /* TLYShyNavBarFade.h */,
+				369EF517A693E9B193725462A96682CD /* TLYShyNavBarManager.h */,
+				BACA65567F86C71B08A478D1EE142B79 /* TLYShyNavBarManager.m */,
+				7EE8515F40B9C9EFAA1C6330C986588F /* TLYShyParent.h */,
+				6F8F11CAF6FB45DDF010F1F2E073E538 /* TLYShyScrollViewController.h */,
+				9D8A6C5C842E94980FFFF8A619007BD4 /* TLYShyScrollViewController.m */,
+				C8A9C1E5E5285529BB3C9241178B62B7 /* TLYShyStatusBarController.h */,
+				61A41649EACCECA353949D58F54C9C40 /* TLYShyStatusBarController.m */,
+				97305D46643B90695C1E6BEAA07EF03C /* TLYShyViewController.h */,
+				14082630618110C5D3BE09385795B37D /* TLYShyViewController.m */,
+				D181EFC9F3154C1168B8FAA8FC556162 /* UIScrollView+Helpers.h */,
+				E29518D2CB9E25F560614ACC2A7370DA /* UIScrollView+Helpers.m */,
+				FB5AB2136F7183BCC33638B21E937E4A /* UIViewController+BetterLayoutGuides.h */,
+				6EA1160EC5FDED5393050BEF4AB62BD1 /* UIViewController+BetterLayoutGuides.m */,
+				C442FD9A6A5BE9440B3984ED3A6D51B9 /* Support Files */,
+			);
+			path = TLYShyNavBar;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C442FD9A6A5BE9440B3984ED3A6D51B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E73D01F778BB4E598E418FB6D43FBE18 /* TLYShyNavBar.modulemap */,
+				DF8D1110970464BF0B091EDB7AC80741 /* TLYShyNavBar-dummy.m */,
+				A0FB47675097E76D40B302399D564B25 /* TLYShyNavBar-Info.plist */,
+				2C95352816E54A3AB9E9F7ABDAB973ED /* TLYShyNavBar-prefix.pch */,
+				4ADBB02E22D385523A11503F8435F04B /* TLYShyNavBar-umbrella.h */,
+				FA587D9103DF07AD24A43C495FA3E931 /* TLYShyNavBar.debug.xcconfig */,
+				C372469C4E7FEE2506A9AB7D13432F7A /* TLYShyNavBar.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TLYShyNavBar";
 			sourceTree = "<group>";
 		};
-		9E1BEC7FC2D15CE3FCEB5590F4673F58 /* Support Files */ = {
+		CC059FE1CCB9E8330C8CF2FD90BD6CE2 /* Presentr */ = {
 			isa = PBXGroup;
 			children = (
-				77C985D0F577499E2345E8771411F734 /* Presentr.modulemap */,
-				086130A1207E5097DA7EBF046A40B0DE /* Presentr-dummy.m */,
-				525013A5EB7BCEA490D0D0D5B4789A12 /* Presentr-Info.plist */,
-				BA02572775B33AE97E04E37C98DCC49F /* Presentr-prefix.pch */,
-				C8F5E756C2B4A49E712C1C42AD0BF314 /* Presentr-umbrella.h */,
-				41DFD4F777A0B32C53024180CB11BAC8 /* Presentr.debug.xcconfig */,
-				7FD3B5EA82F34AF9D102D80BD9308108 /* Presentr.release.xcconfig */,
+				A0E9EC80D0392419F6FD11D965C4A24F /* AlertViewController.swift */,
+				4BF834699F8E56231AFB187209122CCC /* BackgroundView.swift */,
+				967417AFC8BB09D6C966D0BCB294E2DE /* CoverFromCornerAnimation.swift */,
+				97AAB55076673320156D413541B256E7 /* CoverHorizontalAnimation.swift */,
+				B0B211CFE92DB27717F06A1FA7E2CF1C /* CoverVerticalAnimation.swift */,
+				E1910735703D969A7FA9F5A0B62ABDE4 /* CoverVerticalFromTopAnimation.swift */,
+				EB9FC0EAAA6957E1F4CF73AC4FCB9479 /* CrossDissolveAnimation.swift */,
+				7F856BD37801F09C50B6E5DBE51CE385 /* FlipHorizontalAnimation.swift */,
+				19693ACF3211FDCCCE4EF3D7989BCCB2 /* KeyboardTranslation.swift */,
+				198232C6892F68666692F58FA33FF805 /* ModalCenterPosition.swift */,
+				A9A899ABD8BA319976833BB0923913C4 /* ModalSize.swift */,
+				9237FE265AAC36BE9296D320C7186C8B /* PresentationType.swift */,
+				FFC15FC027DDA6629417B620164D56BF /* Presentr.swift */,
+				8C873D7269AB947C349E8278C76AC7F5 /* Presentr+Equatable.swift */,
+				F8383EE94D4516AAFAD8F41F81AAE6A1 /* PresentrAnimation.swift */,
+				96603C5DD1FD5CD0847FBAD686A5ECA2 /* PresentrController.swift */,
+				C444AF6CFFC15C7D9515D0A273B66F12 /* PresentrShadow.swift */,
+				3FB66A6004A78FDE3033305F5D673C1C /* TransitionType.swift */,
+				47C0E8CBE4E460002EB4BC595153C9A7 /* Resources */,
+				F7D26A2E2380A0C0BCA337BBA3095A30 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Presentr";
-			sourceTree = "<group>";
-		};
-		A49E4925BC39AF314B9EC8ADFE16C3CD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1F2DAD7D5D0D6A73B03A2659F8A67777 /* Pods_AertripDemo.framework */,
-				182CB281FBC245D9709B360E9FA4E00C /* Presentr.framework */,
-				147FBC3812B4930EF1002AB103A017B8 /* TLYShyNavBar.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A81B61C0CEA96EBDE67F88A28A86F314 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1AADA60C92606800BB53B977E68D7570 /* Presentr */,
-				DFC10C2A3543CA61AD56096F1FA45F15 /* TLYShyNavBar */,
-			);
-			name = Pods;
+			path = Presentr;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				A81B61C0CEA96EBDE67F88A28A86F314 /* Pods */,
-				A49E4925BC39AF314B9EC8ADFE16C3CD /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				178C2FB2BDF81BBF6D55B2E50CF84690 /* Pods */,
+				E76838B56CF04744F1A95AEA25B7CC5D /* Products */,
 				2F67CF12210321C03CCBC6BFE05EC447 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E76838B56CF04744F1A95AEA25B7CC5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				1F2DAD7D5D0D6A73B03A2659F8A67777 /* Pods_AertripDemo.framework */,
+				182CB281FBC245D9709B360E9FA4E00C /* Presentr.framework */,
+				5865E6F7A8965A5A9078E4DA2D25185E /* SwiftRangeSlider.framework */,
+				147FBC3812B4930EF1002AB103A017B8 /* TLYShyNavBar.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		DFC10C2A3543CA61AD56096F1FA45F15 /* TLYShyNavBar */ = {
+		ECDD2F20C63E45EFAAE45471A799A5BD /* SwiftRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
-				A9D8A041513CD44CB2F7AB54B85D6289 /* Info.plist */,
-				740A0EBB797B5C1A75DD7553113FF135 /* NSObject+TLYSwizzlingHelpers.h */,
-				9C1BA510373C6EADD0A1F5EEA4B53010 /* NSObject+TLYSwizzlingHelpers.m */,
-				E30B1CA363292EC144FA78F1E48BA567 /* TLYDelegateProxy.h */,
-				41E83C9F6E82D3A4F6827297F7E0226A /* TLYDelegateProxy.m */,
-				76A94B2067F34D420529150E9BC76F56 /* TLYShyChild.h */,
-				2AB10363D587B4E07AE44BD713C69D50 /* TLYShyNavBar.h */,
-				2A60196C2765EF157DAFE559ECD55257 /* TLYShyNavBarFade.h */,
-				1089B1164C0259375969040D20BC249D /* TLYShyNavBarManager.h */,
-				B583BB66C34DDD64955C69E6C259B5E0 /* TLYShyNavBarManager.m */,
-				EC62486AC22D427450DCA623EF1862B5 /* TLYShyParent.h */,
-				44DA65D7C1615D4D9F3D3E89B8BA5599 /* TLYShyScrollViewController.h */,
-				DEB2B1C2DF9A01EF310099652E227E7F /* TLYShyScrollViewController.m */,
-				189B1A97CBB34E55E118484C9A1422BA /* TLYShyStatusBarController.h */,
-				16611114CE88608DADF905808A3F1029 /* TLYShyStatusBarController.m */,
-				C05A9B8516A45B868DB262EBC1F322D1 /* TLYShyViewController.h */,
-				77816A462EB02CC6EAE1A9362C8617E5 /* TLYShyViewController.m */,
-				5EAA147989B951AEC678F830C620EDDF /* UIScrollView+Helpers.h */,
-				453C184B1B5F53685C65851EDA76C4C4 /* UIScrollView+Helpers.m */,
-				E052D8AAAB2C37BFDE44288BD1B89BF5 /* UIViewController+BetterLayoutGuides.h */,
-				AB0C675927F6F5640AC88CC68A39A912 /* UIViewController+BetterLayoutGuides.m */,
-				984679D5DA99BB4F7961E7ABEC644BAE /* Support Files */,
+				303CD9BBC09D536651B8F0F4AC1ED3AB /* RangeSlider.swift */,
+				F12A9BA0E0C6EFA21135B6B646AF52EF /* RangeSliderKnob.swift */,
+				669FF3EA85E2D95CAA8E725E1D880781 /* RangeSliderTrack.swift */,
+				296D20857FE1327E28C4889EE484EEDB /* Support Files */,
 			);
-			path = TLYShyNavBar;
+			path = SwiftRangeSlider;
+			sourceTree = "<group>";
+		};
+		F7D26A2E2380A0C0BCA337BBA3095A30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD7EB82BEC25EDB780D0C0422CE4F1 /* Presentr.modulemap */,
+				6345659EA33F6035083004CE4B44210C /* Presentr-dummy.m */,
+				A944FF50DD345BB6A17206658FF85985 /* Presentr-Info.plist */,
+				F92C93289C057B759451647AA3CBF285 /* Presentr-prefix.pch */,
+				2576D678C5CFBF1DB7D2E32FEEEEECF4 /* Presentr-umbrella.h */,
+				BDAA1C3E97A3FF71122965D21DAA0491 /* Presentr.debug.xcconfig */,
+				A3DAAF22D77F974AA23FA277CBDDD569 /* Presentr.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Presentr";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		30268C96A6D773A60F01F2F059F14E0B /* Headers */ = {
+		33D8A1D5EA8645FCA1A876C359538C9E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C2B0DBFE173DD529676D8DC53C1F443 /* Pods-AertripDemo-umbrella.h in Headers */,
+				1B7B0DFC290438BD97BEB8DAAA6DACD6 /* SwiftRangeSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340B5586BA365E6E735C2A90D32838E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F95331640614131BAE4D57D07F22F0 /* Pods-AertripDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,22 +496,41 @@
 		};
 		578015CB3A9700467D6AC707422FF516 /* Pods-AertripDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18956E3954EF0AF292E7094A7BF62BF0 /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */;
+			buildConfigurationList = 054D2C9E61F9E6DFA08FF5927414D377 /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */;
 			buildPhases = (
-				30268C96A6D773A60F01F2F059F14E0B /* Headers */,
-				819EAA70A3B03F2AF8D69B130621B7AC /* Sources */,
-				C6F44C2349EF86D607AD7FDE98BC1D4D /* Frameworks */,
-				34A2B4D1AB69DA0A5EADFF0C0A7A41C9 /* Resources */,
+				340B5586BA365E6E735C2A90D32838E1 /* Headers */,
+				5021976D520BC9A4A45E27CA98EBB31C /* Sources */,
+				00FF2B2337D43236647B55369285A9E7 /* Frameworks */,
+				72664D3FDDDE538E19046A201CAA39DF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6C17874BACAB2E3D4A877143FCC004B6 /* PBXTargetDependency */,
-				60D1438DEA6EFC18DAC09E34F2B0D7FB /* PBXTargetDependency */,
+				287B8ABFD4F834D4511371364AF8640B /* PBXTargetDependency */,
+				0E6C94364C877BD39366330715A0D142 /* PBXTargetDependency */,
+				B71A45FC2494352675A39E31571181E1 /* PBXTargetDependency */,
 			);
 			name = "Pods-AertripDemo";
 			productName = "Pods-AertripDemo";
 			productReference = 1F2DAD7D5D0D6A73B03A2659F8A67777 /* Pods_AertripDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4468DA463E43D33582E6BA100A6B78E /* SwiftRangeSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C56B813F68CE18B48BF65EE910319C /* Build configuration list for PBXNativeTarget "SwiftRangeSlider" */;
+			buildPhases = (
+				33D8A1D5EA8645FCA1A876C359538C9E /* Headers */,
+				7D76972A15FDF37A044C8613DCDC53BC /* Sources */,
+				4D1733C5CDE0F6E5C2017B9C83E081C7 /* Frameworks */,
+				07F7FD6D65F05F20419F1B6936BBE9E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRangeSlider;
+			productName = SwiftRangeSlider;
+			productReference = 5865E6F7A8965A5A9078E4DA2D25185E /* SwiftRangeSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -460,18 +551,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A49E4925BC39AF314B9EC8ADFE16C3CD /* Products */;
+			productRefGroup = E76838B56CF04744F1A95AEA25B7CC5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				578015CB3A9700467D6AC707422FF516 /* Pods-AertripDemo */,
 				433F79D5F3953F8EA8E7B0C7A2A27D32 /* Presentr */,
+				B4468DA463E43D33582E6BA100A6B78E /* SwiftRangeSlider */,
 				56A5CA658D11126106755630FEA45B43 /* TLYShyNavBar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07F7FD6D65F05F20419F1B6936BBE9E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		126A1CE748A60716D9CB2C53156200F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,7 +581,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34A2B4D1AB69DA0A5EADFF0C0A7A41C9 /* Resources */ = {
+		72664D3FDDDE538E19046A201CAA39DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -515,11 +614,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		819EAA70A3B03F2AF8D69B130621B7AC /* Sources */ = {
+		5021976D520BC9A4A45E27CA98EBB31C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940A66A74460B78DE1247C004772BF4A /* Pods-AertripDemo-dummy.m in Sources */,
+				634A1FBC07359A953C5EC6255E70A2F3 /* Pods-AertripDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D76972A15FDF37A044C8613DCDC53BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF44245E1F5D218AED37E1579C99C145 /* RangeSlider.swift in Sources */,
+				5652480EAC92270640DA00F3BBB283E7 /* RangeSliderKnob.swift in Sources */,
+				670D15E04915EE84A15481ACE5BB7A9A /* RangeSliderTrack.swift in Sources */,
+				ADD70A73049D61C7ADD6942CC2EB2232 /* SwiftRangeSlider-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,27 +662,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		60D1438DEA6EFC18DAC09E34F2B0D7FB /* PBXTargetDependency */ = {
+		0E6C94364C877BD39366330715A0D142 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TLYShyNavBar;
-			target = 56A5CA658D11126106755630FEA45B43 /* TLYShyNavBar */;
-			targetProxy = BD45FAD7AF9265B90216BCC60A4713C1 /* PBXContainerItemProxy */;
+			name = SwiftRangeSlider;
+			target = B4468DA463E43D33582E6BA100A6B78E /* SwiftRangeSlider */;
+			targetProxy = 3B90D548E73B9236E3DBF60FDCC90675 /* PBXContainerItemProxy */;
 		};
-		6C17874BACAB2E3D4A877143FCC004B6 /* PBXTargetDependency */ = {
+		287B8ABFD4F834D4511371364AF8640B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Presentr;
 			target = 433F79D5F3953F8EA8E7B0C7A2A27D32 /* Presentr */;
-			targetProxy = 7DA29D319536A69D40A867B4495AED5E /* PBXContainerItemProxy */;
+			targetProxy = 2EACBC6277E6E8A88C2C570C488C3679 /* PBXContainerItemProxy */;
+		};
+		B71A45FC2494352675A39E31571181E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TLYShyNavBar;
+			target = 56A5CA658D11126106755630FEA45B43 /* TLYShyNavBar */;
+			targetProxy = DBE16D43B682C73DB8B9D825A57F4938 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		60DED6735BCF5B0D82C29DE31921B211 /* Release */ = {
+		2555448269E5B13DD14CCDA6EB109E38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 781BF26F2582F47B812EF87BBC5D06FA /* Pods-AertripDemo.release.xcconfig */;
+			baseConfigurationReference = A2D89458293E3E6768F143E8AF747E55 /* SwiftRangeSlider.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -581,23 +695,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftRangeSlider/SwiftRangeSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftRangeSlider/SwiftRangeSlider-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftRangeSlider/SwiftRangeSlider.modulemap";
+				PRODUCT_MODULE_NAME = SwiftRangeSlider;
+				PRODUCT_NAME = SwiftRangeSlider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -607,7 +720,7 @@
 		};
 		739C085E03CC5B39297EC07E79C25AB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A73643D7092909F0C051EB9A0A6A8F08 /* TLYShyNavBar.release.xcconfig */;
+			baseConfigurationReference = C372469C4E7FEE2506A9AB7D13432F7A /* TLYShyNavBar.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -639,6 +752,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		750EA8B150FD97929850187372EE3F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389DAF20EA50A4C588C6D48A2D6A049D /* Pods-AertripDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AertripDemo/Pods-AertripDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -770,7 +920,7 @@
 		};
 		A70F6F00090B35AF50CC3ADB57CB9415 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 364028CDD0182C331FBC7CF63A3C33C5 /* TLYShyNavBar.debug.xcconfig */;
+			baseConfigurationReference = FA587D9103DF07AD24A43C495FA3E931 /* TLYShyNavBar.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -802,9 +952,43 @@
 			};
 			name = Debug;
 		};
+		C3F6B3ECBD971528E1E296D0F01EE902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D04F22479085290E90737FF8BABDCBF2 /* SwiftRangeSlider.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftRangeSlider/SwiftRangeSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftRangeSlider/SwiftRangeSlider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftRangeSlider/SwiftRangeSlider.modulemap";
+				PRODUCT_MODULE_NAME = SwiftRangeSlider;
+				PRODUCT_NAME = SwiftRangeSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D5810FCDEDF8B2A97792E84A24DDAE7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FD3B5EA82F34AF9D102D80BD9308108 /* Presentr.release.xcconfig */;
+			baseConfigurationReference = A3DAAF22D77F974AA23FA277CBDDD569 /* Presentr.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -837,9 +1021,9 @@
 			};
 			name = Release;
 		};
-		D795577430E5C16B51E6F829AA27A707 /* Debug */ = {
+		F36B39D9E25B5475C023C46ED6AD96D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 389DAF20EA50A4C588C6D48A2D6A049D /* Pods-AertripDemo.debug.xcconfig */;
+			baseConfigurationReference = 781BF26F2582F47B812EF87BBC5D06FA /* Pods-AertripDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -869,14 +1053,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		FEA443CA0CFD1B417FAB0D019EF56A70 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41DFD4F777A0B32C53024180CB11BAC8 /* Presentr.debug.xcconfig */;
+			baseConfigurationReference = BDAA1C3E97A3FF71122965D21DAA0491 /* Presentr.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -911,6 +1096,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		054D2C9E61F9E6DFA08FF5927414D377 /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750EA8B150FD97929850187372EE3F84 /* Debug */,
+				F36B39D9E25B5475C023C46ED6AD96D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		05D771076664637457BF9C32AD4FAFA1 /* Build configuration list for PBXNativeTarget "Presentr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -920,20 +1114,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18956E3954EF0AF292E7094A7BF62BF0 /* Build configuration list for PBXNativeTarget "Pods-AertripDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D795577430E5C16B51E6F829AA27A707 /* Debug */,
-				60DED6735BCF5B0D82C29DE31921B211 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2C56B813F68CE18B48BF65EE910319C /* Build configuration list for PBXNativeTarget "SwiftRangeSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F6B3ECBD971528E1E296D0F01EE902 /* Debug */,
+				2555448269E5B13DD14CCDA6EB109E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

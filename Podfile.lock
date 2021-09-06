@@ -1,20 +1,24 @@
 PODS:
   - Presentr (1.9)
+  - SwiftRangeSlider (2.0.0)
   - TLYShyNavBar (1.1.1)
 
 DEPENDENCIES:
   - Presentr
+  - SwiftRangeSlider
   - TLYShyNavBar
 
 SPEC REPOS:
   trunk:
     - Presentr
+    - SwiftRangeSlider
     - TLYShyNavBar
 
 SPEC CHECKSUMS:
   Presentr: 7078d7eb5d1661ebeaae60c9e42a1e534de1b993
+  SwiftRangeSlider: f86e3b637c961120158fa1a89277c8343845cbe4
   TLYShyNavBar: d200e598923fbc2bd21a5c5efdfabf4898b11da0
 
-PODFILE CHECKSUM: 5d425d790c0c21ec338873d8f6bc7b435beea6f5
+PODFILE CHECKSUM: e7b44ec86533cfdbec77d5a24cd8a66f85f08953
 
 COCOAPODS: 1.10.1

@@ -12,6 +12,7 @@ class JSONParser {
     static let jsonParser = JSONParser()
     
     private var aertripData: AertripModel?
+    private var filters: FiltersModel?
     
     init() {
         if let path = Bundle.main.path(forResource: "AertripData", ofType: "json") {
@@ -22,7 +23,17 @@ class JSONParser {
                 // handle error
             }
         }
+        if let path = Bundle.main.path(forResource: "SortFilterData", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                filters = try JSONDecoder().decode(FiltersModel.self, from: data)
+            } catch {
+                // handle error
+            }
+        }
     }
+    
+    //MARK:- Itinary
     
     func numberOfSections() -> Int {
         var numberOfSections: Int = 0
@@ -98,5 +109,25 @@ class JSONParser {
     func flightFare(section: Int, row: Int) -> String {
         let fare: Int = (aertripData?.data.flights[section].results.j[row].farepr)!
         return "\u{20B9} " + String(fare)
+    }
+    
+    func minMaxPrice(section: Int) -> (Double, Double) {
+        let minPrice = Double((aertripData?.data.flights[section].results.f.first?.pr.minPrice)!)
+        let maxPrice = Double((aertripData?.data.flights[section].results.f.first?.pr.maxPrice)!)
+        let minMaxPrice = (minPrice, maxPrice)
+        return minMaxPrice
+    }
+    
+    //MARK:- Filtering
+    func numberOfFilters() -> Int {
+        return (filters?.data.count)!
+    }
+    
+    func filterTitle(row: Int) -> String {
+        return (filters?.data[row].title)!
+    }
+    
+    func filterDetail(row: Int) -> String {
+        return (filters?.data[row].detail)!
     }
 }

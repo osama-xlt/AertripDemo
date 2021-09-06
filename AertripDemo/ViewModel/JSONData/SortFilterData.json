@@ -1,0 +1,22 @@
+{
+    "success": 1,
+    "error": 0,
+    "data": [
+        {
+            "title": "Price",
+            "detail": "Low to High"
+        },
+        {
+            "title": "Duration",
+            "detail": "Shortest first"
+        },
+        {
+            "title": "Depart",
+            "detail": "Earliest first"
+        },
+        {
+            "title": "Arrival",
+            "detail": "Earlist first"
+        }
+    ]
+}
