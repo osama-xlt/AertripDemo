@@ -8,14 +8,22 @@
 import UIKit
 
 class SortFilterViewController: UIViewController {
-
+    
     @IBOutlet weak var sortFilterTableView: UITableView!
     let jsonParser: JSONParser = JSONParser.jsonParser
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setDelegatingView()
+        
         initializeSortFilter()
+    }
+    
+    func setDelegatingView() {
+        if let delegatingView = view as? TouchDelegatingView {
+            delegatingView.touchDelegate = presentingViewController?.view
+        }
     }
     
     func initializeSortFilter() {
@@ -62,11 +70,7 @@ extension SortFilterViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! SortFilterTableViewCell
-        if cell.accessoryType == UITableViewCell.AccessoryType.none {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
+        cell.accessoryType = .checkmark
     }
 }
 

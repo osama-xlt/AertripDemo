@@ -19,6 +19,8 @@
 		DA3FAEFE26E5CAE000937A29 /* SortFilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */; };
 		DA3FAF0026E5CF5200937A29 /* SortFilterData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA3FAEFF26E5CF5200937A29 /* SortFilterData.json */; };
 		DA3FAF0226E5D25C00937A29 /* FiltersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FAF0126E5D25C00937A29 /* FiltersModel.swift */; };
+		DA3FAF0926E6161F00937A29 /* NavBarTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FAF0826E6161F00937A29 /* NavBarTitleView.swift */; };
+		DA3FAF0D26E638AA00937A29 /* TouchDelegatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FAF0C26E638AA00937A29 /* TouchDelegatingView.swift */; };
 		DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED626E10FF8004194EA /* AppDelegate.swift */; };
 		DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516ED826E10FF8004194EA /* SceneDelegate.swift */; };
 		DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516EDC26E10FF8004194EA /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortFilterTableViewCell.xib; sourceTree = "<group>"; };
 		DA3FAEFF26E5CF5200937A29 /* SortFilterData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SortFilterData.json; sourceTree = "<group>"; };
 		DA3FAF0126E5D25C00937A29 /* FiltersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersModel.swift; sourceTree = "<group>"; };
+		DA3FAF0826E6161F00937A29 /* NavBarTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarTitleView.swift; sourceTree = "<group>"; };
+		DA3FAF0C26E638AA00937A29 /* TouchDelegatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDelegatingView.swift; sourceTree = "<group>"; };
 		DA516ED326E10FF8004194EA /* AertripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AertripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA516ED626E10FF8004194EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA516ED826E10FF8004194EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		DA3FAF0526E60F0600937A29 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA3FAF0826E6161F00937A29 /* NavBarTitleView.swift */,
+				DA3FAF0C26E638AA00937A29 /* TouchDelegatingView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		DA516ECA26E10FF8004194EA = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 		DA516EEB26E1157A004194EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA3FAF0526E60F0600937A29 /* CustomViews */,
 				DA516EFD26E19137004194EA /* Cells */,
 				DA516EF326E13D44004194EA /* XIB */,
 				DA516EF226E13D2D004194EA /* Storyboard */,
@@ -394,12 +408,14 @@
 				DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */,
 				DA16992226E33259004E08BB /* SortFilterViewController.swift in Sources */,
 				DA3FAF0226E5D25C00937A29 /* FiltersModel.swift in Sources */,
+				DA3FAF0926E6161F00937A29 /* NavBarTitleView.swift in Sources */,
 				DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */,
 				DADF561226E2A9C700C7A611 /* LoopableProtocol.swift in Sources */,
 				DA16992626E33291004E08BB /* PriceFilterViewController.swift in Sources */,
 				DA516EF926E14C97004194EA /* AertripModel.swift in Sources */,
 				DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */,
 				DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */,
+				DA3FAF0D26E638AA00937A29 /* TouchDelegatingView.swift in Sources */,
 				DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */,
 				DA516EFC26E18FF9004194EA /* Page.swift in Sources */,
 			);

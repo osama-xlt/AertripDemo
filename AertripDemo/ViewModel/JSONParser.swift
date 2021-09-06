@@ -111,6 +111,8 @@ class JSONParser {
         return "\u{20B9} " + String(fare)
     }
     
+    //MARK:- Filtering
+    
     func minMaxPrice(section: Int) -> (Double, Double) {
         let minPrice = Double((aertripData?.data.flights[section].results.f.first?.pr.minPrice)!)
         let maxPrice = Double((aertripData?.data.flights[section].results.f.first?.pr.maxPrice)!)
@@ -118,7 +120,6 @@ class JSONParser {
         return minMaxPrice
     }
     
-    //MARK:- Filtering
     func numberOfFilters() -> Int {
         return (filters?.data.count)!
     }
@@ -129,5 +130,26 @@ class JSONParser {
     
     func filterDetail(row: Int) -> String {
         return (filters?.data[row].detail)!
+    }
+    
+    //MARK:- Sorting
+    func sortByPriceLowToHigh() -> [J] {
+        let numberOfSections = numberOfSections()
+        var numberOfRowsInSections: [Int] = []
+        for index in 0..<numberOfSections {
+            numberOfRowsInSections.append(numberOfFlights(section: index))
+        }
+        var sections: [DataFlight] = []
+        var rowsInSections: [J] = []
+        for index in 0..<numberOfSections {
+            sections.append((aertripData?.data.flights[index])!)
+            for i in 0..<numberOfRowsInSections[index] {
+                rowsInSections.append(sections[index].results.j[i])
+            }
+        }
+        let sortByPriceLowToHigh = rowsInSections.sorted { (a, b) -> Bool in
+            return a.farepr < b.farepr
+        }
+        return sortByPriceLowToHigh
     }
 }

@@ -5,45 +5,65 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Wb8-X6-bbZ">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+        <view contentMode="scaleToFill" id="Wb8-X6-bbZ" customClass="NavBarTitleView" customModule="AertripDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="BOM → CCU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-bM-NO7">
-                    <rect key="frame" x="159.5" y="0.0" width="95" height="23"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 Oct · 1 Adt · Economy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8x-lw-6Vz">
-                    <rect key="frame" x="129" y="23" width="156" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBL-Tn-KLz">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="BOM → CCU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-bM-NO7">
+                            <rect key="frame" x="32.5" y="0.0" width="95" height="19.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 Oct · 1 Adt · Economy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8x-lw-6Vz">
+                            <rect key="frame" x="2" y="19.5" width="156" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN5-x8-2pk">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UN5-x8-2pk" firstAttribute="top" secondItem="sBL-Tn-KLz" secondAttribute="top" id="3PI-oe-blY"/>
+                        <constraint firstAttribute="bottom" secondItem="UN5-x8-2pk" secondAttribute="bottom" id="73g-Nv-dod"/>
+                        <constraint firstItem="ScO-bM-NO7" firstAttribute="top" secondItem="sBL-Tn-KLz" secondAttribute="top" id="7RV-AR-H1a"/>
+                        <constraint firstItem="UN5-x8-2pk" firstAttribute="leading" secondItem="sBL-Tn-KLz" secondAttribute="leading" id="MrK-tp-C3r"/>
+                        <constraint firstItem="ScO-bM-NO7" firstAttribute="centerX" secondItem="sBL-Tn-KLz" secondAttribute="centerX" id="Sc5-bv-n3R"/>
+                        <constraint firstItem="Y8x-lw-6Vz" firstAttribute="centerX" secondItem="sBL-Tn-KLz" secondAttribute="centerX" id="YmF-Mf-IHO"/>
+                        <constraint firstAttribute="trailing" secondItem="UN5-x8-2pk" secondAttribute="trailing" id="bdV-9g-Eiu"/>
+                        <constraint firstItem="Y8x-lw-6Vz" firstAttribute="top" secondItem="ScO-bM-NO7" secondAttribute="bottom" id="f8d-75-3WW"/>
+                        <constraint firstAttribute="height" constant="44" id="wyh-Hp-G6b"/>
+                        <constraint firstAttribute="width" constant="160" id="yyk-9V-REb"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="UET-j6-tYM"/>
-            <color key="backgroundColor" systemColor="systemGray6Color"/>
             <constraints>
-                <constraint firstItem="UET-j6-tYM" firstAttribute="bottom" secondItem="Y8x-lw-6Vz" secondAttribute="bottom" constant="4" id="8fr-DO-23A"/>
-                <constraint firstItem="Y8x-lw-6Vz" firstAttribute="top" secondItem="ScO-bM-NO7" secondAttribute="bottom" id="R8g-oI-nIW"/>
-                <constraint firstItem="ScO-bM-NO7" firstAttribute="centerX" secondItem="Wb8-X6-bbZ" secondAttribute="centerX" id="Rwz-Ma-Fed"/>
-                <constraint firstItem="Y8x-lw-6Vz" firstAttribute="centerX" secondItem="Wb8-X6-bbZ" secondAttribute="centerX" id="mRB-AF-v6a"/>
-                <constraint firstItem="ScO-bM-NO7" firstAttribute="top" secondItem="Wb8-X6-bbZ" secondAttribute="top" id="zln-6Y-6NB"/>
+                <constraint firstItem="UET-j6-tYM" firstAttribute="bottom" secondItem="sBL-Tn-KLz" secondAttribute="bottom" id="S17-KY-Qrh"/>
+                <constraint firstItem="sBL-Tn-KLz" firstAttribute="leading" secondItem="Wb8-X6-bbZ" secondAttribute="leading" id="egc-MW-aAk"/>
+                <constraint firstAttribute="trailing" secondItem="sBL-Tn-KLz" secondAttribute="trailing" id="r1G-km-cNf"/>
+                <constraint firstItem="sBL-Tn-KLz" firstAttribute="top" secondItem="Wb8-X6-bbZ" secondAttribute="top" id="zN4-uT-9Qj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleOne" destination="ScO-bM-NO7" id="xKu-Y1-wWW"/>
+                <outlet property="titleThree" destination="UN5-x8-2pk" id="NIo-QY-bRC"/>
+                <outlet property="titleTwo" destination="Y8x-lw-6Vz" id="MPg-JJ-Fr8"/>
+            </connections>
             <point key="canvasLocation" x="62" y="71"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
