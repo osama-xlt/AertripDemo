@@ -14,6 +14,9 @@
 		DA16992726E33291004E08BB /* PriceFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992526E33291004E08BB /* PriceFilterViewController.xib */; };
 		DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16992926E34B4D004E08BB /* ImageExtension.swift */; };
 		DA16993026E36A75004E08BB /* ItinaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16992F26E36A75004E08BB /* ItinaryViewController.xib */; };
+		DA17046A26E775280046D1B0 /* ButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA17046926E775280046D1B0 /* ButtonsView.xib */; };
+		DA17046C26E7755D0046D1B0 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17046B26E7755D0046D1B0 /* ButtonsView.swift */; };
+		DA17046E26E77AE10046D1B0 /* ButtonsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17046D26E77AE10046D1B0 /* ButtonsDelegate.swift */; };
 		DA1B579C26E521D2005E1481 /* NavBarTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */; };
 		DA3FAEFD26E5CAE000937A29 /* SortFilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FAEFB26E5CAE000937A29 /* SortFilterTableViewCell.swift */; };
 		DA3FAEFE26E5CAE000937A29 /* SortFilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */; };
@@ -48,6 +51,9 @@
 		DA16992526E33291004E08BB /* PriceFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceFilterViewController.xib; sourceTree = "<group>"; };
 		DA16992926E34B4D004E08BB /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		DA16992F26E36A75004E08BB /* ItinaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryViewController.xib; sourceTree = "<group>"; };
+		DA17046926E775280046D1B0 /* ButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsView.xib; sourceTree = "<group>"; };
+		DA17046B26E7755D0046D1B0 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		DA17046D26E77AE10046D1B0 /* ButtonsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsDelegate.swift; sourceTree = "<group>"; };
 		DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarTitleView.xib; sourceTree = "<group>"; };
 		DA3FAEFB26E5CAE000937A29 /* SortFilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortFilterTableViewCell.swift; sourceTree = "<group>"; };
 		DA3FAEFC26E5CAE000937A29 /* SortFilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortFilterTableViewCell.xib; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1B579B26E521D2005E1481 /* NavBarTitleView.xib */,
+				DA17046926E775280046D1B0 /* ButtonsView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 			children = (
 				DA3FAF0826E6161F00937A29 /* NavBarTitleView.swift */,
 				DA3FAF0C26E638AA00937A29 /* TouchDelegatingView.swift */,
+				DA17046B26E7755D0046D1B0 /* ButtonsView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -266,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				DADF561126E2A9C700C7A611 /* LoopableProtocol.swift */,
+				DA17046D26E77AE10046D1B0 /* ButtonsDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 				DA1B579C26E521D2005E1481 /* NavBarTitleView.xib in Resources */,
 				DA516EE026E10FFB004194EA /* Assets.xcassets in Resources */,
 				DA516EDE26E10FF8004194EA /* Main.storyboard in Resources */,
+				DA17046A26E775280046D1B0 /* ButtonsView.xib in Resources */,
 				DA3FAF0026E5CF5200937A29 /* SortFilterData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,11 +412,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB9D03C26E4B7D000CFEA01 /* UIViewExtension.swift in Sources */,
+				DA17046E26E77AE10046D1B0 /* ButtonsDelegate.swift in Sources */,
 				DAB9D03A26E3DFA500CFEA01 /* CardView.swift in Sources */,
 				DADF560F26E24C1900C7A611 /* JSONParser.swift in Sources */,
 				DA3FAEFD26E5CAE000937A29 /* SortFilterTableViewCell.swift in Sources */,
 				DA16992A26E34B4D004E08BB /* ImageExtension.swift in Sources */,
 				DA16992226E33259004E08BB /* SortFilterViewController.swift in Sources */,
+				DA17046C26E7755D0046D1B0 /* ButtonsView.swift in Sources */,
 				DA3FAF0226E5D25C00937A29 /* FiltersModel.swift in Sources */,
 				DA3FAF0926E6161F00937A29 /* NavBarTitleView.swift in Sources */,
 				DA516EF626E13E89004194EA /* ItinaryViewController.swift in Sources */,

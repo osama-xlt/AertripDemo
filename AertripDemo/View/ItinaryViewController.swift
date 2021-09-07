@@ -24,16 +24,17 @@ class ItinaryViewController: UIViewController {
     private var navBarTitleView: NavBarTitleView!
     
     lazy var presenter: Presentr = {
-        let centerY = (navigationBarHeight * 2) + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height)! + 5
+        let centerY = navigationBarHeight + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height)!
         let width = ModalSize.full
         let height = ModalSize.fluid(percentage: 0.50)
         let center = ModalCenterPosition.customOrigin(origin: CGPoint(x: 0, y: centerY))
         let customBackgroundViewOrigin = CGPoint(x: 0, y: centerY)
         let customBackgroundViewSize = CGSize.init(width: (self.view.window?.frame.width)!, height: (self.view.window?.frame.height)! - centerY)
         let customBackgroundViewFrame = CGRect.init(origin: customBackgroundViewOrigin, size: customBackgroundViewSize)
-        let customBackgroundView = UIView.init(frame: customBackgroundViewFrame)
+        let customBackgroundView = Bundle.main.loadNibNamed("ButtonsView", owner: nil, options: nil)?.first as! ButtonsView
         customBackgroundView.backgroundColor = .black
         customBackgroundView.alpha = 0.5
+        customBackgroundView.delegate = self
         let customType = PresentationType.custom(width: width, height: height, center: center)
         
         let customPresenter = Presentr(presentationType: customType)
@@ -43,6 +44,7 @@ class ItinaryViewController: UIViewController {
         customPresenter.dismissOnSwipe = false
         customPresenter.backgroundColor = .clear
         customPresenter.backgroundOpacity = 0
+        customPresenter.outsideContextTap = .noAction
         customPresenter.backgroundTap = .noAction
         customPresenter.customBackgroundView = customBackgroundView
         return customPresenter
@@ -71,10 +73,7 @@ class ItinaryViewController: UIViewController {
         navBarTitleView.titleOne.isHidden = false
         navBarTitleView.titleTwo.isHidden = false
         navBarTitleView.titleThree.isHidden = true
-        
         self.navigationItem.titleView = navBarTitleView
-        self.navigationItem.leftBarButtonItem = nil
-        self.navigationItem.rightBarButtonItem = nil
     }
     
     func setupTableView() {
@@ -132,22 +131,39 @@ class ItinaryViewController: UIViewController {
     }
 }
 
+extension ItinaryViewController: ButtonsDelegate {
+    
+    func clear() {
+    }
+    
+    func done() {
+        clear()
+        presentedViewController?.dismiss(animated: true, completion: {
+            
+        })
+    }
+    
+    func apply() {
+        
+    }
+}
+
 extension ItinaryViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         switch item.tag {
         case 0:
             actionType = .sort
-            addButtons()
+            setupNavBarTitle()
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 1:
             actionType = .sort
-            addButtons()
+            setupNavBarTitle()
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 2:
             actionType = .filter
-            addButtons()
+            setupNavBarTitle()
             let priceVC = PriceFilterViewController(nibName: "PriceFilterViewController", bundle: nil)
             customPresentViewController(presenter, viewController: priceVC, animated: true)
         default:
@@ -155,28 +171,10 @@ extension ItinaryViewController: UITabBarDelegate {
         }
     }
     
-    func addButtons() {
+    func setupNavBarTitle() {
         navBarTitleView.titleOne.isHidden = false
         navBarTitleView.titleTwo.isHidden = false
         navBarTitleView.titleThree.isHidden = true
-        
-        let leftButton: UIBarButtonItem = UIBarButtonItem.init(title: "Clear All", style: .plain, target: self, action: #selector(clear))
-        leftButton.tintColor = .gray
-        let rightButton: UIBarButtonItem = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(done))
-        
-        self.navigationItem.titleView = navBarTitleView
-        self.navigationItem.leftBarButtonItem = leftButton
-        self.navigationItem.rightBarButtonItem = rightButton
-    }
-    
-    @objc func clear() {
-    }
-    
-    @objc func done() {
-        clear()
-        presentedViewController?.dismiss(animated: true, completion: {
-            
-        })
     }
 }
 
