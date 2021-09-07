@@ -15,15 +15,7 @@ class SortFilterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setDelegatingView()
-        
         initializeSortFilter()
-    }
-    
-    func setDelegatingView() {
-        if let delegatingView = view as? TouchDelegatingView {
-            delegatingView.touchDelegate = presentingViewController?.view
-        }
     }
     
     func initializeSortFilter() {
