@@ -128,6 +128,9 @@ class ItinaryViewController: UIViewController {
 extension ItinaryViewController: ButtonsDelegate {
     
     func clear() {
+        jsonParser.actionType = .defaultAction
+        jsonParser.desiredAction()
+        itinaryTableView.reloadData()
     }
     
     func done() {

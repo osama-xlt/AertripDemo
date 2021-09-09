@@ -59,7 +59,7 @@ extension SortFilterViewController: UITableViewDataSource {
             }
         }
         
-        return indexPath;
+        return indexPath
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
