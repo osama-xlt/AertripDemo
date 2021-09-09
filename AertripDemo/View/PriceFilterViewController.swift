@@ -10,6 +10,8 @@ import SwiftRangeSlider
 
 class PriceFilterViewController: UIViewController {
     
+    weak var delegate: ButtonsDelegate?
+    
     @IBOutlet weak var minPrice: UILabel!
     @IBOutlet weak var maxPrice: UILabel!
     @IBOutlet weak var rangeSlider: RangeSlider!

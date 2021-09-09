@@ -9,6 +9,8 @@ import UIKit
 
 class SortFilterViewController: UIViewController {
     
+    weak var delegate: ButtonsDelegate?
+    
     @IBOutlet weak var sortFilterTableView: UITableView!
     let jsonParser: JSONParser = JSONParser.jsonParser
     
@@ -63,6 +65,22 @@ extension SortFilterViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! SortFilterTableViewCell
         cell.accessoryType = .checkmark
+        switch indexPath.row {
+        case 0:
+            jsonParser.actionType = .sort(.price)
+            jsonParser.desiredAction()
+        case 1:
+            jsonParser.actionType = .sort(.duration)
+            jsonParser.desiredAction()
+        case 2:
+            jsonParser.actionType = .sort(.depart)
+            jsonParser.desiredAction()
+        case 3:
+            jsonParser.actionType = .sort(.arrival)
+            jsonParser.desiredAction()
+        default: break
+        }
+        delegate?.apply()
     }
 }
 

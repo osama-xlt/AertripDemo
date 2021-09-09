@@ -36,6 +36,7 @@ class JSONParser {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 aertripData = try JSONDecoder().decode(AertripModel.self, from: data)
+                desiredAction()
             } catch {
                 // handle error
             }
@@ -50,7 +51,7 @@ class JSONParser {
         }
     }
     
-    func defaultAction() {
+    public func desiredAction() {
         let numberOfSections = aertripData?.data.flights.count
         var numberOfRowsInSections: [Int] = []
         for index in 0..<numberOfSections! {
@@ -64,7 +65,19 @@ class JSONParser {
                 rowsInSections.append(sections[index].results.j[i])
             }
         }
-        j = rowsInSections
+        switch actionType {
+        case .defaultAction:
+            j = rowsInSections
+        case .sort(.price):
+            j = sortByPriceLowToHigh()
+        case .sort(.duration):
+            j = sortByDurationLowToHigh()
+        case .sort(.depart):
+            j = sortByDepartLowToHigh()
+        case .sort(.arrival):
+            j = sortByArrivalLowToHigh()
+        default: break
+        }
     }
     
     //MARK:- Itinary
@@ -83,7 +96,7 @@ class JSONParser {
     
     func airlineName(section: Int, row: Int) -> String {
         let flightKey: String = j[row].al[0].rawValue
-        let flightNames = (aertripData?.data.flights[section].results.aldet.allProperties())
+        let flightNames = (aertripData?.data.flights[1].results.aldet.allProperties())
         return flightNames![flightKey.lowercased()] as! String
     }
     
@@ -159,9 +172,6 @@ class JSONParser {
     }
     
     //MARK:- Sorting
-    func sortBy() {
-        
-    }
     
     private func sortByPriceLowToHigh() -> [J] {
         let sortByPriceLowToHigh = j.sorted { (a, b) -> Bool in
@@ -179,14 +189,14 @@ class JSONParser {
     
     private func sortByDepartLowToHigh() -> [J] {
         let sortByDepartLowToHigh = j.sorted { (a, b) -> Bool in
-            return Int(a.dt)! < Int(b.dt)!
+            return a.dt < b.dt
         }
         return sortByDepartLowToHigh
     }
     
     private func sortByArrivalLowToHigh() -> [J] {
         let sortByArrivalLowToHigh = j.sorted { (a, b) -> Bool in
-            return Int(a.at)! < Int(b.at)!
+            return a.at < b.at
         }
         return sortByArrivalLowToHigh
     }

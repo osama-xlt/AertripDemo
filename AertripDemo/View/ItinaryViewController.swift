@@ -14,7 +14,6 @@ class ItinaryViewController: UIViewController {
     private let jsonParser = JSONParser.jsonParser
     @IBOutlet weak var itinaryTableView: UITableView!
     var navigationBarHeight: CGFloat!
-    private var actionType: ActionType!
     private var navBarTitleView: NavBarTitleView!
     
     lazy var presenter: Presentr = {
@@ -46,6 +45,7 @@ class ItinaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        jsonParser.actionType = .defaultAction
         initializeVC()
         setupTableView()
     }
@@ -138,7 +138,7 @@ extension ItinaryViewController: ButtonsDelegate {
     }
     
     func apply() {
-        
+        itinaryTableView.reloadData()
     }
 }
 
@@ -146,19 +146,19 @@ extension ItinaryViewController: UITabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         switch item.tag {
         case 0:
-            actionType = .sort
             setupNavBarTitle()
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
+            sortVC.delegate = self
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 1:
-            actionType = .sort
             setupNavBarTitle()
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
+            sortVC.delegate = self
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 2:
-            actionType = .filter
             setupNavBarTitle()
             let priceVC = PriceFilterViewController(nibName: "PriceFilterViewController", bundle: nil)
+            priceVC.delegate = self
             customPresentViewController(presenter, viewController: priceVC, animated: true)
         default:
             return
