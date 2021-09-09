@@ -9,12 +9,6 @@ import UIKit
 import TLYShyNavBar
 import Presentr
 
-enum ActionType {
-    case sort
-    case filter
-    case revertAll
-}
-
 class ItinaryViewController: UIViewController {
     
     private let jsonParser = JSONParser.jsonParser
