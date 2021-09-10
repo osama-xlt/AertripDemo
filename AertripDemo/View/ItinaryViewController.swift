@@ -134,7 +134,6 @@ extension ItinaryViewController: ButtonsDelegate {
     }
     
     func done() {
-        clear()
         presentedViewController?.dismiss(animated: true, completion: {
             
         })
