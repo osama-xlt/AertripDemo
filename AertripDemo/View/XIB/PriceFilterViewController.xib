@@ -76,7 +76,6 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="trueTrackThickness" value="YES"/>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="dragTrack" value="NO"/>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideLabels" value="YES"/>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="trueKnobSize" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="knobSize">
                                     <real key="value" value="32"/>

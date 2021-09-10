@@ -25,6 +25,31 @@ class SortFilterViewController: UIViewController {
         sortFilterTableView.dataSource = self
         sortFilterTableView.register(UINib(nibName: SortFilterTableViewCellID, bundle: nil), forCellReuseIdentifier: SortFilterTableViewCellID)
     }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        switch jsonParser.actionType {
+        case .sort(.price):
+            let indexPath = IndexPath.init(row: 0, section: 0)
+            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        case .sort(.duration):
+            let indexPath = IndexPath.init(row: 1, section: 0)
+            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        case .sort(.depart):
+            let indexPath = IndexPath.init(row: 2, section: 0)
+            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        case .sort(.arrival):
+            let indexPath = IndexPath.init(row: 3, section: 0)
+            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        default:break
+        }
+    }
+    
 }
 
 

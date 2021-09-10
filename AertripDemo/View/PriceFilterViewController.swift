@@ -19,6 +19,7 @@ class PriceFilterViewController: UIViewController {
     var flightSection: Int!
     let jsonParser: JSONParser = JSONParser.jsonParser
     var minMaxPrice: (Double, Double)!
+    var lowUpPrice: (Double, Double)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,8 @@ class PriceFilterViewController: UIViewController {
     }
     
     func initializeVC() {
-        minMaxPrice = jsonParser.minMaxPrice(section: flightSection ?? 0)
+        minMaxPrice = jsonParser.minMaxPrice()
+        lowUpPrice = jsonParser.lowUpPrice()
         
         initializeRangeSlider()
     }
@@ -43,8 +45,8 @@ class PriceFilterViewController: UIViewController {
         minPrice.text = "\u{20B9} " + rangeSlider.getLabelText(forValue: minPriceValue)
         maxPrice.text = "\u{20B9} " + rangeSlider.getLabelText(forValue: maxPriceValue)
         
-        rangeSlider.lowerValue = minMaxPrice.0
-        rangeSlider.upperValue = minMaxPrice.1
+        rangeSlider.lowerValue = lowUpPrice.0
+        rangeSlider.upperValue = lowUpPrice.1
         rangeSlider.minimumValue = minMaxPrice.0
         rangeSlider.maximumValue = minMaxPrice.1
     }
@@ -56,12 +58,7 @@ class PriceFilterViewController: UIViewController {
     
     @IBAction func updateValues(_ sender: RangeSlider) {
         jsonParser.actionType = .filter
-        jsonParser.updateMinMaxPrice(min: Int(sender.lowerValue), max: Int(sender.upperValue))
-        
-        let minPriceValue = sender.lowerValue
-        let maxPriceValue = sender.upperValue
-        minPrice.text = "\u{20B9} " + sender.getLabelText(forValue: minPriceValue)
-        maxPrice.text = "\u{20B9} " + sender.getLabelText(forValue: maxPriceValue)
+        jsonParser.updateMinMaxPrice(min: sender.lowerValue, max: sender.upperValue)
         
         jsonParser.desiredAction()
         delegate?.apply()

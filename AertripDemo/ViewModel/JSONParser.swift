@@ -31,8 +31,11 @@ class JSONParser {
     
     private var j: [J]!
     
-    private var minPrice: Int!
-    private var maxPrice: Int!
+    private var minPrice: Double!
+    private var maxPrice: Double!
+    
+    private var lowPrice: Double!
+    private var upPrice: Double!
     
     init() {
         if let path = Bundle.main.path(forResource: "AertripData", ofType: "json") {
@@ -68,9 +71,17 @@ class JSONParser {
                 rowsInSections.append(sections[index].results.j[i])
             }
         }
+        
         switch actionType {
         case .defaultAction:
             j = rowsInSections
+            let tempJ = j.sorted { a, b in
+                return a.farepr < b.farepr
+            }
+            minPrice = Double(tempJ.first!.farepr)
+            maxPrice = Double(tempJ.last!.farepr)
+            lowPrice = Double(tempJ.first!.farepr)
+            upPrice = Double(tempJ.last!.farepr)
         case .sort(.price):
             j = sortByPriceLowToHigh()
         case .sort(.duration):
@@ -81,7 +92,6 @@ class JSONParser {
             j = sortByArrivalLowToHigh()
         case .filter:
             j = filterByMinMaxPrice()
-        default: break
         }
     }
     
@@ -157,10 +167,13 @@ class JSONParser {
     
     //MARK:- Filtering
     
-    func minMaxPrice(section: Int) -> (Double, Double) {
-        let minPrice = Double((aertripData?.data.flights[section].results.f.first?.pr.minPrice)!)
-        let maxPrice = Double((aertripData?.data.flights[section].results.f.first?.pr.maxPrice)!)
-        let minMaxPrice = (minPrice, maxPrice)
+    func minMaxPrice() -> (Double, Double) {
+        let minMaxPrice = (minPrice ?? 0, maxPrice ?? 0)
+        return minMaxPrice
+    }
+    
+    func lowUpPrice() -> (Double, Double) {
+        let minMaxPrice = (lowPrice ?? 0, upPrice ?? 0)
         return minMaxPrice
     }
     
@@ -176,14 +189,14 @@ class JSONParser {
         return (filters?.data[row].detail)!
     }
     
-    func updateMinMaxPrice(min: Int, max: Int) {
-        minPrice = min
-        maxPrice = max
+    func updateMinMaxPrice(min: Double, max: Double) {
+        lowPrice = min
+        upPrice = max
     }
     
     func filterByMinMaxPrice() -> [J] {
         let filterByMinMaxPrice = j.filter { j -> Bool in
-            return j.farepr >= minPrice && j.farepr <= maxPrice
+            return Double(j.farepr) >= lowPrice && Double(j.farepr) <= upPrice
         }
         return filterByMinMaxPrice
     }
