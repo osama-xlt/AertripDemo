@@ -21,12 +21,13 @@ class ItinaryViewController: UIViewController {
         let width = ModalSize.full
         let height = ModalSize.fluid(percentage: 0.50)
         let center = ModalCenterPosition.customOrigin(origin: CGPoint(x: 0, y: centerY))
-        let customBackgroundViewOrigin = CGPoint(x: 0, y: centerY)
-        let customBackgroundViewSize = CGSize.init(width: (self.view.window?.frame.width)!, height: (self.view.window?.frame.height)! - centerY)
-        let customBackgroundViewFrame = CGRect.init(origin: customBackgroundViewOrigin, size: customBackgroundViewSize)
         let customBackgroundView = Bundle.main.loadNibNamed("ButtonsView", owner: nil, options: nil)?.first as! ButtonsView
+        let customBackgroundViewOrigin = customBackgroundView.frame.origin
+        let customBackgroundViewSize = CGSize.init(width: (self.view.window?.frame.width)!, height: 200)
+        let customBackgroundViewFrame = CGRect.init(origin: customBackgroundViewOrigin, size: customBackgroundViewSize)
         customBackgroundView.backgroundColor = .black
-        customBackgroundView.alpha = 0.5
+        customBackgroundView.alpha = 1
+        customBackgroundView.frame = customBackgroundViewFrame
         customBackgroundView.delegate = self
         let customType = PresentationType.custom(width: width, height: height, center: center)
         
@@ -35,8 +36,8 @@ class ItinaryViewController: UIViewController {
         customPresenter.roundCorners = true
         customPresenter.cornerRadius = 8
         customPresenter.dismissOnSwipe = false
-        customPresenter.backgroundColor = .clear
-        customPresenter.backgroundOpacity = 0
+        customPresenter.backgroundColor = .black
+        customPresenter.backgroundOpacity = 0.5
         customPresenter.outsideContextTap = .noAction
         customPresenter.backgroundTap = .noAction
         customPresenter.customBackgroundView = customBackgroundView
