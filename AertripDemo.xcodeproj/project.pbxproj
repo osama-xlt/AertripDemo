@@ -35,6 +35,7 @@
 		DA516EFC26E18FF9004194EA /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516EFB26E18FF9004194EA /* Page.swift */; };
 		DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */; };
 		DA516F1226E22D53004194EA /* ItinaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */; };
+		DA75568526EBE81E00445340 /* ClearDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75568426EBE81E00445340 /* ClearDelegate.swift */; };
 		DAB9D03A26E3DFA500CFEA01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9D03926E3DFA500CFEA01 /* CardView.swift */; };
 		DAB9D03C26E4B7D000CFEA01 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB9D03B26E4B7D000CFEA01 /* UIViewExtension.swift */; };
 		DADF560F26E24C1900C7A611 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF560E26E24C1900C7A611 /* JSONParser.swift */; };
@@ -74,6 +75,7 @@
 		DA516EFB26E18FF9004194EA /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		DA516F0F26E22D53004194EA /* ItinaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinaryTableViewCell.swift; sourceTree = "<group>"; };
 		DA516F1026E22D53004194EA /* ItinaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItinaryTableViewCell.xib; sourceTree = "<group>"; };
+		DA75568426EBE81E00445340 /* ClearDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDelegate.swift; sourceTree = "<group>"; };
 		DAA6AD5E26E2B87700481406 /* AertripDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AertripDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DAB9D03926E3DFA500CFEA01 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DAB9D03B26E4B7D000CFEA01 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				DADF561126E2A9C700C7A611 /* LoopableProtocol.swift */,
 				DA17046D26E77AE10046D1B0 /* ButtonsDelegate.swift */,
+				DA75568426EBE81E00445340 /* ClearDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				DA516EF926E14C97004194EA /* AertripModel.swift in Sources */,
 				DA516F1126E22D53004194EA /* ItinaryTableViewCell.swift in Sources */,
 				DA516ED726E10FF8004194EA /* AppDelegate.swift in Sources */,
+				DA75568526EBE81E00445340 /* ClearDelegate.swift in Sources */,
 				DA3FAF0D26E638AA00937A29 /* TouchDelegatingView.swift in Sources */,
 				DA516ED926E10FF8004194EA /* SceneDelegate.swift in Sources */,
 				DA516EFC26E18FF9004194EA /* Page.swift in Sources */,

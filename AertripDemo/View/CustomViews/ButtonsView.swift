@@ -10,9 +10,12 @@ import UIKit
 class ButtonsView: UIView {
     
     weak var delegate: ButtonsDelegate!
+    weak var resetDelegate: ClearDelegate!
     
     @IBAction func clearAction(_ sender: UIBarButtonItem) {
+        resetDelegate.reset()
         delegate.clear()
+        resetDelegate.reset()
     }
     
     @IBAction func doneAction(_ sender: UIBarButtonItem) {

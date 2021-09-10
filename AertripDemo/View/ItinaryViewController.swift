@@ -19,19 +19,14 @@ class ItinaryViewController: UIViewController {
     private var sortFilterTabBarItem: UITabBarItem!
     private var priceFilterTabBarItem: UITabBarItem!
     
+    private var customBackgroundView: ButtonsView!
+    
     lazy var presenter: Presentr = {
         let centerY = navigationBarHeight + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height)!
         let width = ModalSize.full
         let height = ModalSize.fluid(percentage: 0.50)
         let center = ModalCenterPosition.customOrigin(origin: CGPoint(x: 0, y: centerY))
-        let customBackgroundView = Bundle.main.loadNibNamed("ButtonsView", owner: nil, options: nil)?.first as! ButtonsView
-        let customBackgroundViewOrigin = customBackgroundView.frame.origin
-        let customBackgroundViewSize = CGSize.init(width: (self.view.window?.frame.width)!, height: 200)
-        let customBackgroundViewFrame = CGRect.init(origin: customBackgroundViewOrigin, size: customBackgroundViewSize)
-        customBackgroundView.backgroundColor = .black
-        customBackgroundView.alpha = 1
-        customBackgroundView.frame = customBackgroundViewFrame
-        customBackgroundView.delegate = self
+        
         let customType = PresentationType.custom(width: width, height: height, center: center)
         
         let customPresenter = Presentr(presentationType: customType)
@@ -56,6 +51,14 @@ class ItinaryViewController: UIViewController {
     
     func initializeVC() {
         navigationBarHeight = self.navigationController!.navigationBar.frame.size.height
+        customBackgroundView = (Bundle.main.loadNibNamed("ButtonsView", owner: nil, options: nil)?.first as! ButtonsView)
+        let customBackgroundViewOrigin = customBackgroundView.frame.origin
+        let customBackgroundViewSize = CGSize.init(width: (self.view.frame.width), height: 200)
+        let customBackgroundViewFrame = CGRect.init(origin: customBackgroundViewOrigin, size: customBackgroundViewSize)
+        customBackgroundView.backgroundColor = .black
+        customBackgroundView.alpha = 1
+        customBackgroundView.frame = customBackgroundViewFrame
+        customBackgroundView.delegate = self
     }
     
     override func viewWillLayoutSubviews() {
@@ -177,16 +180,19 @@ extension ItinaryViewController: UITabBarDelegate {
             setupNavBarTitle()
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
             sortVC.delegate = self
+            customBackgroundView.resetDelegate = sortVC
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 1:
             setupNavBarTitle()
             let sortVC = SortFilterViewController(nibName: "SortFilterViewController", bundle: nil)
             sortVC.delegate = self
+            customBackgroundView.resetDelegate = sortVC
             customPresentViewController(presenter, viewController: sortVC, animated: true)
         case 2:
             setupNavBarTitle()
             let priceVC = PriceFilterViewController(nibName: "PriceFilterViewController", bundle: nil)
             priceVC.delegate = self
+            customBackgroundView.resetDelegate = priceVC
             customPresentViewController(presenter, viewController: priceVC, animated: true)
         default:
             return

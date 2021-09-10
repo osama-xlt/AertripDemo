@@ -64,3 +64,9 @@ class PriceFilterViewController: UIViewController {
         delegate?.apply()
     }
 }
+
+extension PriceFilterViewController: ClearDelegate {
+    func reset() {
+        initializeVC()
+    }
+}

@@ -29,24 +29,34 @@ class SortFilterViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
+        selectDeselectTableCell(selectDeselect: true)
+    }
+    
+    func selectDeselectTableCell(selectDeselect: Bool) {
+        var indexPath: IndexPath!
         switch jsonParser.actionType {
         case .sort(.price):
-            let indexPath = IndexPath.init(row: 0, section: 0)
-            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
-            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            indexPath = IndexPath.init(row: 0, section: 0)
         case .sort(.duration):
-            let indexPath = IndexPath.init(row: 1, section: 0)
-            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
-            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            indexPath = IndexPath.init(row: 1, section: 0)
         case .sort(.depart):
-            let indexPath = IndexPath.init(row: 2, section: 0)
-            sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
-            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            indexPath = IndexPath.init(row: 2, section: 0)
         case .sort(.arrival):
-            let indexPath = IndexPath.init(row: 3, section: 0)
+            indexPath = IndexPath.init(row: 3, section: 0)
+        default:break
+        }
+        
+        guard indexPath != nil else {
+            return
+        }
+        
+        if selectDeselect {
             sortFilterTableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
             sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        default:break
+        } else {
+            sortFilterTableView.deselectRow(at: indexPath, animated: true)
+            sortFilterTableView.cellForRow(at: indexPath)?.accessoryType = .none
+            
         }
     }
     
@@ -118,5 +128,15 @@ extension SortFilterViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
+    }
+}
+
+
+//MARK:- reset protocol
+
+extension SortFilterViewController: ClearDelegate {
+    func reset() {
+        selectDeselectTableCell(selectDeselect: false)
+        sortFilterTableView.reloadData()
     }
 }
