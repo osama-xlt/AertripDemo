@@ -47,9 +47,13 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="4cT-cW-ONR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8oY-eJ-osK"/>
+                <constraint firstItem="YWi-QM-IcQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dc9-fd-7Eh"/>
                 <constraint firstItem="YWi-QM-IcQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GDN-xm-kRy"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4cT-cW-ONR" secondAttribute="trailing" id="JOQ-r8-QF5"/>
+                <constraint firstItem="YWi-QM-IcQ" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="Lup-Wi-6yA"/>
                 <constraint firstItem="4cT-cW-ONR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RVD-ws-uIt"/>
+                <constraint firstItem="4cT-cW-ONR" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="UrF-W1-FtC"/>
                 <constraint firstItem="YWi-QM-IcQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fw1-nK-I3t"/>
                 <constraint firstItem="4cT-cW-ONR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-20" id="sFR-4G-T78"/>
                 <constraint firstItem="YWi-QM-IcQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xni-P5-hMT"/>

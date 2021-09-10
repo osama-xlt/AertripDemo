@@ -15,6 +15,9 @@ class ItinaryViewController: UIViewController {
     @IBOutlet weak var itinaryTableView: UITableView!
     var navigationBarHeight: CGFloat!
     private var navBarTitleView: NavBarTitleView!
+    private var filterTabBarItem: UITabBarItem!
+    private var sortFilterTabBarItem: UITabBarItem!
+    private var priceFilterTabBarItem: UITabBarItem!
     
     lazy var presenter: Presentr = {
         let centerY = navigationBarHeight + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height)!
@@ -95,21 +98,21 @@ class ItinaryViewController: UIViewController {
         
         var tabBarItems: [UITabBarItem] = []
         
-        let filterTabBarItem = UITabBarItem()
+        filterTabBarItem = UITabBarItem()
         filterTabBarItem.badgeColor = .red
         filterTabBarItem.image = UIImage(named: "filterIcon")
         filterTabBarItem.tag = 0
         filterTabBarItem.imageInsets = UIEdgeInsets.init(top: 8, left: 8, bottom: 3, right: 8)
         tabBarItems.append(filterTabBarItem)
         
-        let sortFilterTabBarItem = UITabBarItem()
+        sortFilterTabBarItem = UITabBarItem()
         sortFilterTabBarItem.badgeColor = UIColor(red: 96/255, green: 210/255, blue: 153/255, alpha: 1)
         sortFilterTabBarItem.title = "Sort"
         sortFilterTabBarItem.setTitleTextAttributes(attributes, for: .normal)
         sortFilterTabBarItem.tag = 1
         tabBarItems.append(sortFilterTabBarItem)
         
-        let priceFilterTabBarItem = UITabBarItem()
+        priceFilterTabBarItem = UITabBarItem()
         priceFilterTabBarItem.badgeColor = UIColor(red: 96/255, green: 210/255, blue: 153/255, alpha: 1)
         priceFilterTabBarItem.title = "Price"
         priceFilterTabBarItem.setTitleTextAttributes(attributes, for: .normal)
@@ -129,6 +132,9 @@ class ItinaryViewController: UIViewController {
 extension ItinaryViewController: ButtonsDelegate {
     
     func clear() {
+        filterTabBarItem.badgeValue = nil
+        sortFilterTabBarItem.badgeValue = nil
+        priceFilterTabBarItem.badgeValue = nil
         jsonParser.actionType = .defaultAction
         jsonParser.desiredAction()
         itinaryTableView.reloadData()
@@ -141,6 +147,25 @@ extension ItinaryViewController: ButtonsDelegate {
     }
     
     func apply() {
+        switch jsonParser.actionType {
+        case .sort(.price):
+            filterTabBarItem.badgeValue = ""
+            sortFilterTabBarItem.badgeValue = ""
+        case .sort(.duration):
+            filterTabBarItem.badgeValue = ""
+            sortFilterTabBarItem.badgeValue = ""
+        case .sort(.depart):
+            filterTabBarItem.badgeValue = ""
+            sortFilterTabBarItem.badgeValue = ""
+        case .sort(.arrival):
+            filterTabBarItem.badgeValue = ""
+            sortFilterTabBarItem.badgeValue = ""
+        case .filter:
+            filterTabBarItem.badgeValue = ""
+            priceFilterTabBarItem.badgeValue = ""
+        default:
+            break
+        }
         itinaryTableView.reloadData()
     }
 }
