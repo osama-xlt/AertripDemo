@@ -31,6 +31,9 @@ class JSONParser {
     
     private var j: [J]!
     
+    private var minPrice: Int!
+    private var maxPrice: Int!
+    
     init() {
         if let path = Bundle.main.path(forResource: "AertripData", ofType: "json") {
             do {
@@ -76,6 +79,8 @@ class JSONParser {
             j = sortByDepartLowToHigh()
         case .sort(.arrival):
             j = sortByArrivalLowToHigh()
+        case .filter:
+            j = filterByMinMaxPrice()
         default: break
         }
     }
@@ -169,6 +174,18 @@ class JSONParser {
     
     func filterDetail(row: Int) -> String {
         return (filters?.data[row].detail)!
+    }
+    
+    func updateMinMaxPrice(min: Int, max: Int) {
+        minPrice = min
+        maxPrice = max
+    }
+    
+    func filterByMinMaxPrice() -> [J] {
+        let filterByMinMaxPrice = j.filter { j -> Bool in
+            return j.farepr >= minPrice && j.farepr <= maxPrice
+        }
+        return filterByMinMaxPrice
     }
     
     //MARK:- Sorting

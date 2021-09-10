@@ -55,9 +55,15 @@ class PriceFilterViewController: UIViewController {
     }
     
     @IBAction func updateValues(_ sender: RangeSlider) {
+        jsonParser.actionType = .filter
+        jsonParser.updateMinMaxPrice(min: Int(sender.lowerValue), max: Int(sender.upperValue))
+        
         let minPriceValue = sender.lowerValue
         let maxPriceValue = sender.upperValue
         minPrice.text = "\u{20B9} " + sender.getLabelText(forValue: minPriceValue)
         maxPrice.text = "\u{20B9} " + sender.getLabelText(forValue: maxPriceValue)
+        
+        jsonParser.desiredAction()
+        delegate?.apply()
     }
 }
